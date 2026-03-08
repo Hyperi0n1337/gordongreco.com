@@ -295,15 +295,18 @@
       <h2 class="text-3xl font-bold text-navy mb-4">Schedule a Call</h2>
       <p class="text-gray-600 mb-8">Book a free 30-minute consultation to discuss your portfolio and tax situation.</p>
 
-      <!-- Cal.com embed placeholder -->
-      <div id="cal-embed" class="bg-gray-50 rounded-2xl p-12 border-2 border-dashed border-gray-300">
-        <p class="text-gray-500 text-lg mb-2">Calendar booking will appear here</p>
-        <p class="text-gray-400 text-sm">Pending Cal.com account setup</p>
-        <!-- Replace this div with:
-             <cal-inline calLink="your-cal-link"></cal-inline>
-             <script src="https://app.cal.com/embed/embed.js"></script>
-        -->
-      </div>
+      <!-- Cal.com inline embed -->
+      <div style="width:100%;height:700px;overflow:auto" id="my-cal-inline-intro-call" class="rounded-2xl"></div>
+      <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init", "intro-call", {origin:"https://app.cal.com"});
+        Cal.ns["intro-call"]("inline", {
+          elementOrSelector:"#my-cal-inline-intro-call",
+          config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+          calLink: "markos-terzidis-hicsb3/intro-call",
+        });
+        Cal.ns["intro-call"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
 
       <p class="text-sm text-gray-500 mt-6">
         Or email us directly at <a href="mailto:markos@gordongreco.com" class="text-green hover:underline">markos@gordongreco.com</a>
@@ -318,7 +321,7 @@
       <p class="text-gray-600 text-center mb-10">Tell us about your situation and we'll reach out to schedule a conversation.</p>
 
       <!-- Formspree form — replace YOUR_FORM_ID with actual ID -->
-      <form id="lead-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+      <form id="lead-form" action="https://formspree.io/f/xdawkbna" method="POST" class="space-y-6">
         <div class="grid sm:grid-cols-2 gap-6">
           <div>
             <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name <span class="text-red-500">*</span></label>
