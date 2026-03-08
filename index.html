@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gordon Greco LLC — Global Tax and Wealth Advisors</title>
+  <meta name="description" content="Tax-optimized wealth management. Tax-loss harvesting, asset location, Roth conversion, and estate planning — powered by quantitative analysis.">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: '#1a365d', dark: '#0f2440', light: '#2a4a7f' },
+            slate: '#2d3748',
+            green: { DEFAULT: '#276749', light: '#38a169' },
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- ===== NAV ===== -->
+  <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="Gordon Greco LLC" class="h-10 w-10 rounded-full object-cover">
+          <span class="font-bold text-navy text-lg hidden sm:inline">Gordon Greco</span>
+        </a>
+        <!-- Desktop nav -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+          <a href="#about" class="hover:text-navy transition">About</a>
+          <a href="#services" class="hover:text-navy transition">Services</a>
+          <a href="#calculator" class="hover:text-navy transition">Calculator</a>
+          <a href="#how-it-works" class="hover:text-navy transition">How It Works</a>
+          <a href="#schedule" class="hover:text-navy transition">Schedule</a>
+          <a href="#contact" class="hover:text-navy transition">Contact</a>
+        </div>
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+          <svg class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile nav -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col gap-3 text-sm font-medium text-gray-600">
+          <a href="#about" class="hover:text-navy transition py-1">About</a>
+          <a href="#services" class="hover:text-navy transition py-1">Services</a>
+          <a href="#calculator" class="hover:text-navy transition py-1">Calculator</a>
+          <a href="#how-it-works" class="hover:text-navy transition py-1">How It Works</a>
+          <a href="#schedule" class="hover:text-navy transition py-1">Schedule</a>
+          <a href="#contact" class="hover:text-navy transition py-1">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="pt-28 pb-20 sm:pt-36 sm:pb-28 bg-gradient-to-br from-navy-dark via-navy to-navy-light text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <img src="assets/logo.png" alt="Gordon Greco LLC" class="h-28 w-28 mx-auto mb-8 rounded-full bg-white p-2 shadow-xl">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+        Global Tax and Wealth Advisors
+      </h1>
+      <p class="text-lg sm:text-xl text-blue-200 max-w-2xl mx-auto mb-10">
+        Quantitative, tax-optimized portfolio management. We don't just grow your wealth — we keep more of it from the IRS.
+      </p>
+      <a href="#schedule" class="inline-block bg-green hover:bg-green-light text-white font-semibold px-8 py-4 rounded-lg text-lg transition shadow-lg hover:shadow-xl">
+        Schedule a Call
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="py-20 bg-white fade-in">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-8 text-center">About Gordon Greco</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Gordon Greco LLC is a fee-only registered investment advisory firm specializing in tax-optimized wealth management. We combine quantitative analysis with proactive tax planning to deliver measurable value above and beyond market returns.
+          </p>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Founded by Markos Terzidis, the firm serves high-net-worth individuals and families who want a data-driven approach to portfolio construction, tax-loss harvesting, asset location, and estate planning.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            As a fiduciary, we are legally obligated to act in your best interest — always. Our compensation comes solely from advisory fees, never commissions or product sales.
+          </p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-8">
+          <h3 class="font-semibold text-navy text-lg mb-4">Our Approach</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <span class="text-green font-bold mt-0.5">&#10003;</span>
+              <span><strong>Fee-only fiduciary</strong> — no commissions, no conflicts</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-green font-bold mt-0.5">&#10003;</span>
+              <span><strong>Tax alpha focus</strong> — every decision filtered through after-tax impact</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-green font-bold mt-0.5">&#10003;</span>
+              <span><strong>Quantitative discipline</strong> — evidence-based, not gut-based</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-green font-bold mt-0.5">&#10003;</span>
+              <span><strong>Transparent reporting</strong> — you see exactly where value is created</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="py-20 bg-gray-50 fade-in">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-4 text-center">Tax-Alpha Strategies</h2>
+      <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Every basis point matters. Here's how we generate measurable, after-tax value for your portfolio.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-green/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+          </div>
+          <h3 class="font-semibold text-navy text-lg mb-2">Tax-Loss Harvesting</h3>
+          <p class="text-gray-600 text-sm">Systematically harvest portfolio losses to offset gains, reducing your annual tax bill while maintaining market exposure.</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-green/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+          </div>
+          <h3 class="font-semibold text-navy text-lg mb-2">Asset Location</h3>
+          <p class="text-gray-600 text-sm">Place tax-inefficient assets (bonds, REITs) in tax-deferred accounts and tax-efficient assets (index funds) in taxable — saving 15–25 basis points annually.</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-green/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </div>
+          <h3 class="font-semibold text-navy text-lg mb-2">Roth Conversion</h3>
+          <p class="text-gray-600 text-sm">Strategic bracket-filling conversions from traditional IRA to Roth, locking in today's tax rates against future increases.</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-green/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z"/></svg>
+          </div>
+          <h3 class="font-semibold text-navy text-lg mb-2">QDI Optimization</h3>
+          <p class="text-gray-600 text-sm">Maximize qualified dividend income to benefit from the lower long-term capital gains rate instead of ordinary income rates.</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-green/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+          </div>
+          <h3 class="font-semibold text-navy text-lg mb-2">Estate & Trust Planning</h3>
+          <p class="text-gray-600 text-sm">Trust structure optimization, accumulation vs. distribution analysis, and multi-generational tax planning for complex family situations.</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-green/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3 class="font-semibold text-navy text-lg mb-2">Portfolio Construction</h3>
+          <p class="text-gray-600 text-sm">Evidence-based allocation using low-cost index funds, factor tilts, and Section 1256 contracts where appropriate for 60/40 tax treatment.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TAX ALPHA CALCULATOR ===== -->
+  <section id="calculator" class="py-20 bg-white fade-in">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-4 text-center">Tax Alpha Calculator</h2>
+      <p class="text-gray-600 text-center mb-10">See how much proactive tax management could save you each year.</p>
+
+      <div class="bg-gray-50 rounded-2xl p-6 sm:p-8">
+        <!-- Portfolio Size -->
+        <div class="mb-6">
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Portfolio Size</label>
+          <input type="range" id="calc-aum" min="100000" max="10000000" step="50000" value="1000000"
+                 class="w-full" oninput="updateSliderLabel(); calculateAlpha();">
+          <div class="flex justify-between text-xs text-gray-500 mt-1">
+            <span>$100K</span>
+            <span id="calc-aum-label" class="text-base font-bold text-navy">$1,000,000</span>
+            <span>$10M</span>
+          </div>
+        </div>
+
+        <!-- Account Types -->
+        <div class="mb-6">
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Account Types</label>
+          <div class="flex flex-wrap gap-4">
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="checkbox" id="calc-taxable" checked onchange="calculateAlpha()"
+                     class="w-4 h-4 text-green rounded border-gray-300 focus:ring-green">
+              <span class="text-sm text-gray-700">Taxable Brokerage</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="checkbox" id="calc-ira" checked onchange="calculateAlpha()"
+                     class="w-4 h-4 text-green rounded border-gray-300 focus:ring-green">
+              <span class="text-sm text-gray-700">Traditional IRA / 401(k)</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="checkbox" id="calc-roth" checked onchange="calculateAlpha()"
+                     class="w-4 h-4 text-green rounded border-gray-300 focus:ring-green">
+              <span class="text-sm text-gray-700">Roth IRA / Roth 401(k)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Marginal Rate -->
+        <div class="mb-8">
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Marginal Tax Rate</label>
+          <select id="calc-rate" onchange="calculateAlpha()"
+                  class="w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-green focus:border-green">
+            <option value="0.10">10%</option>
+            <option value="0.12">12%</option>
+            <option value="0.22">22%</option>
+            <option value="0.24" selected>24%</option>
+            <option value="0.32">32%</option>
+            <option value="0.35">35%</option>
+            <option value="0.37">37%</option>
+          </select>
+        </div>
+
+        <!-- Results -->
+        <div id="calc-results" class="hidden">
+          <div class="text-center mb-6">
+            <p class="text-sm text-gray-500 uppercase tracking-wide mb-1">Estimated Annual Tax Alpha</p>
+            <p id="calc-total" class="text-5xl font-extrabold text-emerald-600">$0</p>
+          </div>
+
+          <table class="w-full text-sm">
+            <tbody id="calc-breakdown"></tbody>
+          </table>
+
+          <p class="text-xs text-gray-400 mt-6 text-center">
+            Estimates are hypothetical and for illustrative purposes only. Actual results vary based on individual circumstances, market conditions, and tax law changes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section id="how-it-works" class="py-20 bg-gray-50 fade-in">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">How It Works</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+          <h3 class="font-semibold text-navy text-lg mb-2">Schedule a Consultation</h3>
+          <p class="text-gray-600 text-sm">Book a free 30-minute call. We'll discuss your financial situation, goals, and how tax-alpha strategies apply to you.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+          <h3 class="font-semibold text-navy text-lg mb-2">We Analyze Your Portfolio</h3>
+          <p class="text-gray-600 text-sm">Using our proprietary analytics engine, we identify specific tax-alpha opportunities — TLH, asset location, Roth conversion, and more.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+          <h3 class="font-semibold text-navy text-lg mb-2">Open Your Account</h3>
+          <p class="text-gray-600 text-sm">Your assets are custodied at Interactive Brokers, one of the world's largest electronic brokerages. You'll receive an application directly from IBKR — the process takes about 10 minutes.</p>
+        </div>
+
+      </div>
+      <div class="mt-12 text-center">
+        <a href="#schedule" class="inline-block bg-green hover:bg-green-light text-white font-semibold px-8 py-3 rounded-lg transition">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCHEDULE ===== -->
+  <section id="schedule" class="py-20 bg-white fade-in">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-navy mb-4">Schedule a Call</h2>
+      <p class="text-gray-600 mb-8">Book a free 30-minute consultation to discuss your portfolio and tax situation.</p>
+
+      <!-- Cal.com embed placeholder -->
+      <div id="cal-embed" class="bg-gray-50 rounded-2xl p-12 border-2 border-dashed border-gray-300">
+        <p class="text-gray-500 text-lg mb-2">Calendar booking will appear here</p>
+        <p class="text-gray-400 text-sm">Pending Cal.com account setup</p>
+        <!-- Replace this div with:
+             <cal-inline calLink="your-cal-link"></cal-inline>
+             <script src="https://app.cal.com/embed/embed.js"></script>
+        -->
+      </div>
+
+      <p class="text-sm text-gray-500 mt-6">
+        Or email us directly at <a href="mailto:markos@gordongreco.com" class="text-green hover:underline">markos@gordongreco.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / LEAD CAPTURE ===== -->
+  <section id="contact" class="py-20 bg-gray-50 fade-in">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-4 text-center">Get in Touch</h2>
+      <p class="text-gray-600 text-center mb-10">Tell us about your situation and we'll reach out to schedule a conversation.</p>
+
+      <!-- Formspree form — replace YOUR_FORM_ID with actual ID -->
+      <form id="lead-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name <span class="text-red-500">*</span></label>
+            <input type="text" id="name" name="name" required
+                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green text-sm">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>
+            <input type="email" id="email" name="email" required
+                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green text-sm">
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+            <input type="tel" id="phone" name="phone"
+                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green text-sm">
+          </div>
+          <div>
+            <label for="portfolio" class="block text-sm font-medium text-gray-700 mb-1">Estimated Portfolio Size</label>
+            <select id="portfolio" name="portfolio_size"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green text-sm">
+              <option value="">Select...</option>
+              <option value="<250K">Less than $250K</option>
+              <option value="250K-500K">$250K – $500K</option>
+              <option value="500K-1M">$500K – $1M</option>
+              <option value="1M-5M">$1M – $5M</option>
+              <option value="5M+">$5M+</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+          <textarea id="message" name="message" rows="4"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green text-sm"
+                    placeholder="Tell us about your financial goals or questions..."></textarea>
+        </div>
+
+        <button type="submit"
+                class="w-full bg-navy hover:bg-navy-dark text-white font-semibold py-3 rounded-lg transition">
+          Send Message
+        </button>
+      </form>
+
+      <!-- Thank you message (shown after submit) -->
+      <div id="thank-you" class="hidden text-center py-12">
+        <div class="w-16 h-16 bg-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <h3 class="text-2xl font-bold text-navy mb-2">Thank You</h3>
+        <p class="text-gray-600">We've received your message and will be in touch within one business day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-navy-dark text-gray-400 py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/logo.png" alt="Gordon Greco LLC" class="h-8 w-8 rounded-full bg-white p-0.5">
+            <span class="font-semibold text-white">Gordon Greco LLC</span>
+          </div>
+          <p class="text-sm leading-relaxed">
+            Global Tax and Wealth Advisors. Fee-only fiduciary investment management with a focus on tax-alpha generation.
+          </p>
+        </div>
+        <div class="sm:text-right">
+          <p class="text-sm mb-2">
+            <a href="mailto:markos@gordongreco.com" class="hover:text-white transition">markos@gordongreco.com</a>
+          </p>
+          <p class="text-sm">Advisory Fee: 1% AUM annually</p>
+          <p class="text-sm">(0.25% billed quarterly)</p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 pt-6">
+        <p class="text-xs leading-relaxed mb-4">
+          <strong class="text-gray-300">Important Disclosures:</strong> Gordon Greco LLC is a registered investment advisor. Registration does not imply any level of skill or training. Past performance is not indicative of future results. All investments involve risk, including loss of principal. The tax-alpha estimates presented on this website are hypothetical and for illustrative purposes only. Actual results will vary based on individual circumstances, market conditions, and changes in tax law. This website does not constitute investment advice, tax advice, or a solicitation. Please consult with a qualified professional before making any investment decisions.
+        </p>
+        <p class="text-xs text-gray-500">
+          &copy; <span id="copyright-year"></span> Gordon Greco LLC. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/calculator.js"></script>
+  <script>
+    // Copyright year
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+    // Fade-in on scroll
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(function(el) {
+      observer.observe(el);
+    });
+
+    // Run calculator on page load
+    window.addEventListener('DOMContentLoaded', function() {
+      calculateAlpha();
+    });
+
+    // Form submit → show thank you (Formspree handles actual submission)
+    document.getElementById('lead-form').addEventListener('submit', function(e) {
+      // For local testing without Formspree, uncomment the next line:
+      // e.preventDefault();
+      var form = this;
+      // Show thank you after a brief delay to allow form submission
+      setTimeout(function() {
+        form.classList.add('hidden');
+        document.getElementById('thank-you').classList.remove('hidden');
+      }, 1000);
+    });
+  </script>
+
+</body>
+</html>
