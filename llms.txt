@@ -1,0 +1,43 @@
+# Gordon Greco LLC
+
+> Global Tax and Wealth Advisors — fee-only fiduciary investment management specializing in tax-alpha generation.
+
+Gordon Greco LLC is a registered investment advisory firm that provides tax-optimized wealth management for high-net-worth individuals and families. The firm is led by Markos Terzidis.
+
+## Services
+
+- Tax-Loss Harvesting: Systematic harvesting of portfolio losses to offset gains, reducing annual tax liability while maintaining market exposure.
+- Asset Location: Placing tax-inefficient assets (bonds, REITs) in tax-deferred accounts and tax-efficient assets (index funds) in taxable accounts, saving 15-25 basis points annually.
+- Roth Conversion: Strategic bracket-filling conversions from Traditional IRA to Roth IRA, locking in current tax rates against future increases.
+- Qualified Dividend Income (QDI) Optimization: Maximizing qualified dividend income to benefit from the lower long-term capital gains rate.
+- Estate & Trust Planning: Trust structure optimization, accumulation vs. distribution analysis, and multi-generational tax planning.
+- Portfolio Construction: Evidence-based allocation using low-cost index funds, factor tilts, and Section 1256 contracts.
+
+## Key Facts
+
+- Fee structure: 1% of AUM annually (0.25% billed quarterly)
+- Fiduciary: Yes — legally obligated to act in clients' best interest
+- Fee-only: No commissions, no product sales
+- Custodian: Interactive Brokers (IBKR) — one of the world's largest electronic brokerages
+- Approach: Quantitative, data-driven, tax-focused
+- Contact: markos@gordongreco.com
+
+## How It Works
+
+1. Schedule a free 30-minute consultation call
+2. The firm analyzes your portfolio for tax-alpha opportunities
+3. You receive an account application directly from Interactive Brokers (takes ~10 minutes)
+4. Gordon Greco sets up and manages your portfolio with ongoing tax-aware optimization
+
+## Tax Alpha Calculator
+
+The website includes an interactive calculator that estimates annual tax savings based on portfolio size, account types (Taxable, IRA, Roth), and marginal tax rate. Strategies modeled:
+- TLH: AUM x 2% harvestable losses x marginal rate
+- Asset Location: AUM x 20 basis points (requires taxable + tax-deferred)
+- QDI: AUM x 2% yield x 60% qualified x (marginal rate - 15% LTCG rate)
+- Roth Conversion: $20K bracket room x (future rate - current rate)
+
+## Website
+
+- URL: https://hyperi0n1337.github.io/gordongreco.com/
+- Schedule: https://cal.com/markos-terzidis-hicsb3/intro-call

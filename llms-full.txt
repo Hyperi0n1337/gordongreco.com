@@ -1,0 +1,130 @@
+# Gordon Greco LLC — Complete Reference
+
+> Global Tax and Wealth Advisors — fee-only fiduciary investment management specializing in tax-alpha generation.
+
+## About the Firm
+
+Gordon Greco LLC is a registered investment advisory firm specializing in tax-optimized wealth management. Founded by Markos Terzidis, the firm serves high-net-worth individuals and families who want a data-driven approach to portfolio construction, tax-loss harvesting, asset location, and estate planning.
+
+As a fiduciary, Gordon Greco is legally obligated to act in clients' best interest — always. Compensation comes solely from advisory fees, never commissions or product sales.
+
+### Founder: Markos Terzidis
+
+Markos combines quantitative analysis with proactive tax planning to deliver measurable value above and beyond market returns. The firm uses a proprietary analytics engine to identify and execute tax-alpha opportunities across client portfolios.
+
+## Services — Detailed
+
+### 1. Tax-Loss Harvesting (TLH)
+
+Systematically harvests portfolio losses to offset realized gains, reducing annual tax bills while maintaining full market exposure through substitute positions. The firm assumes approximately 2% of AUM in harvestable losses annually through normal portfolio turnover.
+
+**Estimated value:** AUM x 2% x marginal tax rate (e.g., $1M portfolio at 24% rate = ~$4,800/year)
+
+### 2. Asset Location
+
+Optimizes the placement of assets across account types based on tax efficiency:
+- Taxable accounts: Hold tax-efficient assets (broad index funds, municipal bonds, tax-managed funds)
+- Tax-deferred accounts (IRA, 401k): Hold tax-inefficient assets (bonds, REITs, high-turnover funds)
+- Roth accounts: Hold highest expected growth assets (small-cap, emerging markets)
+
+**Estimated value:** 15-25 basis points annually (e.g., $1M portfolio = ~$2,000/year)
+
+Requires both taxable and tax-deferred/Roth accounts to implement.
+
+### 3. Roth Conversion Strategy
+
+Strategic bracket-filling conversions from Traditional IRA to Roth IRA. The firm identifies unused space in the client's current tax bracket and converts just enough to fill it, locking in today's rates against likely future increases.
+
+**Estimated value:** Depends on bracket room. Example: $20K converted at 24% now vs. 32%+ in retirement = $1,600-$2,000/year in future tax savings.
+
+Requires both Traditional IRA and Roth IRA accounts.
+
+### 4. Qualified Dividend Income (QDI) Optimization
+
+Maximizes the proportion of portfolio dividends that qualify for the lower long-term capital gains rate (0%/15%/20%) instead of ordinary income rates (up to 37%). Achieved by selecting funds and individual stocks with high QDI ratios.
+
+**Estimated value:** AUM x 2% dividend yield x 60% qualified x (marginal rate - 15% LTCG rate)
+
+Example: $1M at 24% marginal rate = ~$1,080/year
+
+### 5. Estate & Trust Planning
+
+- Trust structure optimization (revocable, irrevocable, special needs)
+- Accumulation vs. distribution analysis (Form 1041)
+- Qualified Disability Trust (QDT) strategies
+- Successor trustee and incapacity planning
+- Multi-generational tax planning
+- Cross-entity optimization for families with multiple entities
+
+### 6. Portfolio Construction
+
+Evidence-based allocation methodology:
+- Core holdings: Low-cost index funds (total market, international, emerging)
+- Factor tilts: Value, small-cap, profitability factors where appropriate
+- Section 1256 contracts: Futures and options with 60/40 long-term/short-term tax treatment
+- Tax-aware rebalancing: Minimize taxable events during portfolio adjustments
+
+## Fee Structure
+
+- **Annual fee:** 1% of assets under management (AUM)
+- **Billing:** 0.25% quarterly
+- **Fee-only:** No commissions, no product sales, no hidden fees
+- **Fiduciary standard:** Legally obligated to act in client's best interest
+
+## Custodian
+
+Client assets are custodied at **Interactive Brokers (IBKR)**, one of the world's largest electronic brokerage firms. Benefits include:
+- Low trading costs
+- Global market access (150+ markets, 200+ countries)
+- Institutional-grade execution
+- SIPC protection up to $500K (including $250K cash)
+- Excess SIPC coverage through Lloyd's of London
+
+The account opening process: after consultation, the client receives an application email directly from IBKR. The process takes approximately 10 minutes.
+
+## Tax Alpha Calculator — Formulas
+
+The website features an interactive calculator that estimates annual tax savings. The formulas are:
+
+### Inputs
+- Portfolio size (slider: $100K – $10M)
+- Account types (checkboxes: Taxable Brokerage, Traditional IRA/401k, Roth IRA/401k)
+- Marginal tax rate (dropdown: 10% – 37%)
+
+### Calculations
+
+1. **Tax-Loss Harvesting** (requires Taxable account):
+   - Harvestable losses = AUM x 0.02
+   - TLH alpha = harvestable losses x marginal rate
+
+2. **Asset Location** (requires Taxable + IRA or Roth):
+   - Alpha = AUM x 0.0020 (20 basis points)
+
+3. **Qualified Dividend Income** (requires Taxable account):
+   - Dividend income = AUM x 0.02
+   - QDI percentage = 60%
+   - QDI alpha = dividend income x QDI percentage x (marginal rate - 0.15)
+   - Only applies if marginal rate > 15% LTCG rate
+
+4. **Roth Conversion** (requires IRA + Roth):
+   - Bracket room = $20,000
+   - Future rate = max(marginal rate + 10%, 32%)
+   - Roth alpha = bracket room x (future rate - marginal rate)
+   - Only applies if future rate > marginal rate
+
+### Output
+- Total estimated annual tax alpha (sum of applicable strategies)
+- Breakdown table showing each strategy, description, and dollar value
+- Fee comparison: advisory fee (1% AUM) vs. tax alpha generated
+- Net tax alpha after fees
+
+## Contact Information
+
+- **Email:** markos@gordongreco.com
+- **Website:** https://hyperi0n1337.github.io/gordongreco.com/
+- **Schedule a call:** https://cal.com/markos-terzidis-hicsb3/intro-call
+- **Lead capture form:** Available on website (Name, Email, Phone, Portfolio Size, Message)
+
+## Compliance Disclosures
+
+Gordon Greco LLC is a registered investment advisor. Registration does not imply any level of skill or training. Past performance is not indicative of future results. All investments involve risk, including loss of principal. Tax-alpha estimates are hypothetical and for illustrative purposes only. Actual results vary based on individual circumstances, market conditions, and changes in tax law. The website does not constitute investment advice, tax advice, or a solicitation.
