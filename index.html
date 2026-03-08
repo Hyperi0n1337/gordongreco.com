@@ -5,25 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gordon Greco LLC — Global Tax and Wealth Advisors</title>
   <meta name="description" content="Tax-optimized wealth management. Tax-loss harvesting, asset location, Roth conversion, and estate planning — powered by quantitative analysis.">
-  <link rel="icon" href="assets/logo.png" type="image/png">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gordon Greco LLC — Global Tax and Wealth Advisors">
+  <meta property="og:description" content="Tax-optimized wealth management. Tax-loss harvesting, asset location, Roth conversion, and estate planning — powered by quantitative analysis.">
+  <meta property="og:image" content="https://hyperi0n1337.github.io/gordongreco.com/assets/og-image.png">
+  <meta property="og:url" content="https://hyperi0n1337.github.io/gordongreco.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gordon Greco LLC">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gordon Greco LLC — Global Tax and Wealth Advisors">
+  <meta name="twitter:description" content="Tax-optimized wealth management. Tax-loss harvesting, asset location, Roth conversion, and estate planning — powered by quantitative analysis.">
+  <meta name="twitter:image" content="https://hyperi0n1337.github.io/gordongreco.com/assets/og-image.png">
+
+  <!-- Google Analytics (replace G-XXXXXXXXXX with your GA4 measurement ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Gordon Greco LLC",
+    "description": "Tax-optimized wealth management. Fee-only fiduciary advisory specializing in tax-loss harvesting, asset location, Roth conversion, and estate planning.",
+    "url": "https://hyperi0n1337.github.io/gordongreco.com/",
+    "logo": "https://hyperi0n1337.github.io/gordongreco.com/assets/logo.png",
+    "founder": {
+      "@type": "Person",
+      "name": "Markos Terzidis"
+    },
+    "areaServed": "US",
+    "serviceType": ["Investment Management", "Tax Planning", "Estate Planning", "Wealth Management"],
+    "priceRange": "1% AUM annually",
+    "email": "markos@gordongreco.com"
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/tailwind.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: { DEFAULT: '#1a365d', dark: '#0f2440', light: '#2a4a7f' },
-            slate: '#2d3748',
-            green: { DEFAULT: '#276749', light: '#38a169' },
-          }
-        }
-      }
-    }
-  </script>
 </head>
 <body class="bg-white text-gray-800">
 
@@ -41,6 +73,7 @@
           <a href="#services" class="hover:text-navy transition">Services</a>
           <a href="#calculator" class="hover:text-navy transition">Calculator</a>
           <a href="#how-it-works" class="hover:text-navy transition">How It Works</a>
+          <a href="#insights" class="hover:text-navy transition">Insights</a>
           <a href="#schedule" class="hover:text-navy transition">Schedule</a>
           <a href="#contact" class="hover:text-navy transition">Contact</a>
         </div>
@@ -58,6 +91,7 @@
           <a href="#services" class="hover:text-navy transition py-1">Services</a>
           <a href="#calculator" class="hover:text-navy transition py-1">Calculator</a>
           <a href="#how-it-works" class="hover:text-navy transition py-1">How It Works</a>
+          <a href="#insights" class="hover:text-navy transition py-1">Insights</a>
           <a href="#schedule" class="hover:text-navy transition py-1">Schedule</a>
           <a href="#contact" class="hover:text-navy transition py-1">Contact</a>
         </div>
@@ -285,6 +319,68 @@
         <a href="#schedule" class="inline-block bg-green hover:bg-green-light text-white font-semibold px-8 py-3 rounded-lg transition">
           Get Started
         </a>
+        <p class="mt-6 text-sm text-gray-500 flex items-center justify-center gap-2">
+          <svg class="w-5 h-5 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          Client assets custodied at Interactive Brokers
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL PROOF ===== -->
+  <section class="py-20 bg-white fade-in">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">Why Clients Choose Gordon Greco</h2>
+      <div class="grid sm:grid-cols-3 gap-8">
+        <div class="text-center p-6 bg-gray-50 rounded-xl">
+          <div class="w-14 h-14 bg-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <p class="text-2xl font-extrabold text-navy mb-1">100%</p>
+          <p class="text-sm font-semibold text-gray-700">Fee-Only Fiduciary</p>
+          <p class="text-xs text-gray-500 mt-2">No commissions. No conflicts. Legally bound to act in your interest.</p>
+        </div>
+        <div class="text-center p-6 bg-gray-50 rounded-xl">
+          <div class="w-14 h-14 bg-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+          </div>
+          <p class="text-2xl font-extrabold text-navy mb-1">6</p>
+          <p class="text-sm font-semibold text-gray-700">Tax-Alpha Strategies</p>
+          <p class="text-xs text-gray-500 mt-2">TLH, asset location, Roth conversion, QDI, Section 1256, and estate planning.</p>
+        </div>
+        <div class="text-center p-6 bg-gray-50 rounded-xl">
+          <div class="w-14 h-14 bg-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <p class="text-2xl font-extrabold text-navy mb-1">24/7</p>
+          <p class="text-sm font-semibold text-gray-700">Quantitative Monitoring</p>
+          <p class="text-xs text-gray-500 mt-2">Automated daily scans for harvesting opportunities, anomalies, and rebalancing triggers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSIGHTS ===== -->
+  <section id="insights" class="py-20 bg-gray-50 fade-in">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-4 text-center">Insights</h2>
+      <p class="text-gray-600 text-center mb-12">Tax strategies and wealth management perspectives from our research desk.</p>
+      <div class="grid sm:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <p class="text-xs text-green font-semibold uppercase tracking-wide mb-2">Coming Soon</p>
+          <h3 class="font-semibold text-navy text-lg mb-2">Tax-Loss Harvesting: A Complete Guide</h3>
+          <p class="text-gray-600 text-sm">How systematic loss harvesting can save thousands in taxes each year without changing your portfolio's risk profile.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <p class="text-xs text-green font-semibold uppercase tracking-wide mb-2">Coming Soon</p>
+          <h3 class="font-semibold text-navy text-lg mb-2">When Does a Roth Conversion Make Sense?</h3>
+          <p class="text-gray-600 text-sm">The bracket-filling strategy that can save six figures over a retirement horizon — and when it doesn't make sense.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <p class="text-xs text-green font-semibold uppercase tracking-wide mb-2">Coming Soon</p>
+          <h3 class="font-semibold text-navy text-lg mb-2">Which Account Should Hold What?</h3>
+          <p class="text-gray-600 text-sm">Asset location matters more than most investors realize. The right placement can add 15–25 basis points per year.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -398,6 +494,7 @@
           </p>
           <p class="text-sm">Advisory Fee: 1% AUM annually</p>
           <p class="text-sm">(0.25% billed quarterly)</p>
+          <p class="text-sm mt-2">Custodied at Interactive Brokers</p>
         </div>
       </div>
 
@@ -447,16 +544,33 @@
       calculateAlpha();
     });
 
-    // Form submit → show thank you (Formspree handles actual submission)
+    // Form AJAX submit via Formspree
     document.getElementById('lead-form').addEventListener('submit', function(e) {
-      // For local testing without Formspree, uncomment the next line:
-      // e.preventDefault();
+      e.preventDefault();
       var form = this;
-      // Show thank you after a brief delay to allow form submission
-      setTimeout(function() {
-        form.classList.add('hidden');
-        document.getElementById('thank-you').classList.remove('hidden');
-      }, 1000);
+      var btn = form.querySelector('button[type="submit"]');
+      var origText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function(response) {
+        if (response.ok) {
+          form.classList.add('hidden');
+          document.getElementById('thank-you').classList.remove('hidden');
+        } else {
+          btn.disabled = false;
+          btn.textContent = origText;
+          alert('Something went wrong. Please try again or email us directly.');
+        }
+      }).catch(function() {
+        btn.disabled = false;
+        btn.textContent = origText;
+        alert('Network error. Please try again or email us directly.');
+      });
     });
   </script>
 
