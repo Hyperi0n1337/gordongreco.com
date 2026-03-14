@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gordon Greco LLC — Global Tax and Wealth Advisors</title>
-  <meta name="description" content="Tax-optimized wealth management. Tax-loss harvesting, asset location, Roth conversion, and estate planning — powered by quantitative analysis.">
+  <title>Gordon Greco LLC — Global Financial Advisory</title>
+  <meta name="description" content="Wealth management, tax advisory, financial planning, and international money services. Fee-only fiduciary serving clients with a global perspective.">
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Gordon Greco LLC — Global Tax and Wealth Advisors">
-  <meta property="og:description" content="Tax-optimized wealth management. Tax-loss harvesting, asset location, Roth conversion, and estate planning — powered by quantitative analysis.">
+  <meta property="og:title" content="Gordon Greco LLC — Global Financial Advisory">
+  <meta property="og:description" content="Wealth management, tax advisory, financial planning, and international money services. Fee-only fiduciary serving clients with a global perspective.">
   <meta property="og:image" content="https://hyperi0n1337.github.io/gordongreco.com/assets/og-image.png">
   <meta property="og:url" content="https://hyperi0n1337.github.io/gordongreco.com/">
   <meta property="og:type" content="website">
@@ -18,11 +18,11 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gordon Greco LLC — Global Tax and Wealth Advisors">
-  <meta name="twitter:description" content="Tax-optimized wealth management. Tax-loss harvesting, asset location, Roth conversion, and estate planning — powered by quantitative analysis.">
+  <meta name="twitter:title" content="Gordon Greco LLC — Global Financial Advisory">
+  <meta name="twitter:description" content="Wealth management, tax advisory, financial planning, and international money services. Fee-only fiduciary serving clients with a global perspective.">
   <meta name="twitter:image" content="https://hyperi0n1337.github.io/gordongreco.com/assets/og-image.png">
 
-  <!-- Google Analytics (replace G-EM93GNSLSC with your GA4 measurement ID) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EM93GNSLSC"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -37,16 +37,16 @@
     "@context": "https://schema.org",
     "@type": "FinancialService",
     "name": "Gordon Greco LLC",
-    "description": "Tax-optimized wealth management. Fee-only fiduciary advisory specializing in tax-loss harvesting, asset location, Roth conversion, and estate planning.",
+    "description": "Fee-only fiduciary financial advisory. Investment management, tax filing, tax optimization, estate planning, financial planning, and international money transfers.",
     "url": "https://hyperi0n1337.github.io/gordongreco.com/",
     "logo": "https://hyperi0n1337.github.io/gordongreco.com/assets/logo.png",
     "founder": {
       "@type": "Person",
       "name": "Markos Terzidis"
     },
-    "areaServed": "US",
-    "serviceType": ["Investment Management", "Tax Planning", "Estate Planning", "Wealth Management"],
-    "priceRange": "1% AUM annually",
+    "areaServed": ["US", "GR"],
+    "serviceType": ["Investment Management", "Tax Filing", "Tax Advisory", "Tax Optimization", "Estate Planning", "Financial Planning", "Money Transfer Services"],
+    "priceRange": "1% AUM / fee-based",
     "email": "markos@gordongreco.com"
   }
   </script>
@@ -54,345 +54,470 @@
   <link rel="stylesheet" href="css/tailwind.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-white text-gray-800">
 
   <!-- ===== NAV ===== -->
   <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
+    <div class="nav-container">
+      <div class="flex items-center justify-between h-18">
         <a href="#" class="flex items-center gap-3">
           <img src="assets/logo.png" alt="Gordon Greco LLC" class="h-10 w-10 rounded-full object-cover">
-          <span class="font-bold text-navy text-lg hidden sm:inline">Gordon Greco</span>
+          <span class="nav-brand hidden sm:inline">Gordon Greco</span>
         </a>
         <!-- Desktop nav -->
-        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-          <a href="#about" class="hover:text-navy transition">About</a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-500">
+          <a href="#" class="hover:text-navy transition">Home</a>
+          <a href="#story" class="hover:text-navy transition">Story</a>
+          <a href="#philosophy" class="hover:text-navy transition">Philosophy</a>
           <a href="#services" class="hover:text-navy transition">Services</a>
-          <a href="#calculator" class="hover:text-navy transition">Calculator</a>
-          <a href="#how-it-works" class="hover:text-navy transition">How It Works</a>
-          <a href="#insights" class="hover:text-navy transition">Insights</a>
-          <a href="#schedule" class="hover:text-navy transition">Schedule</a>
+          <a href="#pricing" class="hover:text-navy transition">Pricing</a>
           <a href="#contact" class="hover:text-navy transition">Contact</a>
+        </div>
+        <div class="hidden md:block">
+          <a href="#schedule" class="inline-block bg-navy hover:bg-navy-dark text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition">
+            Schedule a Call
+          </a>
         </div>
         <!-- Mobile menu button -->
         <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
           <svg class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
         </button>
       </div>
       <!-- Mobile nav -->
-      <div id="mobile-menu" class="hidden md:hidden pb-4">
-        <div class="flex flex-col gap-3 text-sm font-medium text-gray-600">
-          <a href="#about" class="hover:text-navy transition py-1">About</a>
+      <div id="mobile-menu" class="hidden md:hidden pb-6">
+        <div class="flex flex-col gap-4 text-sm font-medium text-gray-600">
+          <a href="#" class="hover:text-navy transition py-1">Home</a>
+          <a href="#story" class="hover:text-navy transition py-1">Story</a>
+          <a href="#philosophy" class="hover:text-navy transition py-1">Philosophy</a>
           <a href="#services" class="hover:text-navy transition py-1">Services</a>
-          <a href="#calculator" class="hover:text-navy transition py-1">Calculator</a>
-          <a href="#how-it-works" class="hover:text-navy transition py-1">How It Works</a>
-          <a href="#insights" class="hover:text-navy transition py-1">Insights</a>
-          <a href="#schedule" class="hover:text-navy transition py-1">Schedule</a>
+          <a href="#pricing" class="hover:text-navy transition py-1">Pricing</a>
           <a href="#contact" class="hover:text-navy transition py-1">Contact</a>
+          <a href="#schedule" class="inline-block bg-navy text-white font-semibold px-5 py-2.5 rounded-lg text-sm text-center mt-2">
+            Schedule a Call
+          </a>
         </div>
       </div>
     </div>
   </nav>
 
   <!-- ===== HERO ===== -->
-  <section class="pt-28 pb-20 sm:pt-36 sm:pb-28 bg-gradient-to-br from-navy-dark via-navy to-navy-light text-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <img src="assets/logo.png" alt="Gordon Greco LLC" class="h-28 w-28 mx-auto mb-8 rounded-full bg-white p-2 shadow-xl">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
-        Global Tax and Wealth Advisors
+  <section class="hero-section">
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
+    <div class="hero-container">
+      <p class="hero-eyebrow fade-in">Fee-Only Fiduciary Advisory</p>
+      <h1 class="hero-title fade-in">
+        Your Money, Working Harder.
       </h1>
-      <p class="text-lg sm:text-xl text-blue-200 max-w-2xl mx-auto mb-10">
-        Quantitative, tax-optimized portfolio management. We don't just grow your wealth — we keep more of it from the IRS.
+      <p class="hero-subtitle fade-in">
+        We manage your investments, cut your tax bill, and handle the financial complexity most advisors won't touch &mdash; so you can focus on everything else.
       </p>
-      <a href="#schedule" class="inline-block bg-green hover:bg-green-light text-white font-semibold px-8 py-4 rounded-lg text-lg transition shadow-lg hover:shadow-xl">
-        Schedule a Call
-      </a>
+      <div class="fade-in">
+        <a href="#schedule" class="hero-cta">
+          Schedule a Call
+          <svg class="hero-cta-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="py-20 bg-white fade-in">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-navy mb-8 text-center">About Gordon Greco</h2>
-      <div class="grid md:grid-cols-2 gap-12 items-start">
-        <div>
-          <p class="text-gray-700 leading-relaxed mb-4">
-            Gordon Greco LLC is a fee-only registered investment advisory firm specializing in tax-optimized wealth management. We combine quantitative analysis with proactive tax planning to deliver measurable value above and beyond market returns.
+  <!-- ===== STORY / ABOUT ===== -->
+  <section id="story" class="section-padding bg-white">
+    <div class="content-container">
+      <div class="story-grid fade-in">
+        <!-- Headshot placeholder -->
+        <div class="story-photo">
+          <div class="photo-placeholder">
+            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span class="placeholder-text">Photo Coming Soon</span>
+          </div>
+        </div>
+        <!-- Bio -->
+        <div class="story-content">
+          <h2 class="section-label">The Founder</h2>
+          <h3 class="story-headline">
+            Your <span class="highlight-circle">financial partner</span>, not your financial salesman.
+          </h3>
+          <p class="story-body">
+            I'm Markos Terzidis. I started Gordon Greco because I got tired of an industry that sells products instead of solving problems. My approach is data-driven: carefully constructed portfolios that <span class="highlight-underline">can beat market returns</span> over time — paired with smart tax strategies that keep more of those returns in your pocket.
           </p>
-          <p class="text-gray-700 leading-relaxed mb-4">
-            Founded by Markos Terzidis, the firm serves high-net-worth individuals and families who want a data-driven approach to portfolio construction, tax-loss harvesting, asset location, and estate planning.
+          <p class="story-body">
+            My clients are people who need more than someone picking stocks. They need a partner who understands <span class="highlight-underline">the full picture</span> — taxes, retirement accounts, international transfers, estate planning — and can actually make it all work together.
           </p>
-          <p class="text-gray-700 leading-relaxed">
-            As a fiduciary, we are legally obligated to act in your best interest — always. Our compensation comes solely from advisory fees, never commissions or product sales.
+          <p class="story-body">
+            As a fiduciary, I'm legally required to put your interests first. No commissions, no product sales, no hidden agendas. Just honest advice and measurable results.
           </p>
         </div>
-        <div class="bg-gray-50 rounded-xl p-8">
-          <h3 class="font-semibold text-navy text-lg mb-4">Our Approach</h3>
-          <ul class="space-y-3 text-gray-700">
-            <li class="flex items-start gap-3">
-              <span class="text-green font-bold mt-0.5">&#10003;</span>
-              <span><strong>Fee-only fiduciary</strong> — no commissions, no conflicts</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-green font-bold mt-0.5">&#10003;</span>
-              <span><strong>Tax alpha focus</strong> — every decision filtered through after-tax impact</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-green font-bold mt-0.5">&#10003;</span>
-              <span><strong>Quantitative discipline</strong> — evidence-based, not gut-based</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-green font-bold mt-0.5">&#10003;</span>
-              <span><strong>Transparent reporting</strong> — you see exactly where value is created</span>
-            </li>
-          </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PHILOSOPHY ===== -->
+  <section id="philosophy" class="section-padding bg-gray-50">
+    <div class="content-container">
+      <h2 class="section-label text-center fade-in">Philosophy</h2>
+      <h3 class="section-title text-center fade-in">How we think about your money.</h3>
+      <div class="philosophy-grid fade-in">
+
+        <div class="philosophy-card">
+          <div class="philosophy-number">01</div>
+          <h4 class="philosophy-heading">Your Interests First. By Law.</h4>
+          <p class="philosophy-body">
+            We're a fiduciary — that means we're legally required to put your interests ahead of ours. We don't earn commissions, we don't sell products, and we don't get kickbacks. You pay us a fee, and that's it.
+          </p>
         </div>
+
+        <div class="philosophy-card">
+          <div class="philosophy-number">02</div>
+          <h4 class="philosophy-heading">Built for the Real World.</h4>
+          <p class="philosophy-body">
+            Life doesn't fit neatly into one country or one tax bracket. Whether you have family abroad, property overseas, or need to move money between countries — we know how to handle it.
+          </p>
+        </div>
+
+        <div class="philosophy-card">
+          <div class="philosophy-number">03</div>
+          <h4 class="philosophy-heading">Math, Not Gut Feelings.</h4>
+          <p class="philosophy-body">
+            We don't guess. Every investment decision is backed by data and research — not market hype, not hot tips. Disciplined, systematic, and designed to grow your wealth over the long term.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- ===== SERVICES ===== -->
-  <section id="services" class="py-20 bg-gray-50 fade-in">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-navy mb-4 text-center">Tax-Alpha Strategies</h2>
-      <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Every basis point matters. Here's how we generate measurable, after-tax value for your portfolio.</p>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  <section id="services" class="section-padding bg-white">
+    <div class="content-container">
+      <h2 class="section-label text-center fade-in">Services</h2>
+      <h3 class="section-title text-center fade-in">Everything your finances need. Nothing they don't.</h3>
+      <div class="services-grid fade-in">
 
-        <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition">
-          <div class="w-12 h-12 bg-green/10 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+            </svg>
           </div>
-          <h3 class="font-semibold text-navy text-lg mb-2">Tax-Loss Harvesting</h3>
-          <p class="text-gray-600 text-sm">Systematically harvest portfolio losses to offset gains, reducing your annual tax bill while maintaining market exposure.</p>
+          <h4 class="service-heading">Investment Management</h4>
+          <p class="service-body">
+            We build and manage your portfolio using proven, data-backed strategies — and actively reduce your tax bill along the way. The goal isn't just growing your money, it's keeping more of what you earn.
+          </p>
         </div>
 
-        <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition">
-          <div class="w-12 h-12 bg-green/10 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z"/>
+            </svg>
           </div>
-          <h3 class="font-semibold text-navy text-lg mb-2">Asset Location</h3>
-          <p class="text-gray-600 text-sm">Place tax-inefficient assets (bonds, REITs) in tax-deferred accounts and tax-efficient assets (index funds) in taxable — saving 15–25 basis points annually.</p>
+          <h4 class="service-heading">Tax Filing & Advisory</h4>
+          <p class="service-body">
+            Annual tax preparation and year-round advisory. We don't just file — we plan proactively to minimize what you owe, every year.
+          </p>
         </div>
 
-        <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition">
-          <div class="w-12 h-12 bg-green/10 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+            </svg>
           </div>
-          <h3 class="font-semibold text-navy text-lg mb-2">Roth Conversion</h3>
-          <p class="text-gray-600 text-sm">Strategic bracket-filling conversions from traditional IRA to Roth, locking in today's tax rates against future increases.</p>
+          <h4 class="service-heading">Tax Optimization</h4>
+          <p class="service-body">
+            We look at your full picture — personal, business, estate — and find every legal way to reduce what you owe. Most people overpay on taxes because nobody's looking at the whole board.
+          </p>
         </div>
 
-        <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition">
-          <div class="w-12 h-12 bg-green/10 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z"/></svg>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
           </div>
-          <h3 class="font-semibold text-navy text-lg mb-2">QDI Optimization</h3>
-          <p class="text-gray-600 text-sm">Maximize qualified dividend income to benefit from the lower long-term capital gains rate instead of ordinary income rates.</p>
+          <h4 class="service-heading">Financial Planning</h4>
+          <p class="service-body">
+            Retirement, savings goals, insurance, cash flow — we map out where you are and where you're going. A real plan you'll actually use, not a 50-page PDF that sits in a drawer.
+          </p>
         </div>
 
-        <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition">
-          <div class="w-12 h-12 bg-green/10 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+            </svg>
           </div>
-          <h3 class="font-semibold text-navy text-lg mb-2">Estate & Trust Planning</h3>
-          <p class="text-gray-600 text-sm">Trust structure optimization, accumulation vs. distribution analysis, and multi-generational tax planning for complex family situations.</p>
+          <h4 class="service-heading">International Transfers</h4>
+          <p class="service-body">
+            Need to move money between countries? We handle international wires, currency exchange, and cross-border transfers at fair rates — no hidden bank fees, no guesswork.
+          </p>
         </div>
 
-        <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition">
-          <div class="w-12 h-12 bg-green/10 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
           </div>
-          <h3 class="font-semibold text-navy text-lg mb-2">Portfolio Construction</h3>
-          <p class="text-gray-600 text-sm">Evidence-based allocation using low-cost index funds, factor tilts, and Section 1256 contracts where appropriate for 60/40 tax treatment.</p>
+          <h4 class="service-heading">Estate Planning</h4>
+          <p class="service-body">
+            Making sure your family is taken care of — wills, trusts, and passing wealth to the next generation the smart way. We work with your lawyer to make sure nothing gets missed.
+          </p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ===== TAX ALPHA CALCULATOR ===== -->
-  <section id="calculator" class="py-20 bg-white fade-in">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-navy mb-4 text-center">Tax Alpha Calculator</h2>
-      <p class="text-gray-600 text-center mb-10">See how much proactive tax management could save you each year.</p>
-
-      <div class="bg-gray-50 rounded-2xl p-6 sm:p-8">
-        <!-- Portfolio Size -->
-        <div class="mb-6">
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Portfolio Size</label>
-          <input type="range" id="calc-aum" min="100000" max="10000000" step="50000" value="1000000"
-                 class="w-full" oninput="updateSliderLabel(); calculateAlpha();">
-          <div class="flex justify-between text-xs text-gray-500 mt-1">
-            <span>$100K</span>
-            <span id="calc-aum-label" class="text-base font-bold text-navy">$1,000,000</span>
-            <span>$10M</span>
-          </div>
-        </div>
-
-        <!-- Account Types -->
-        <div class="mb-6">
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Account Types</label>
-          <div class="flex flex-wrap gap-4">
-            <label class="flex items-center gap-2 cursor-pointer">
-              <input type="checkbox" id="calc-taxable" checked onchange="calculateAlpha()"
-                     class="w-4 h-4 text-green rounded border-gray-300 focus:ring-green">
-              <span class="text-sm text-gray-700">Taxable Brokerage</span>
-            </label>
-            <label class="flex items-center gap-2 cursor-pointer">
-              <input type="checkbox" id="calc-ira" checked onchange="calculateAlpha()"
-                     class="w-4 h-4 text-green rounded border-gray-300 focus:ring-green">
-              <span class="text-sm text-gray-700">Traditional IRA / 401(k)</span>
-            </label>
-            <label class="flex items-center gap-2 cursor-pointer">
-              <input type="checkbox" id="calc-roth" checked onchange="calculateAlpha()"
-                     class="w-4 h-4 text-green rounded border-gray-300 focus:ring-green">
-              <span class="text-sm text-gray-700">Roth IRA / Roth 401(k)</span>
-            </label>
-          </div>
-        </div>
-
-        <!-- Marginal Rate -->
-        <div class="mb-8">
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Marginal Tax Rate</label>
-          <select id="calc-rate" onchange="calculateAlpha()"
-                  class="w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-green focus:border-green">
-            <option value="0.10">10%</option>
-            <option value="0.12">12%</option>
-            <option value="0.22">22%</option>
-            <option value="0.24" selected>24%</option>
-            <option value="0.32">32%</option>
-            <option value="0.35">35%</option>
-            <option value="0.37">37%</option>
-          </select>
-        </div>
-
-        <!-- Results -->
-        <div id="calc-results" class="hidden">
-          <div class="text-center mb-6">
-            <p class="text-sm text-gray-500 uppercase tracking-wide mb-1">Estimated Annual Tax Alpha</p>
-            <p id="calc-total" class="text-5xl font-extrabold text-emerald-600">$0</p>
-          </div>
-
-          <table class="w-full text-sm">
-            <tbody id="calc-breakdown"></tbody>
-          </table>
-
-          <p class="text-xs text-gray-400 mt-6 text-center">
-            Estimates are hypothetical and for illustrative purposes only. Actual results vary based on individual circumstances, market conditions, and tax law changes.
-          </p>
-        </div>
+  <!-- ===== MID-PAGE CTA ===== -->
+  <section class="cta-break">
+    <canvas id="cta-canvas" class="cta-break-canvas"></canvas>
+    <div class="content-container text-center">
+      <h2 class="cta-break-title fade-in">
+        Not sure where to start?
+      </h2>
+      <p class="cta-break-subtitle fade-in">
+        A free 30-minute conversation. No sales pitch, no pressure — just a chance to talk about your situation and see if working together makes sense.
+      </p>
+      <div class="fade-in">
+        <a href="#schedule" class="cta-break-button">
+          Let's Talk
+          <svg class="cta-break-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- ===== HOW IT WORKS ===== -->
-  <section id="how-it-works" class="py-20 bg-gray-50 fade-in">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-navy mb-12 text-center">How It Works</h2>
-      <div class="grid md:grid-cols-3 gap-8">
+  <section id="how-it-works" class="section-padding bg-white">
+    <div class="content-container">
+      <h2 class="section-label text-center fade-in">Process</h2>
+      <h3 class="section-title text-center fade-in">Three steps. No complexity.</h3>
+      <div class="steps-grid fade-in">
 
-        <div class="text-center">
-          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
-          <h3 class="font-semibold text-navy text-lg mb-2">Schedule a Consultation</h3>
-          <p class="text-gray-600 text-sm">Book a free 30-minute call. We'll discuss your financial situation, goals, and how tax-alpha strategies apply to you.</p>
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h4 class="step-heading">Schedule a Consultation</h4>
+          <p class="step-body">
+            Book a free 30-minute call. We'll talk about your goals, your situation, and what you're looking for in a financial partner.
+          </p>
         </div>
 
-        <div class="text-center">
-          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
-          <h3 class="font-semibold text-navy text-lg mb-2">We Analyze Your Portfolio</h3>
-          <p class="text-gray-600 text-sm">Using our proprietary analytics engine, we identify specific tax-alpha opportunities — TLH, asset location, Roth conversion, and more.</p>
+        <div class="step-divider">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-4-4l4 4-4 4"/></svg>
         </div>
 
-        <div class="text-center">
-          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
-          <h3 class="font-semibold text-navy text-lg mb-2">Open Your Account</h3>
-          <p class="text-gray-600 text-sm">Your assets are custodied at Interactive Brokers, one of the world's largest electronic brokerages. You'll receive an application directly from IBKR — the process takes about 10 minutes.</p>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h4 class="step-heading">We Analyze Your Situation</h4>
+          <p class="step-body">
+            We review your accounts, tax returns, and the full financial picture — then show you exactly where you're overpaying, underperforming, or leaving money on the table.
+          </p>
+        </div>
+
+        <div class="step-divider">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-4-4l4 4-4 4"/></svg>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h4 class="step-heading">Get Started</h4>
+          <p class="step-body">
+            If it's a fit, onboarding takes about 10 minutes. Your assets are custodied at Interactive Brokers — one of the world's largest and most secure brokerages.
+          </p>
         </div>
 
       </div>
-      <div class="mt-12 text-center">
-        <a href="#schedule" class="inline-block bg-green hover:bg-green-light text-white font-semibold px-8 py-3 rounded-lg transition">
-          Get Started
-        </a>
-        <p class="mt-6 text-sm text-gray-500 flex items-center justify-center gap-2">
-          <svg class="w-5 h-5 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-          Client assets custodied at Interactive Brokers
-        </p>
+
+      <!-- Why us — icon features -->
+      <div class="process-features fade-in">
+
+        <div class="ibkr-feature">
+          <div class="ibkr-feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <h4 class="ibkr-feature-title">Fiduciary Standard</h4>
+          <p class="ibkr-feature-text">Legally required to act in your best interest. No commissions, no product sales — ever.</p>
+        </div>
+
+        <div class="ibkr-feature">
+          <div class="ibkr-feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+            </svg>
+          </div>
+          <h4 class="ibkr-feature-title">Global Reach</h4>
+          <p class="ibkr-feature-text">Cross-border expertise. Move money, manage taxes, and invest across multiple countries.</p>
+        </div>
+
+        <div class="ibkr-feature">
+          <div class="ibkr-feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+            </svg>
+          </div>
+          <h4 class="ibkr-feature-title">Data-Driven</h4>
+          <p class="ibkr-feature-text">Every decision backed by quantitative analysis. Systematic strategies designed to outperform over time.</p>
+        </div>
+
+        <div class="ibkr-feature">
+          <div class="ibkr-feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h4 class="ibkr-feature-title">Tax-Smart</h4>
+          <p class="ibkr-feature-text">Active tax strategies that save you real money — not just growing your wealth, but keeping more of it.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== SOCIAL PROOF ===== -->
-  <section class="py-20 bg-white fade-in">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-navy mb-12 text-center">Why Clients Choose Gordon Greco</h2>
-      <div class="grid sm:grid-cols-3 gap-8">
-        <div class="text-center p-6 bg-gray-50 rounded-xl">
-          <div class="w-14 h-14 bg-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-7 h-7 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+  <!-- ===== PARTNERED WITH IBKR ===== -->
+  <section class="ibkr-hero-section">
+    <!-- Animated background -->
+    <div class="ibkr-bg">
+      <div class="ibkr-bg-wave ibkr-bg-wave-1"></div>
+      <div class="ibkr-bg-wave ibkr-bg-wave-2"></div>
+      <div class="ibkr-bg-wave ibkr-bg-wave-3"></div>
+    </div>
+
+    <!-- Auto-sliding presentation -->
+    <div class="ibkr-carousel fade-in">
+      <div class="ibkr-carousel-inner">
+
+        <div class="ibkr-slide ibkr-slide-active">
+          <div class="ibkr-slide-content">
+            <!-- Trust badge -->
+            <div class="ibkr-trust-badge">
+              <svg class="ibkr-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              <span>Verified Custodial Partner</span>
+            </div>
+            <img src="assets/ibkr-logo.png" alt="Interactive Brokers" class="ibkr-slide-logo">
+            <h3 class="ibkr-slide-title">We partner with one of the world's most trusted financial institutions.</h3>
+            <p class="ibkr-slide-text">Interactive Brokers holds over $500 billion in client assets and has served institutional and private clients for more than 45 years. Your accounts are SIPC-insured with additional coverage through Lloyd's of London.</p>
           </div>
-          <p class="text-2xl font-extrabold text-navy mb-1">100%</p>
-          <p class="text-sm font-semibold text-gray-700">Fee-Only Fiduciary</p>
-          <p class="text-xs text-gray-500 mt-2">No commissions. No conflicts. Legally bound to act in your interest.</p>
         </div>
-        <div class="text-center p-6 bg-gray-50 rounded-xl">
-          <div class="w-14 h-14 bg-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-7 h-7 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+
+        <div class="ibkr-slide">
+          <div class="ibkr-slide-content">
+            <div class="ibkr-trust-badge">
+              <svg class="ibkr-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              <span>Global Access</span>
+            </div>
+            <img src="assets/ibkr-logo.png" alt="Interactive Brokers" class="ibkr-slide-logo">
+            <h3 class="ibkr-slide-title">150+ markets across 33 countries. One account.</h3>
+            <p class="ibkr-slide-text">Invest in stocks, bonds, ETFs, options, and more across global exchanges. The same institutional-grade access used by hedge funds and major financial institutions — now available to our clients.</p>
           </div>
-          <p class="text-2xl font-extrabold text-navy mb-1">6</p>
-          <p class="text-sm font-semibold text-gray-700">Tax-Alpha Strategies</p>
-          <p class="text-xs text-gray-500 mt-2">TLH, asset location, Roth conversion, QDI, Section 1256, and estate planning.</p>
         </div>
-        <div class="text-center p-6 bg-gray-50 rounded-xl">
-          <div class="w-14 h-14 bg-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-7 h-7 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+
+        <div class="ibkr-slide">
+          <div class="ibkr-slide-content">
+            <div class="ibkr-trust-badge">
+              <svg class="ibkr-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Lower Costs, Higher Returns</span>
+            </div>
+            <img src="assets/ibkr-logo.png" alt="Interactive Brokers" class="ibkr-slide-logo">
+            <h3 class="ibkr-slide-title">Industry-leading execution at the lowest cost.</h3>
+            <p class="ibkr-slide-text">Every dollar saved on trading fees stays in your portfolio. IBKR's pricing and execution quality give our clients a structural advantage that compounds year after year.</p>
           </div>
-          <p class="text-2xl font-extrabold text-navy mb-1">24/7</p>
-          <p class="text-sm font-semibold text-gray-700">Quantitative Monitoring</p>
-          <p class="text-xs text-gray-500 mt-2">Automated daily scans for harvesting opportunities, anomalies, and rebalancing triggers.</p>
         </div>
+
+        <div class="ibkr-slide">
+          <div class="ibkr-slide-content">
+            <div class="ibkr-trust-badge">
+              <svg class="ibkr-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+              <span>Publicly Traded & Regulated</span>
+            </div>
+            <img src="assets/ibkr-logo.png" alt="Interactive Brokers" class="ibkr-slide-logo">
+            <h3 class="ibkr-slide-title">Fully transparent. Fully regulated.</h3>
+            <p class="ibkr-slide-text">Interactive Brokers is publicly listed on NASDAQ, regulated by the SEC and FINRA, and audited continuously. This isn't a startup — it's a fortress that's been standing for half a century.</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- Slide indicators -->
+      <div class="ibkr-indicators">
+        <button class="ibkr-indicator ibkr-indicator-active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="ibkr-indicator" data-slide="1" aria-label="Slide 2"></button>
+        <button class="ibkr-indicator" data-slide="2" aria-label="Slide 3"></button>
+        <button class="ibkr-indicator" data-slide="3" aria-label="Slide 4"></button>
       </div>
     </div>
+
   </section>
 
-  <!-- ===== INSIGHTS ===== -->
-  <section id="insights" class="py-20 bg-gray-50 fade-in">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-navy mb-4 text-center">Insights</h2>
-      <p class="text-gray-600 text-center mb-12">Tax strategies and wealth management perspectives from our research desk.</p>
-      <div class="grid sm:grid-cols-3 gap-8">
-        <div class="bg-white rounded-xl p-6 shadow-sm">
-          <p class="text-xs text-green font-semibold uppercase tracking-wide mb-2">Coming Soon</p>
-          <h3 class="font-semibold text-navy text-lg mb-2">Tax-Loss Harvesting: A Complete Guide</h3>
-          <p class="text-gray-600 text-sm">How systematic loss harvesting can save thousands in taxes each year without changing your portfolio's risk profile.</p>
+  <!-- ===== PRICING ===== -->
+  <section id="pricing" class="section-padding bg-white">
+    <div class="content-container">
+      <h2 class="section-label text-center fade-in">Pricing</h2>
+      <h3 class="section-title text-center fade-in">Simple. Transparent. Aligned.</h3>
+      <div class="pricing-grid fade-in">
+
+        <div class="pricing-card pricing-card-primary">
+          <div class="pricing-badge">Most Popular</div>
+          <h4 class="pricing-heading">Investment Management</h4>
+          <div class="pricing-amount">
+            <span class="pricing-number">1%</span>
+            <span class="pricing-unit">of AUM / year</span>
+          </div>
+          <p class="pricing-detail">Billed quarterly at 0.25%</p>
+          <ul class="pricing-features">
+            <li>Your investments built & managed for you</li>
+            <li>Active strategies to lower your tax bill</li>
+            <li>Right accounts holding the right assets</li>
+            <li>Retirement account optimization</li>
+            <li>Ongoing monitoring & rebalancing</li>
+            <li>Clear quarterly reports you can actually read</li>
+          </ul>
+          <a href="#schedule" class="pricing-cta">Get Started</a>
         </div>
-        <div class="bg-white rounded-xl p-6 shadow-sm">
-          <p class="text-xs text-green font-semibold uppercase tracking-wide mb-2">Coming Soon</p>
-          <h3 class="font-semibold text-navy text-lg mb-2">When Does a Roth Conversion Make Sense?</h3>
-          <p class="text-gray-600 text-sm">The bracket-filling strategy that can save six figures over a retirement horizon — and when it doesn't make sense.</p>
+
+        <div class="pricing-card">
+          <h4 class="pricing-heading">Advisory Services</h4>
+          <div class="pricing-amount">
+            <span class="pricing-number">Fee-Based</span>
+          </div>
+          <p class="pricing-detail">Scoped to your needs</p>
+          <ul class="pricing-features">
+            <li>Tax filing & preparation</li>
+            <li>Strategies to pay less in taxes — legally</li>
+            <li>Retirement & financial planning</li>
+            <li>Estate planning & wealth transfer</li>
+            <li>International money transfers</li>
+            <li>Multi-country tax situations</li>
+          </ul>
+          <a href="#schedule" class="pricing-cta pricing-cta-secondary">Book a Consultation</a>
         </div>
-        <div class="bg-white rounded-xl p-6 shadow-sm">
-          <p class="text-xs text-green font-semibold uppercase tracking-wide mb-2">Coming Soon</p>
-          <h3 class="font-semibold text-navy text-lg mb-2">Which Account Should Hold What?</h3>
-          <p class="text-gray-600 text-sm">Asset location matters more than most investors realize. The right placement can add 15–25 basis points per year.</p>
-        </div>
+
       </div>
+      <p class="pricing-footnote fade-in">
+        All fees are discussed upfront. No hidden charges. No commissions. No product sales. Ever.
+      </p>
     </div>
   </section>
 
   <!-- ===== SCHEDULE ===== -->
-  <section id="schedule" class="py-20 bg-white fade-in">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl font-bold text-navy mb-4">Schedule a Call</h2>
-      <p class="text-gray-600 mb-8">Book a free 30-minute consultation to discuss your portfolio and tax situation.</p>
+  <section id="schedule" class="section-padding bg-white">
+    <div class="narrow-container text-center">
+      <h2 class="section-label fade-in">Schedule</h2>
+      <h3 class="section-title fade-in">Let's find a time to talk.</h3>
+      <p class="section-subtitle fade-in">Free 30-minute consultation. Pick a time that works for you.</p>
 
       <!-- Cal.com inline embed -->
-      <div style="width:100%;height:700px;overflow:auto" id="my-cal-inline-intro-call" class="rounded-2xl"></div>
+      <div style="width:100%;height:700px;overflow:auto" id="my-cal-inline-intro-call" class="rounded-2xl mt-8"></div>
       <script type="text/javascript">
         (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
         Cal("init", "intro-call", {origin:"https://app.cal.com"});
@@ -405,42 +530,38 @@
       </script>
 
       <p class="text-sm text-gray-500 mt-6">
-        Or email us directly at <a href="mailto:markos@gordongreco.com" class="text-green hover:underline">markos@gordongreco.com</a>
+        Or email directly: <a href="mailto:markos@gordongreco.com" class="text-green hover:underline font-medium">markos@gordongreco.com</a>
       </p>
     </div>
   </section>
 
-  <!-- ===== CONTACT / LEAD CAPTURE ===== -->
-  <section id="contact" class="py-20 bg-gray-50 fade-in">
-    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-navy mb-4 text-center">Get in Touch</h2>
-      <p class="text-gray-600 text-center mb-10">Tell us about your situation and we'll reach out to schedule a conversation.</p>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section-padding bg-gray-50">
+    <div class="narrow-container">
+      <h2 class="section-label text-center fade-in">Contact</h2>
+      <h3 class="section-title text-center fade-in">Send us a message.</h3>
+      <p class="section-subtitle text-center fade-in">Tell us about your situation and we'll reach out within one business day.</p>
 
-      <!-- Formspree form — replace YOUR_FORM_ID with actual ID -->
-      <form id="lead-form" action="https://formspree.io/f/xdawkbna" method="POST" class="space-y-6">
-        <div class="grid sm:grid-cols-2 gap-6">
+      <form id="lead-form" action="https://formspree.io/f/xdawkbna" method="POST" class="contact-form fade-in">
+        <div class="form-row">
           <div>
-            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name <span class="text-red-500">*</span></label>
-            <input type="text" id="name" name="name" required
-                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green text-sm">
+            <label for="name" class="form-label">Name <span class="text-red-500">*</span></label>
+            <input type="text" id="name" name="name" required class="form-input">
           </div>
           <div>
-            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>
-            <input type="email" id="email" name="email" required
-                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green text-sm">
+            <label for="email" class="form-label">Email <span class="text-red-500">*</span></label>
+            <input type="email" id="email" name="email" required class="form-input">
           </div>
         </div>
 
-        <div class="grid sm:grid-cols-2 gap-6">
+        <div class="form-row">
           <div>
-            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
-            <input type="tel" id="phone" name="phone"
-                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green text-sm">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" id="phone" name="phone" class="form-input">
           </div>
           <div>
-            <label for="portfolio" class="block text-sm font-medium text-gray-700 mb-1">Estimated Portfolio Size</label>
-            <select id="portfolio" name="portfolio_size"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green text-sm">
+            <label for="portfolio" class="form-label">Estimated Portfolio Size</label>
+            <select id="portfolio" name="portfolio_size" class="form-input">
               <option value="">Select...</option>
               <option value="<250K">Less than $250K</option>
               <option value="250K-500K">$250K – $500K</option>
@@ -452,20 +573,17 @@
         </div>
 
         <div>
-          <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-          <textarea id="message" name="message" rows="4"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green text-sm"
-                    placeholder="Tell us about your financial goals or questions..."></textarea>
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" name="message" rows="4" class="form-input" placeholder="Tell us about your financial goals or questions..."></textarea>
         </div>
 
-        <button type="submit"
-                class="w-full bg-navy hover:bg-navy-dark text-white font-semibold py-3 rounded-lg transition">
+        <button type="submit" class="form-submit">
           Send Message
         </button>
       </form>
 
-      <!-- Thank you message (shown after submit) -->
-      <div id="thank-you" class="hidden text-center py-12">
+      <!-- Thank you message -->
+      <div id="thank-you" class="hidden text-center py-16">
         <div class="w-16 h-16 bg-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
           <svg class="w-8 h-8 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
         </div>
@@ -476,40 +594,51 @@
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="bg-navy-dark text-gray-400 py-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid sm:grid-cols-2 gap-8 mb-8">
+  <footer class="site-footer">
+    <div class="content-container">
+      <div class="footer-grid">
         <div>
           <div class="flex items-center gap-3 mb-4">
             <img src="assets/logo.png" alt="Gordon Greco LLC" class="h-8 w-8 rounded-full bg-white p-0.5">
-            <span class="font-semibold text-white">Gordon Greco LLC</span>
+            <span class="font-semibold text-white text-lg">Gordon Greco LLC</span>
           </div>
-          <p class="text-sm leading-relaxed">
-            Global Tax and Wealth Advisors. Fee-only fiduciary investment management with a focus on tax-alpha generation.
+          <p class="text-sm leading-relaxed text-gray-400 max-w-sm">
+            Global financial advisory. Investment management, tax strategy, estate planning, and international financial services.
           </p>
         </div>
-        <div class="sm:text-right">
-          <p class="text-sm mb-2">
+        <div>
+          <h5 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Quick Links</h5>
+          <div class="flex flex-col gap-2 text-sm text-gray-400">
+            <a href="#story" class="hover:text-white transition">Our Story</a>
+            <a href="#philosophy" class="hover:text-white transition">Philosophy</a>
+            <a href="#services" class="hover:text-white transition">Services</a>
+            <a href="#pricing" class="hover:text-white transition">Pricing</a>
+            <a href="#schedule" class="hover:text-white transition">Schedule a Call</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Contact</h5>
+          <div class="flex flex-col gap-2 text-sm text-gray-400">
             <a href="mailto:markos@gordongreco.com" class="hover:text-white transition">markos@gordongreco.com</a>
-          </p>
-          <p class="text-sm">Advisory Fee: 1% AUM annually</p>
-          <p class="text-sm">(0.25% billed quarterly)</p>
-          <p class="text-sm mt-2">Custodied at Interactive Brokers</p>
+            <p>Fee: 1% AUM annually</p>
+            <p>(0.25% billed quarterly)</p>
+            <p class="mt-1">Assets custodied at Interactive Brokers</p>
+          </div>
         </div>
       </div>
 
-      <div class="border-t border-gray-700 pt-6">
-        <p class="text-xs leading-relaxed mb-4">
-          <strong class="text-gray-300">Important Disclosures:</strong> Gordon Greco LLC is a registered investment advisor. Registration does not imply any level of skill or training. Past performance is not indicative of future results. All investments involve risk, including loss of principal. The tax-alpha estimates presented on this website are hypothetical and for illustrative purposes only. Actual results will vary based on individual circumstances, market conditions, and changes in tax law. This website does not constitute investment advice, tax advice, or a solicitation. Please consult with a qualified professional before making any investment decisions.
+      <div class="footer-disclosure">
+        <p class="text-xs leading-relaxed mb-4 text-gray-500">
+          <strong class="text-gray-400">Important Disclosures:</strong> Gordon Greco LLC is a registered investment advisor. Registration does not imply any level of skill or training. Past performance is not indicative of future results. All investments involve risk, including loss of principal. This website does not constitute investment advice, tax advice, or a solicitation. Please consult with a qualified professional before making any investment decisions.
         </p>
-        <p class="text-xs text-gray-500">
+        <p class="text-xs text-gray-600">
           &copy; <span id="copyright-year"></span> Gordon Greco LLC. All rights reserved.
         </p>
       </div>
     </div>
   </footer>
 
-  <script src="js/calculator.js"></script>
+  <script src="js/hero-bg.js"></script>
   <script>
     // Copyright year
     document.getElementById('copyright-year').textContent = new Date().getFullYear();
@@ -526,7 +655,7 @@
       });
     });
 
-    // Fade-in on scroll
+    // Fade-in on scroll (IntersectionObserver)
     var observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
@@ -539,10 +668,49 @@
       observer.observe(el);
     });
 
-    // Run calculator on page load
-    window.addEventListener('DOMContentLoaded', function() {
-      calculateAlpha();
-    });
+    // IBKR Carousel — auto-slide with crossfade
+    (function () {
+      var slides = document.querySelectorAll('.ibkr-slide');
+      var indicators = document.querySelectorAll('.ibkr-indicator');
+      if (slides.length === 0) return;
+      var current = 0;
+      var interval = 8000;
+      var timer;
+
+      function goTo(idx) {
+        slides[current].classList.remove('ibkr-slide-active');
+        indicators[current].classList.remove('ibkr-indicator-active');
+        current = idx;
+        slides[current].classList.add('ibkr-slide-active');
+        indicators[current].classList.add('ibkr-indicator-active');
+      }
+
+      function next() {
+        goTo((current + 1) % slides.length);
+      }
+
+      function startTimer() {
+        timer = setInterval(next, interval);
+      }
+
+      // Click indicators
+      indicators.forEach(function (btn, idx) {
+        btn.addEventListener('click', function () {
+          clearInterval(timer);
+          goTo(idx);
+          startTimer();
+        });
+      });
+
+      // Pause on hover
+      var carousel = document.querySelector('.ibkr-carousel');
+      if (carousel) {
+        carousel.addEventListener('mouseenter', function () { clearInterval(timer); });
+        carousel.addEventListener('mouseleave', startTimer);
+      }
+
+      startTimer();
+    })();
 
     // Form AJAX submit via Formspree
     document.getElementById('lead-form').addEventListener('submit', function(e) {
