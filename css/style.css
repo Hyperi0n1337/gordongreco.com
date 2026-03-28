@@ -1094,6 +1094,139 @@ textarea.form-input {
 .bg-navy { background-color: var(--primary); }
 .bg-navy-dark { background-color: #0a0a0a; }
 
+/* ===== SERVICE DETAIL PAGES ===== */
+
+.breadcrumb {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+  color: var(--accent);
+}
+
+.breadcrumb-sep {
+  margin: 0 0.5rem;
+  opacity: 0.4;
+}
+
+.capability-block {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.capability-block:last-child {
+  border-bottom: none;
+}
+
+.capability-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.capability-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  color: var(--accent);
+  margin-top: 0.1rem;
+}
+
+.capability-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.capability-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: -0.01em;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.capability-body {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  padding-left: 3.75rem;
+}
+
+.capability-body ul {
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.capability-body ul li {
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+
+.capability-body ul li::marker {
+  color: var(--accent);
+}
+
+.scenario-vignette {
+  background: linear-gradient(135deg, #faf8f4 0%, #f3efe8 100%);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 0.75rem;
+  padding: 2rem 2.25rem;
+  margin: 3rem 0;
+}
+
+.scenario-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.scenario-text {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.85;
+  font-style: italic;
+}
+
+.service-cta-section {
+  text-align: center;
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  background: #0e0e0e;
+  color: white;
+}
+
+.service-cta-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .capability-body {
+    padding-left: 0;
+  }
+  .capability-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
 /* ===== RESPONSIVE ===== */
 
 @media (max-width: 767px) {

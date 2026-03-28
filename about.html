@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Gordon Greco</title>
+  <meta name="description" content="Quantitative rigor meets personal advisory. Learn about our engineering-driven approach to wealth management.">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About | Gordon Greco">
+  <meta property="og:description" content="Quantitative rigor meets personal advisory. Learn about our engineering-driven approach to wealth management.">
+  <meta property="og:image" content="https://hyperi0n1337.github.io/gordongreco.com/assets/og-image.png">
+  <meta property="og:url" content="https://hyperi0n1337.github.io/gordongreco.com/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gordon Greco LLC">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About | Gordon Greco">
+  <meta name="twitter:description" content="Quantitative rigor meets personal advisory. Learn about our engineering-driven approach to wealth management.">
+  <meta name="twitter:image" content="https://hyperi0n1337.github.io/gordongreco.com/assets/og-image.png">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EM93GNSLSC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EM93GNSLSC');
+  </script>
+
+  <link rel="stylesheet" href="css/tailwind.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- ===== NAV ===== -->
+  <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+    <div class="nav-container">
+      <div class="flex items-center justify-between h-18">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="Gordon Greco LLC" class="h-10 w-10 rounded-full object-cover">
+          <span class="nav-brand hidden sm:inline">Gordon Greco</span>
+        </a>
+        <!-- Desktop nav -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-500">
+          <a href="index.html" class="hover:text-navy transition">Home</a>
+          <a href="about.html" class="text-navy font-semibold transition">About</a>
+          <a href="services.html" class="hover:text-navy transition">Services</a>
+          <a href="index.html#pricing" class="hover:text-navy transition">Pricing</a>
+          <a href="contact.html" class="hover:text-navy transition">Contact</a>
+        </div>
+        <div class="hidden md:block">
+          <a href="contact.html#schedule" class="inline-block bg-navy hover:bg-navy-dark text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition">
+            Schedule a Call
+          </a>
+        </div>
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+          <svg class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile nav -->
+      <div id="mobile-menu" class="hidden md:hidden pb-6">
+        <div class="flex flex-col gap-4 text-sm font-medium text-gray-600">
+          <a href="index.html" class="hover:text-navy transition py-1">Home</a>
+          <a href="about.html" class="text-navy font-semibold py-1">About</a>
+          <a href="services.html" class="hover:text-navy transition py-1">Services</a>
+          <a href="index.html#pricing" class="hover:text-navy transition py-1">Pricing</a>
+          <a href="contact.html" class="hover:text-navy transition py-1">Contact</a>
+          <a href="contact.html#schedule" class="inline-block bg-navy text-white font-semibold px-5 py-2.5 rounded-lg text-sm text-center mt-2">
+            Schedule a Call
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-section" style="padding-top: clamp(6rem, 12vw, 9rem); padding-bottom: clamp(4rem, 8vw, 6rem);">
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
+    <div class="hero-container">
+      <p class="hero-eyebrow fade-in">Fee-Only Fiduciary</p>
+      <h1 class="hero-title fade-in">
+        A Fiduciary With an Engineering Mindset
+      </h1>
+      <p class="hero-subtitle fade-in">
+        Combining quantitative rigor with personal advisory &mdash; so every recommendation is stress-tested, tax-optimized, and built around your life.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== THE FOUNDER ===== -->
+  <section class="section-padding bg-white">
+    <div class="content-container">
+      <div class="story-grid fade-in">
+        <div class="story-photo">
+          <div class="photo-placeholder">
+            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span class="placeholder-text">Photo coming soon</span>
+          </div>
+        </div>
+        <div class="story-content">
+          <h2 class="section-label">The Founder</h2>
+          <h3 class="story-headline">Markos Terzidis</h3>
+          <p class="story-body">
+            Markos built Gordon Greco LLC on a conviction that most financial advisory is stuck in the past — relying on rules of thumb, gut instinct, and products that pay commissions. He took a different path: one rooted in quantitative analysis, tax-first thinking, and a legal obligation to put clients first.
+          </p>
+          <p class="story-body">
+            With a dual US/Greece background, Markos brings rare expertise in cross-border tax and asset strategy — navigating the complexity that most advisors hand off to "someone else." Whether you hold assets across multiple countries or simply want your domestic portfolio run with institutional-grade precision, Gordon Greco is built for that.
+          </p>
+          <p class="story-body">
+            Gordon Greco LLC is a registered investment advisor. As a fee-only fiduciary, Markos earns no commissions, sells no products, and has no financial incentive other than delivering results for clients. Your interests are his interests — not just as a value, but as a legal obligation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR APPROACH ===== -->
+  <section class="section-padding" style="background: var(--bg-off);">
+    <div class="content-container">
+      <h2 class="section-label text-center fade-in">Our Approach</h2>
+      <h3 class="section-title text-center fade-in">Three pillars. No compromises.</h3>
+      <div class="philosophy-grid fade-in">
+
+        <div class="philosophy-card">
+          <div class="philosophy-number">01</div>
+          <h4 class="philosophy-heading">Quantitative Rigor</h4>
+          <p class="philosophy-body">
+            We model your financial life across hundreds of scenarios, not rules of thumb. Every recommendation is stress-tested against market crashes, rate shocks, and life changes before it reaches you.
+          </p>
+        </div>
+
+        <div class="philosophy-card">
+          <div class="philosophy-number">02</div>
+          <h4 class="philosophy-heading">Tax-First Thinking</h4>
+          <p class="philosophy-body">
+            Every portfolio decision, every contribution, every withdrawal runs through comprehensive tax analysis spanning federal, state, and international obligations. Tax alpha isn't an afterthought — it's built into every recommendation.
+          </p>
+        </div>
+
+        <div class="philosophy-card">
+          <div class="philosophy-number">03</div>
+          <h4 class="philosophy-heading">Transparency &amp; Compliance</h4>
+          <p class="philosophy-body">
+            Auditable trails for every action. Quarterly performance reports with full attribution. No black boxes, no conflicts of interest, no product sales.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHO WE SERVE ===== -->
+  <section class="section-padding bg-white">
+    <div class="content-container">
+      <h2 class="section-label text-center fade-in">Who We Serve</h2>
+      <h3 class="section-title text-center fade-in">Built for complexity. Accessible to all.</h3>
+      <div class="services-grid fade-in">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="14" r="6"/>
+              <circle cx="32" cy="14" r="6"/>
+              <path d="M6 40c0-7.18 5.37-13 12-13h12c6.63 0 12 5.82 12 13"/>
+            </svg>
+          </div>
+          <h4 class="service-heading">High-Net-Worth Individuals &amp; Families</h4>
+          <p class="service-body">
+            $250K+ portfolios seeking sophisticated, tax-aware management. We handle the full picture — investments, tax, estate, and planning — so nothing falls through the cracks.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="8" y="20" width="32" height="22" rx="2"/>
+              <path d="M16 20v-4a8 8 0 0116 0v4"/>
+              <circle cx="24" cy="31" r="3"/>
+              <path d="M24 34v4"/>
+            </svg>
+          </div>
+          <h4 class="service-heading">Business Owners</h4>
+          <p class="service-body">
+            Entity structure optimization, Solo 401k strategy, and cash flow management. We align your business and personal finances so every dollar works harder.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" transform="translate(10 2) scale(1.1)"/>
+              <path d="M8 24h32"/>
+            </svg>
+          </div>
+          <h4 class="service-heading">Cross-Border Clients</h4>
+          <p class="service-body">
+            US/Greece dual tax situations, international assets, and multi-country compliance. Rare expertise that most advisors simply don't offer.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="20" r="10"/>
+              <path d="M8 42c0-8.84 7.16-16 16-16s16 7.16 16 16"/>
+              <path d="M24 10v10l6 4"/>
+            </svg>
+          </div>
+          <h4 class="service-heading">Pre-Retirees &amp; Retirees</h4>
+          <p class="service-body">
+            Social Security optimization, withdrawal sequencing, and estate planning. We build a retirement income plan you can rely on — stress-tested against the scenarios that matter.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOTTOM CTA ===== -->
+  <section class="cta-break">
+    <canvas id="cta-canvas" class="cta-break-canvas"></canvas>
+    <div class="content-container text-center">
+      <h2 class="cta-break-title fade-in">
+        Ready to work together?
+      </h2>
+      <p class="cta-break-subtitle fade-in">
+        A free 30-minute conversation. No sales pitch, no pressure — just a chance to talk about your situation and see if working together makes sense.
+      </p>
+      <div class="fade-in">
+        <a href="contact.html#schedule" class="cta-break-button">
+          Schedule a Call
+          <svg class="cta-break-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="content-container">
+      <div class="footer-grid">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/logo.png" alt="Gordon Greco LLC" class="h-8 w-8 rounded-full bg-white p-0.5">
+            <span class="font-semibold text-white text-lg">Gordon Greco LLC</span>
+          </div>
+          <p class="text-sm leading-relaxed text-gray-400 max-w-sm">
+            Global financial advisory. Investment management, tax strategy, estate planning, and financial planning. Founded by Markos Terzidis — a fiduciary who puts your interests first, by law.
+          </p>
+        </div>
+        <div>
+          <h5 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Quick Links</h5>
+          <div class="flex flex-col gap-2 text-sm text-gray-400">
+            <a href="index.html" class="hover:text-white transition">Home</a>
+            <a href="about.html" class="hover:text-white transition">About</a>
+            <a href="services.html" class="hover:text-white transition">Services</a>
+            <a href="index.html#pricing" class="hover:text-white transition">Pricing</a>
+            <a href="contact.html#schedule" class="hover:text-white transition">Schedule a Call</a>
+            <a href="contact.html" class="hover:text-white transition">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Contact</h5>
+          <div class="flex flex-col gap-2 text-sm text-gray-400">
+            <a href="mailto:markos@gordongreco.com" class="hover:text-white transition">markos@gordongreco.com</a>
+            <p>Fee: 1% AUM annually</p>
+            <p>(0.25% billed quarterly)</p>
+            <p class="mt-1">Assets custodied at Interactive Brokers</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-disclosure">
+        <p class="text-xs leading-relaxed mb-4 text-gray-500">
+          <strong class="text-gray-400">Important Disclosures:</strong> Gordon Greco LLC is a registered investment advisor. Registration does not imply any level of skill or training. Past performance is not indicative of future results. All investments involve risk, including loss of principal. This website does not constitute investment advice, tax advice, or a solicitation. Please consult with a qualified professional before making any investment decisions.
+        </p>
+        <p class="text-xs text-gray-600">
+          &copy; <span id="copyright-year"></span> Gordon Greco LLC. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/hero-bg.js"></script>
+  <script src="js/nav.js" defer></script>
+
+</body>
+</html>

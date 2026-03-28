@@ -1,17 +1,20 @@
 # Gordon Greco LLC
 
-> Global Financial Advisory — fee-only fiduciary investment management, tax advisory, estate planning, and international financial services.
+> Fee-only fiduciary financial advisory — comprehensive wealth management for high-net-worth individuals, families, and business owners.
 
-Gordon Greco LLC is a registered investment advisory firm that provides comprehensive financial services for individuals and families. The firm is led by Markos Terzidis, a Greek-American financial advisor with an international perspective.
+Gordon Greco LLC is a registered investment advisory firm founded by Markos Terzidis. The firm combines quantitative rigor with personalized advisory, specializing in tax-first thinking and cross-border US/Greece financial situations.
 
-## Services
+## Pages
 
-- Investment Management: Evidence-based portfolio construction using low-cost index funds, tax-loss harvesting, asset location, Roth conversion strategy, and disciplined rebalancing.
-- Tax Filing & Advisory: Annual tax preparation and year-round proactive tax planning.
-- Tax Optimization: Estate, business, and personal tax strategy including entity structuring, loss harvesting, and Roth conversions.
-- Financial Planning: Comprehensive planning covering retirement projections, cash flow analysis, insurance review, and goal-based roadmaps.
-- Money Transfer Services: International wire transfers, currency exchange, and cross-border fund movement with full compliance.
-- Estate Planning: Trust structuring, succession planning, and multi-generational wealth transfer coordination.
+- [Home](https://hyperi0n1337.github.io/gordongreco.com/) — Overview of services, pricing, and custodian (Interactive Brokers)
+- [About](https://hyperi0n1337.github.io/gordongreco.com/about.html) — Founder background, philosophy, and who the firm serves
+- [Services](https://hyperi0n1337.github.io/gordongreco.com/services.html) — Overview of all five service pillars
+- [Investment Management](https://hyperi0n1337.github.io/gordongreco.com/services/investment.html) — Tax-aware portfolio construction, risk management, quarterly reporting
+- [Tax Strategy](https://hyperi0n1337.github.io/gordongreco.com/services/tax.html) — Year-round federal, state, AMT, and cross-border US/Greece tax planning
+- [Retirement Planning](https://hyperi0n1337.github.io/gordongreco.com/services/retirement.html) — Contribution optimization, Social Security analysis, Monte Carlo simulations
+- [Estate & Trust Planning](https://hyperi0n1337.github.io/gordongreco.com/services/estate.html) — Trust strategy, wealth transfer, special needs planning, legal coordination
+- [Business Advisory](https://hyperi0n1337.github.io/gordongreco.com/services/business.html) — Entity structure, Solo 401(k), cash flow management for business owners
+- [Contact](https://hyperi0n1337.github.io/gordongreco.com/contact.html) — Schedule a free 30-minute consultation; contact form
 
 ## Key Facts
 
@@ -19,16 +22,6 @@ Gordon Greco LLC is a registered investment advisory firm that provides comprehe
 - Fiduciary: Yes — legally obligated to act in clients' best interest
 - Fee-only: No commissions, no product sales
 - Custodian: Interactive Brokers (IBKR)
-- Approach: Data-driven, globally minded, tax-aware
+- Specialty: Cross-border US/Greece tax situations, HNW families, business owners
 - Contact: markos@gordongreco.com
-
-## How It Works
-
-1. Schedule a free 30-minute consultation call
-2. We analyze your financial situation and identify opportunities
-3. Onboarding takes about 10 minutes via Interactive Brokers
-
-## Website
-
-- URL: https://hyperi0n1337.github.io/gordongreco.com/
 - Schedule: https://cal.com/markos-terzidis-hicsb3/intro-call

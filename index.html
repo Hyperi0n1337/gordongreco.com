@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gordon Greco LLC — Global Financial Advisory</title>
-  <meta name="description" content="Wealth management, tax advisory, financial planning, and estate planning. Fee-only fiduciary serving clients with a global perspective.">
+  <title>Gordon Greco — Fee-Only Fiduciary Advisory</title>
+  <meta name="description" content="Comprehensive wealth management: tax-aware investing, retirement planning, estate design, and business advisory. Fee-only fiduciary serving HNW clients.">
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Gordon Greco LLC — Global Financial Advisory">
-  <meta property="og:description" content="Wealth management, tax advisory, financial planning, and estate planning. Fee-only fiduciary serving clients with a global perspective.">
+  <meta property="og:title" content="Gordon Greco — Fee-Only Fiduciary Advisory">
+  <meta property="og:description" content="Comprehensive wealth management: tax-aware investing, retirement planning, estate design, and business advisory. Fee-only fiduciary serving HNW clients.">
   <meta property="og:image" content="https://hyperi0n1337.github.io/gordongreco.com/assets/og-image.png">
   <meta property="og:url" content="https://hyperi0n1337.github.io/gordongreco.com/">
   <meta property="og:type" content="website">
@@ -18,8 +18,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gordon Greco LLC — Global Financial Advisory">
-  <meta name="twitter:description" content="Wealth management, tax advisory, financial planning, and estate planning. Fee-only fiduciary serving clients with a global perspective.">
+  <meta name="twitter:title" content="Gordon Greco — Fee-Only Fiduciary Advisory">
+  <meta name="twitter:description" content="Comprehensive wealth management: tax-aware investing, retirement planning, estate design, and business advisory. Fee-only fiduciary serving HNW clients.">
   <meta name="twitter:image" content="https://hyperi0n1337.github.io/gordongreco.com/assets/og-image.png">
 
   <!-- Google Analytics -->
@@ -47,7 +47,18 @@
     "areaServed": ["US", "GR"],
     "serviceType": ["Investment Management", "Tax Advisory", "Tax Optimization", "Estate Planning", "Financial Planning"],
     "priceRange": "1% AUM / fee-based",
-    "email": "markos@gordongreco.com"
+    "email": "markos@gordongreco.com",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Financial Advisory Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Investment Management", "url": "https://hyperi0n1337.github.io/gordongreco.com/services/investment.html"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tax Strategy", "url": "https://hyperi0n1337.github.io/gordongreco.com/services/tax.html"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Retirement Planning", "url": "https://hyperi0n1337.github.io/gordongreco.com/services/retirement.html"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Estate & Trust Planning", "url": "https://hyperi0n1337.github.io/gordongreco.com/services/estate.html"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Business Advisory", "url": "https://hyperi0n1337.github.io/gordongreco.com/services/business.html"}}
+      ]
+    }
   }
   </script>
 
@@ -63,19 +74,20 @@
   <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
     <div class="nav-container">
       <div class="flex items-center justify-between h-18">
-        <a href="#" class="flex items-center gap-3">
+        <a href="index.html" class="flex items-center gap-3">
           <img src="assets/logo.png" alt="Gordon Greco LLC" class="h-10 w-10 rounded-full object-cover">
           <span class="nav-brand hidden sm:inline">Gordon Greco</span>
         </a>
         <!-- Desktop nav -->
         <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-500">
-          <a href="#" class="hover:text-navy transition">Home</a>
-          <a href="#services" class="hover:text-navy transition">Services</a>
+          <a href="index.html" class="text-navy font-semibold transition">Home</a>
+          <a href="about.html" class="hover:text-navy transition">About</a>
+          <a href="services.html" class="hover:text-navy transition">Services</a>
           <a href="#pricing" class="hover:text-navy transition">Pricing</a>
-          <a href="#contact" class="hover:text-navy transition">Contact</a>
+          <a href="contact.html" class="hover:text-navy transition">Contact</a>
         </div>
         <div class="hidden md:block">
-          <a href="#schedule" class="inline-block bg-navy hover:bg-navy-dark text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition">
+          <a href="contact.html#schedule" class="inline-block bg-navy hover:bg-navy-dark text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition">
             Schedule a Call
           </a>
         </div>
@@ -89,11 +101,12 @@
       <!-- Mobile nav -->
       <div id="mobile-menu" class="hidden md:hidden pb-6">
         <div class="flex flex-col gap-4 text-sm font-medium text-gray-600">
-          <a href="#" class="hover:text-navy transition py-1">Home</a>
-          <a href="#services" class="hover:text-navy transition py-1">Services</a>
+          <a href="index.html" class="text-navy font-semibold py-1">Home</a>
+          <a href="about.html" class="hover:text-navy transition py-1">About</a>
+          <a href="services.html" class="hover:text-navy transition py-1">Services</a>
           <a href="#pricing" class="hover:text-navy transition py-1">Pricing</a>
-          <a href="#contact" class="hover:text-navy transition py-1">Contact</a>
-          <a href="#schedule" class="inline-block bg-navy text-white font-semibold px-5 py-2.5 rounded-lg text-sm text-center mt-2">
+          <a href="contact.html" class="hover:text-navy transition py-1">Contact</a>
+          <a href="contact.html#schedule" class="inline-block bg-navy text-white font-semibold px-5 py-2.5 rounded-lg text-sm text-center mt-2">
             Schedule a Call
           </a>
         </div>
@@ -113,7 +126,7 @@
         We manage your investments, cut your tax bill, and handle the financial complexity most advisors won't touch &mdash; so you can focus on everything else.
       </p>
       <div class="fade-in">
-        <a href="#schedule" class="hero-cta">
+        <a href="contact.html#schedule" class="hero-cta">
           Schedule a Call
           <svg class="hero-cta-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
         </a>
@@ -137,9 +150,8 @@
             </svg>
           </div>
           <h4 class="service-heading">Investment Management</h4>
-          <p class="service-body">
-            We build and manage your portfolio using proven, data-backed strategies — and actively reduce your tax bill along the way.
-          </p>
+          <p class="service-body">Data-backed portfolios built and managed with tax efficiency at the core.</p>
+          <a href="services/investment.html" class="text-green font-medium text-sm mt-3 inline-block hover:underline">Learn More &rarr;</a>
         </div>
 
         <div class="service-card">
@@ -151,10 +163,9 @@
               <circle cx="24" cy="24" r="3" fill="currentColor" stroke="none"/>
             </svg>
           </div>
-          <h4 class="service-heading">Tax Advisory & Optimization</h4>
-          <p class="service-body">
-            Year-round tax planning, annual preparation, and proactive strategies that minimize what you owe — across personal, business, and estate.
-          </p>
+          <h4 class="service-heading">Tax Strategy</h4>
+          <p class="service-body">Year-round planning and preparation that keeps more of your money out of the IRS's hands.</p>
+          <a href="services/tax.html" class="text-green font-medium text-sm mt-3 inline-block hover:underline">Learn More &rarr;</a>
         </div>
 
         <div class="service-card">
@@ -167,10 +178,9 @@
               <circle cx="38" cy="8" r="2.5" fill="currentColor" stroke="none"/>
             </svg>
           </div>
-          <h4 class="service-heading">Financial Planning</h4>
-          <p class="service-body">
-            Retirement, savings goals, insurance, cash flow — a real plan you'll actually use, not a 50-page PDF that sits in a drawer.
-          </p>
+          <h4 class="service-heading">Retirement &amp; Wealth Planning</h4>
+          <p class="service-body">A real retirement plan built around your numbers, not a generic template.</p>
+          <a href="services/retirement.html" class="text-green font-medium text-sm mt-3 inline-block hover:underline">Learn More &rarr;</a>
         </div>
 
         <div class="service-card">
@@ -183,12 +193,57 @@
               <path d="M14 18v4M34 18v4"/>
             </svg>
           </div>
-          <h4 class="service-heading">Estate Planning</h4>
-          <p class="service-body">
-            Wills, trusts, and passing wealth to the next generation the smart way. We work with your lawyer to make sure nothing gets missed.
-          </p>
+          <h4 class="service-heading">Estate &amp; Trust Planning</h4>
+          <p class="service-body">Wills, trusts, and wealth transfer strategies coordinated with your attorney.</p>
+          <a href="services/estate.html" class="text-green font-medium text-sm mt-3 inline-block hover:underline">Learn More &rarr;</a>
         </div>
 
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="14" width="36" height="26" rx="3"/>
+              <path d="M16 14V10a8 8 0 0116 0v4"/>
+              <circle cx="24" cy="27" r="4"/>
+              <path d="M24 31v4"/>
+            </svg>
+          </div>
+          <h4 class="service-heading">Business Advisory</h4>
+          <p class="service-body">Entity structuring, compensation planning, and exit strategies for business owners.</p>
+          <a href="services/business.html" class="text-green font-medium text-sm mt-3 inline-block hover:underline">Learn More &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR APPROACH TEASER ===== -->
+  <section class="section-padding bg-gray-50">
+    <div class="content-container">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-in">
+        <div class="text-center px-4">
+          <div class="w-12 h-12 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6M5 20h14a2 2 0 002-2V8l-5-5H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <h4 class="font-bold text-navy text-lg mb-2">Quantitative Rigor</h4>
+          <p class="text-gray-600 text-sm">Hundreds of scenarios, not rules of thumb.</p>
+        </div>
+        <div class="text-center px-4">
+          <div class="w-12 h-12 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"/></svg>
+          </div>
+          <h4 class="font-bold text-navy text-lg mb-2">Tax-First Thinking</h4>
+          <p class="text-gray-600 text-sm">Every recommendation runs through comprehensive tax analysis.</p>
+        </div>
+        <div class="text-center px-4">
+          <div class="w-12 h-12 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h4 class="font-bold text-navy text-lg mb-2">Transparency</h4>
+          <p class="text-gray-600 text-sm">Auditable trails. No black boxes. No conflicts.</p>
+        </div>
+      </div>
+      <div class="text-center mt-8 fade-in">
+        <a href="about.html" class="text-green font-medium text-sm hover:underline">Learn more about our approach &rarr;</a>
       </div>
     </div>
   </section>
@@ -204,7 +259,7 @@
         A free 30-minute conversation. No sales pitch, no pressure — just a chance to talk about your situation and see if working together makes sense.
       </p>
       <div class="fade-in">
-        <a href="#schedule" class="cta-break-button">
+        <a href="contact.html" class="cta-break-button">
           Let's Talk
           <svg class="cta-break-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
         </a>
@@ -295,7 +350,7 @@
             <li>Ongoing monitoring & rebalancing</li>
             <li>Clear quarterly reports you can actually read</li>
           </ul>
-          <a href="#schedule" class="pricing-cta">Get Started</a>
+          <a href="contact.html#schedule" class="pricing-cta">Get Started</a>
         </div>
 
         <div class="pricing-card">
@@ -312,97 +367,13 @@
             <li>Business entity optimization</li>
             <li>Multi-country tax situations</li>
           </ul>
-          <a href="#schedule" class="pricing-cta pricing-cta-secondary">Book a Consultation</a>
+          <a href="contact.html#schedule" class="pricing-cta pricing-cta-secondary">Book a Consultation</a>
         </div>
 
       </div>
       <p class="pricing-footnote fade-in">
         All fees are discussed upfront. No hidden charges. No commissions. No product sales. Ever.
       </p>
-    </div>
-  </section>
-
-  <!-- ===== SCHEDULE ===== -->
-  <section id="schedule" class="section-padding bg-white">
-    <div class="narrow-container text-center">
-      <h2 class="section-label fade-in">Schedule</h2>
-      <h3 class="section-title fade-in">Let's find a time to talk.</h3>
-      <p class="section-subtitle fade-in">Free 30-minute consultation. Pick a time that works for you.</p>
-
-      <!-- Cal.com inline embed -->
-      <div style="width:100%;height:700px;overflow:auto" id="my-cal-inline-intro-call" class="rounded-2xl mt-8"></div>
-      <script type="text/javascript">
-        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-        Cal("init", "intro-call", {origin:"https://app.cal.com"});
-        Cal.ns["intro-call"]("inline", {
-          elementOrSelector:"#my-cal-inline-intro-call",
-          config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
-          calLink: "markos-terzidis-hicsb3/intro-call",
-        });
-        Cal.ns["intro-call"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
-
-      <p class="text-sm text-gray-500 mt-6">
-        Or email directly: <a href="mailto:markos@gordongreco.com" class="text-green hover:underline font-medium">markos@gordongreco.com</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section-padding bg-gray-50">
-    <div class="narrow-container">
-      <h2 class="section-label text-center fade-in">Contact</h2>
-      <h3 class="section-title text-center fade-in">Send us a message.</h3>
-      <p class="section-subtitle text-center fade-in">Tell us about your situation and we'll reach out within one business day.</p>
-
-      <form id="lead-form" action="https://formspree.io/f/xdawkbna" method="POST" class="contact-form fade-in">
-        <div class="form-row">
-          <div>
-            <label for="name" class="form-label">Name <span class="text-red-500">*</span></label>
-            <input type="text" id="name" name="name" required class="form-input">
-          </div>
-          <div>
-            <label for="email" class="form-label">Email <span class="text-red-500">*</span></label>
-            <input type="email" id="email" name="email" required class="form-input">
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div>
-            <label for="phone" class="form-label">Phone</label>
-            <input type="tel" id="phone" name="phone" class="form-input">
-          </div>
-          <div>
-            <label for="portfolio" class="form-label">Estimated Portfolio Size</label>
-            <select id="portfolio" name="portfolio_size" class="form-input">
-              <option value="">Select...</option>
-              <option value="<250K">Less than $250K</option>
-              <option value="250K-500K">$250K – $500K</option>
-              <option value="500K-1M">$500K – $1M</option>
-              <option value="1M-5M">$1M – $5M</option>
-              <option value="5M+">$5M+</option>
-            </select>
-          </div>
-        </div>
-
-        <div>
-          <label for="message" class="form-label">Message</label>
-          <textarea id="message" name="message" rows="4" class="form-input" placeholder="Tell us about your financial goals or questions..."></textarea>
-        </div>
-
-        <button type="submit" class="form-submit">
-          Send Message
-        </button>
-      </form>
-
-      <!-- Thank you message -->
-      <div id="thank-you" class="hidden text-center py-16">
-        <div class="w-16 h-16 bg-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-        </div>
-        <h3 class="text-2xl font-bold text-navy mb-2">Thank You</h3>
-        <p class="text-gray-600">We've received your message and will be in touch within one business day.</p>
-      </div>
     </div>
   </section>
 
@@ -422,10 +393,12 @@
         <div>
           <h5 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Quick Links</h5>
           <div class="flex flex-col gap-2 text-sm text-gray-400">
-            <a href="#services" class="hover:text-white transition">Services</a>
+            <a href="index.html" class="hover:text-white transition">Home</a>
+            <a href="about.html" class="hover:text-white transition">About</a>
+            <a href="services.html" class="hover:text-white transition">Services</a>
             <a href="#pricing" class="hover:text-white transition">Pricing</a>
-            <a href="#schedule" class="hover:text-white transition">Schedule a Call</a>
-            <a href="#contact" class="hover:text-white transition">Contact</a>
+            <a href="contact.html#schedule" class="hover:text-white transition">Schedule a Call</a>
+            <a href="contact.html" class="hover:text-white transition">Contact</a>
           </div>
         </div>
         <div>
@@ -451,108 +424,7 @@
   </footer>
 
   <script src="js/hero-bg.js"></script>
-  <script>
-    // Copyright year
-    document.getElementById('copyright-year').textContent = new Date().getFullYear();
-
-    // Mobile menu toggle
-    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
-
-    // Close mobile menu on link click
-    document.querySelectorAll('#mobile-menu a').forEach(function(link) {
-      link.addEventListener('click', function() {
-        document.getElementById('mobile-menu').classList.add('hidden');
-      });
-    });
-
-    // Fade-in on scroll (IntersectionObserver)
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.fade-in').forEach(function(el) {
-      observer.observe(el);
-    });
-
-    // IBKR Carousel — auto-slide with crossfade
-    (function () {
-      var slides = document.querySelectorAll('.ibkr-slide');
-      var indicators = document.querySelectorAll('.ibkr-indicator');
-      if (slides.length === 0) return;
-      var current = 0;
-      var interval = 8000;
-      var timer;
-
-      function goTo(idx) {
-        slides[current].classList.remove('ibkr-slide-active');
-        indicators[current].classList.remove('ibkr-indicator-active');
-        current = idx;
-        slides[current].classList.add('ibkr-slide-active');
-        indicators[current].classList.add('ibkr-indicator-active');
-      }
-
-      function next() {
-        goTo((current + 1) % slides.length);
-      }
-
-      function startTimer() {
-        timer = setInterval(next, interval);
-      }
-
-      // Click indicators
-      indicators.forEach(function (btn, idx) {
-        btn.addEventListener('click', function () {
-          clearInterval(timer);
-          goTo(idx);
-          startTimer();
-        });
-      });
-
-      // Pause on hover
-      var carousel = document.querySelector('.ibkr-carousel');
-      if (carousel) {
-        carousel.addEventListener('mouseenter', function () { clearInterval(timer); });
-        carousel.addEventListener('mouseleave', startTimer);
-      }
-
-      startTimer();
-    })();
-
-    // Form AJAX submit via Formspree
-    document.getElementById('lead-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      var form = this;
-      var btn = form.querySelector('button[type="submit"]');
-      var origText = btn.textContent;
-      btn.disabled = true;
-      btn.textContent = 'Sending...';
-
-      fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      }).then(function(response) {
-        if (response.ok) {
-          form.classList.add('hidden');
-          document.getElementById('thank-you').classList.remove('hidden');
-        } else {
-          btn.disabled = false;
-          btn.textContent = origText;
-          alert('Something went wrong. Please try again or email us directly.');
-        }
-      }).catch(function() {
-        btn.disabled = false;
-        btn.textContent = origText;
-        alert('Network error. Please try again or email us directly.');
-      });
-    });
-  </script>
+  <script src="js/nav.js" defer></script>
 
 </body>
 </html>
