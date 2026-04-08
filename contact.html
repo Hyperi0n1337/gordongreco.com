@@ -34,7 +34,7 @@
   <link rel="stylesheet" href="css/tailwind.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-white text-gray-800">
@@ -85,13 +85,14 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero-section" style="padding-top: clamp(7rem, 14vw, 10rem); padding-bottom: clamp(4rem, 8vw, 6rem);">
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
     <div class="hero-container">
-      <p class="hero-eyebrow fade-in">Free Consultation</p>
-      <h1 class="hero-title fade-in">Let's Talk</h1>
-      <p class="hero-subtitle fade-in">
+      <p class="hero-eyebrow slide-up">Free Consultation</p>
+      <h1 class="hero-title mask-reveal">Let's Talk</h1>
+      <p class="hero-subtitle slide-up">
         Free 30-minute consultation. No sales pitch. No obligations.
       </p>
-      <div class="fade-in">
+      <div class="slide-up">
         <a href="#schedule" class="hero-cta">
           Pick a Time
           <svg class="hero-cta-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
@@ -103,12 +104,12 @@
   <!-- ===== WHAT TO EXPECT ===== -->
   <section class="section-padding bg-white">
     <div class="content-container">
-      <h2 class="section-label text-center fade-in">What to Expect</h2>
-      <h3 class="section-title text-center fade-in">Simple. Honest. No pressure.</h3>
+      <h2 class="section-label text-center slide-up">What to Expect</h2>
+      <h3 class="section-title text-center mask-reveal">Simple. Honest. No pressure.</h3>
 
-      <div class="steps-grid fade-in" style="margin-top: 3rem;">
+      <div class="steps-grid stagger-group" style="margin-top: 3rem;">
 
-        <div class="step-card">
+        <div class="step-card stagger-item">
           <div class="step-number">1</div>
           <h4 class="step-heading">Schedule</h4>
           <p class="step-body">Pick a time that works for you using the calendar below. 30 minutes, no preparation required.</p>
@@ -118,7 +119,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"/></svg>
         </div>
 
-        <div class="step-card">
+        <div class="step-card stagger-item">
           <div class="step-number">2</div>
           <h4 class="step-heading">Conversation</h4>
           <p class="step-body">We'll talk through your situation, goals, and questions — no scripts, no sales pitch. Just an honest conversation.</p>
@@ -128,7 +129,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"/></svg>
         </div>
 
-        <div class="step-card">
+        <div class="step-card stagger-item">
           <div class="step-number">3</div>
           <h4 class="step-heading">Next Steps</h4>
           <p class="step-body">If there's a fit, we'll outline a clear path forward. If not, no hard feelings — you'll still leave with useful perspective.</p>
@@ -141,9 +142,9 @@
   <!-- ===== SCHEDULE ===== -->
   <section id="schedule" class="section-padding bg-gray-50">
     <div class="narrow-container text-center">
-      <h2 class="section-label fade-in">Schedule</h2>
-      <h3 class="section-title fade-in">Pick a time that works for you.</h3>
-      <p class="section-subtitle fade-in">Free 30-minute consultation. No preparation needed.</p>
+      <h2 class="section-label slide-up">Schedule</h2>
+      <h3 class="section-title mask-reveal">Pick a time that works for you.</h3>
+      <p class="section-subtitle slide-up">Free 30-minute consultation. No preparation needed.</p>
 
       <!-- Cal.com inline embed -->
       <div style="width:100%;height:700px;overflow:auto" id="my-cal-inline-intro-call" class="rounded-2xl mt-8"></div>
@@ -159,7 +160,7 @@
       </script>
 
       <p class="text-sm text-gray-500 mt-6">
-        Prefer email? Reach us at <a href="mailto:markos@gordongreco.com" class="text-green hover:underline font-medium">markos@gordongreco.com</a>
+        Prefer email? Reach us at <a href="mailto:markos@gordongreco.com" class="hover:underline font-medium" style="color: var(--accent);">markos@gordongreco.com</a>
       </p>
     </div>
   </section>
@@ -167,29 +168,28 @@
   <!-- ===== CONTACT FORM ===== -->
   <section id="contact" class="section-padding bg-white">
     <div class="narrow-container">
-      <h2 class="section-label text-center fade-in">Send a Message</h2>
-      <h3 class="section-title text-center fade-in">Prefer to write it out?</h3>
-      <p class="section-subtitle text-center fade-in">Tell us about your situation and we'll reach out within one business day.</p>
+      <h2 class="section-label text-center slide-up">Send a Message</h2>
+      <h3 class="section-title text-center mask-reveal">Prefer to write it out?</h3>
+      <p class="section-subtitle text-center slide-up">Tell us about your situation and we'll reach out within one business day.</p>
 
-      <form id="lead-form" action="https://formspree.io/f/xdawkbna" method="POST" class="contact-form fade-in">
+      <form id="lead-form" action="https://formspree.io/f/xdawkbna" method="POST" class="contact-form slide-up">
         <div class="form-row">
-          <div>
+          <div class="form-group-floating">
+            <input type="text" id="name" name="name" required class="form-input" placeholder=" ">
             <label for="name" class="form-label">Name <span class="text-red-500">*</span></label>
-            <input type="text" id="name" name="name" required class="form-input">
           </div>
-          <div>
+          <div class="form-group-floating">
+            <input type="email" id="email" name="email" required class="form-input" placeholder=" ">
             <label for="email" class="form-label">Email <span class="text-red-500">*</span></label>
-            <input type="email" id="email" name="email" required class="form-input">
           </div>
         </div>
 
         <div class="form-row">
-          <div>
+          <div class="form-group-floating">
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder=" ">
             <label for="phone" class="form-label">Phone</label>
-            <input type="tel" id="phone" name="phone" class="form-input">
           </div>
-          <div>
-            <label for="portfolio" class="form-label">Estimated Portfolio Size</label>
+          <div class="form-group-floating">
             <select id="portfolio" name="portfolio_size" class="form-input">
               <option value="">Select...</option>
               <option value="<250K">Less than $250K</option>
@@ -198,12 +198,13 @@
               <option value="1M-5M">$1M – $5M</option>
               <option value="5M+">$5M+</option>
             </select>
+            <label for="portfolio" class="form-label" style="top:0.4rem; font-size:0.7rem; font-weight:600; color:var(--accent); pointer-events:none;">Estimated Portfolio Size</label>
           </div>
         </div>
 
-        <div>
+        <div class="form-group-floating">
+          <textarea id="message" name="message" rows="4" class="form-input" placeholder=" "></textarea>
           <label for="message" class="form-label">Message</label>
-          <textarea id="message" name="message" rows="4" class="form-input" placeholder="Tell us about your financial goals or questions..."></textarea>
         </div>
 
         <button type="submit" class="form-submit">
@@ -212,11 +213,11 @@
       </form>
 
       <!-- Thank you message -->
-      <div id="thank-you" class="hidden text-center py-16">
-        <div class="w-16 h-16 bg-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+      <div id="thank-you" class="hidden text-center py-16" style="display:none">
+        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background: var(--accent-muted);">
+          <svg class="w-8 h-8" style="color: var(--accent);" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
         </div>
-        <h3 class="text-2xl font-bold text-navy mb-2">Thank You</h3>
+        <h3 class="text-2xl font-bold mb-2" style="color: var(--primary);">Thank You</h3>
         <p class="text-gray-600">We've received your message and will be in touch within one business day.</p>
       </div>
     </div>
@@ -268,6 +269,7 @@
     </div>
   </footer>
 
+  <script src="js/hero-bg.js"></script>
   <script src="js/nav.js" defer></script>
 
 </body>

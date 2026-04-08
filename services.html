@@ -34,7 +34,7 @@
   <link rel="stylesheet" href="css/tailwind.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <style>
     .services-detail-grid {
@@ -51,14 +51,6 @@
     }
 
     @media (min-width: 1024px) {
-      .services-detail-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      /* Last row: 2 cards centered */
-      .services-detail-grid .service-detail-card:nth-child(4),
-      .services-detail-grid .service-detail-card:nth-child(5) {
-        grid-column: auto;
-      }
       .services-detail-grid {
         grid-template-columns: repeat(3, 1fr);
       }
@@ -177,11 +169,11 @@
   <section class="hero-section" style="padding-top: clamp(6rem, 12vw, 9rem); padding-bottom: clamp(4rem, 8vw, 6rem);">
     <canvas id="hero-canvas" class="hero-canvas"></canvas>
     <div class="hero-container">
-      <p class="hero-eyebrow fade-in">What We Do</p>
-      <h1 class="hero-title fade-in">
+      <p class="hero-eyebrow slide-up">What We Do</p>
+      <h1 class="hero-title mask-reveal">
         Comprehensive Wealth Management
       </h1>
-      <p class="hero-subtitle fade-in">
+      <p class="hero-subtitle slide-up">
         Investment management, tax strategy, retirement planning, estate design, and business advisory &mdash; integrated under one roof.
       </p>
     </div>
@@ -190,12 +182,12 @@
   <!-- ===== SERVICE PILLARS ===== -->
   <section class="section-padding bg-white">
     <div class="content-container">
-      <h2 class="section-label text-center fade-in">Services</h2>
-      <h3 class="section-title text-center fade-in">Five pillars. One integrated strategy.</h3>
-      <div class="services-detail-grid fade-in">
+      <h2 class="section-label text-center slide-up">Services</h2>
+      <h3 class="section-title text-center mask-reveal">Five pillars. One integrated strategy.</h3>
+      <div class="services-detail-grid stagger-group">
 
         <!-- 1. Investment Management -->
-        <div class="service-detail-card">
+        <div class="service-detail-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M8 36l8-10 6 6 8-12 10 12"/>
@@ -214,7 +206,7 @@
         </div>
 
         <!-- 2. Tax Strategy -->
-        <div class="service-detail-card">
+        <div class="service-detail-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="10" y="6" width="28" height="36" rx="2"/>
@@ -233,7 +225,7 @@
         </div>
 
         <!-- 3. Retirement & Wealth Planning -->
-        <div class="service-detail-card">
+        <div class="service-detail-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="24" cy="24" r="18"/>
@@ -253,7 +245,7 @@
         </div>
 
         <!-- 4. Estate & Trust Planning -->
-        <div class="service-detail-card">
+        <div class="service-detail-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M24 4l18 10v8c0 11-7.6 21.3-18 24C13.6 43.3 6 33 6 22v-8L24 4z"/>
@@ -271,7 +263,7 @@
         </div>
 
         <!-- 5. Business Advisory -->
-        <div class="service-detail-card">
+        <div class="service-detail-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="6" y="18" width="36" height="24" rx="2"/>
@@ -297,14 +289,14 @@
   <!-- ===== BOTTOM CTA ===== -->
   <section class="cta-break">
     <canvas id="cta-canvas" class="cta-break-canvas"></canvas>
-    <div class="content-container text-center">
-      <h2 class="cta-break-title fade-in">
+    <div class="content-container text-center stagger-group">
+      <h2 class="cta-break-title mask-reveal">
         Not sure which service fits?
       </h2>
-      <p class="cta-break-subtitle fade-in">
+      <p class="cta-break-subtitle slide-up stagger-item">
         Most clients need more than one. Let's talk through your situation and figure out what makes sense for you.
       </p>
-      <div class="fade-in">
+      <div class="slide-up stagger-item" style="transition-delay: 0.1s">
         <a href="contact.html" class="cta-break-button">
           Get in Touch
           <svg class="cta-break-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>

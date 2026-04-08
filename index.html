@@ -65,7 +65,7 @@
   <link rel="stylesheet" href="css/tailwind.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-white text-gray-800">
@@ -118,14 +118,14 @@
   <section class="hero-section">
     <canvas id="hero-canvas" class="hero-canvas"></canvas>
     <div class="hero-container">
-      <p class="hero-eyebrow fade-in">Fee-Only Fiduciary Advisory</p>
-      <h1 class="hero-title fade-in">
+      <p class="hero-eyebrow slide-up">Fee-Only Fiduciary Advisory</p>
+      <h1 class="hero-title mask-reveal">
         Your Money, Working Harder.
       </h1>
-      <p class="hero-subtitle fade-in">
+      <p class="hero-subtitle slide-up">
         We manage your investments, cut your tax bill, and handle the financial complexity most advisors won't touch &mdash; so you can focus on everything else.
       </p>
-      <div class="fade-in">
+      <div class="slide-up">
         <a href="contact.html#schedule" class="hero-cta">
           Schedule a Call
           <svg class="hero-cta-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
@@ -137,11 +137,11 @@
   <!-- ===== SERVICES ===== -->
   <section id="services" class="section-padding bg-white">
     <div class="content-container">
-      <h2 class="section-label text-center fade-in">Services</h2>
-      <h3 class="section-title text-center fade-in">Everything your finances need. Nothing they don't.</h3>
-      <div class="services-grid fade-in">
+      <h2 class="section-label text-center slide-up">Services</h2>
+      <h3 class="section-title text-center mask-reveal">Everything your finances need. Nothing they don't.</h3>
+      <div class="services-grid stagger-group">
 
-        <div class="service-card">
+        <div class="service-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M8 36l8-10 6 6 8-12 10 12"/>
@@ -154,7 +154,7 @@
           <a href="services/investment.html" class="text-green font-medium text-sm mt-3 inline-block hover:underline">Learn More &rarr;</a>
         </div>
 
-        <div class="service-card">
+        <div class="service-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="24" cy="24" r="18"/>
@@ -168,7 +168,7 @@
           <a href="services/tax.html" class="text-green font-medium text-sm mt-3 inline-block hover:underline">Learn More &rarr;</a>
         </div>
 
-        <div class="service-card">
+        <div class="service-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M6 40h36"/>
@@ -183,7 +183,7 @@
           <a href="services/retirement.html" class="text-green font-medium text-sm mt-3 inline-block hover:underline">Learn More &rarr;</a>
         </div>
 
-        <div class="service-card">
+        <div class="service-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M8 42V14l16-8 16 8v28"/>
@@ -198,7 +198,7 @@
           <a href="services/estate.html" class="text-green font-medium text-sm mt-3 inline-block hover:underline">Learn More &rarr;</a>
         </div>
 
-        <div class="service-card">
+        <div class="service-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="6" y="14" width="36" height="26" rx="3"/>
@@ -217,29 +217,29 @@
   </section>
 
   <!-- ===== OUR APPROACH TEASER ===== -->
-  <section class="section-padding bg-gray-50">
+  <section class="section-padding bg-gray-50 slide-up">
     <div class="content-container">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-in">
-        <div class="text-center px-4">
-          <div class="w-12 h-12 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6M5 20h14a2 2 0 002-2V8l-5-5H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      <div class="approach-grid stagger-group">
+        <div class="approach-item stagger-item">
+          <div class="approach-icon-wrap">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6M5 20h14a2 2 0 002-2V8l-5-5H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
           </div>
-          <h4 class="font-bold text-navy text-lg mb-2">Quantitative Rigor</h4>
-          <p class="text-gray-600 text-sm">Hundreds of scenarios, not rules of thumb.</p>
+          <h4 class="approach-heading">Quantitative Rigor</h4>
+          <p class="approach-body">Hundreds of scenarios, not rules of thumb.</p>
         </div>
-        <div class="text-center px-4">
-          <div class="w-12 h-12 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"/></svg>
+        <div class="approach-item stagger-item">
+          <div class="approach-icon-wrap">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"/></svg>
           </div>
-          <h4 class="font-bold text-navy text-lg mb-2">Tax-First Thinking</h4>
-          <p class="text-gray-600 text-sm">Every recommendation runs through comprehensive tax analysis.</p>
+          <h4 class="approach-heading">Tax-First Thinking</h4>
+          <p class="approach-body">Every recommendation runs through comprehensive tax analysis.</p>
         </div>
-        <div class="text-center px-4">
-          <div class="w-12 h-12 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <div class="approach-item stagger-item">
+          <div class="approach-icon-wrap">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
-          <h4 class="font-bold text-navy text-lg mb-2">Transparency</h4>
-          <p class="text-gray-600 text-sm">Auditable trails. No black boxes. No conflicts.</p>
+          <h4 class="approach-heading">Transparency</h4>
+          <p class="approach-body">Auditable trails. No black boxes. No conflicts.</p>
         </div>
       </div>
       <div class="text-center mt-8 fade-in">
@@ -251,14 +251,14 @@
   <!-- ===== MID-PAGE CTA ===== -->
   <section class="cta-break">
     <canvas id="cta-canvas" class="cta-break-canvas"></canvas>
-    <div class="content-container text-center">
-      <h2 class="cta-break-title fade-in">
+    <div class="content-container text-center stagger-group">
+      <h2 class="cta-break-title mask-reveal">
         Not sure where to start?
       </h2>
-      <p class="cta-break-subtitle fade-in">
+      <p class="cta-break-subtitle slide-up stagger-item">
         A free 30-minute conversation. No sales pitch, no pressure — just a chance to talk about your situation and see if working together makes sense.
       </p>
-      <div class="fade-in">
+      <div class="slide-up stagger-item" style="transition-delay: 0.1s">
         <a href="contact.html" class="cta-break-button">
           Let's Talk
           <svg class="cta-break-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
@@ -330,11 +330,11 @@
   <!-- ===== PRICING ===== -->
   <section id="pricing" class="section-padding bg-white">
     <div class="content-container">
-      <h2 class="section-label text-center fade-in">Pricing</h2>
-      <h3 class="section-title text-center fade-in">Simple. Transparent. Aligned.</h3>
-      <div class="pricing-grid fade-in">
+      <h2 class="section-label text-center slide-up">Pricing</h2>
+      <h3 class="section-title text-center mask-reveal">Simple. Transparent. Aligned.</h3>
+      <div class="pricing-grid stagger-group">
 
-        <div class="pricing-card pricing-card-primary">
+        <div class="pricing-card pricing-card-primary stagger-item">
           <div class="pricing-badge">Most Popular</div>
           <h4 class="pricing-heading">Investment Management</h4>
           <div class="pricing-amount">
@@ -353,10 +353,10 @@
           <a href="contact.html#schedule" class="pricing-cta">Get Started</a>
         </div>
 
-        <div class="pricing-card">
+        <div class="pricing-card stagger-item">
           <h4 class="pricing-heading">Advisory Services</h4>
           <div class="pricing-amount">
-            <span class="pricing-number">Fee-Based</span>
+            <span class="pricing-number" style="font-size: 2rem;">Fee-Based</span>
           </div>
           <p class="pricing-detail">Scoped to your needs</p>
           <ul class="pricing-features">
@@ -371,7 +371,7 @@
         </div>
 
       </div>
-      <p class="pricing-footnote fade-in">
+      <p class="pricing-footnote slide-up">
         All fees are discussed upfront. No hidden charges. No commissions. No product sales. Ever.
       </p>
     </div>

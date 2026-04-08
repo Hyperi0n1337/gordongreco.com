@@ -34,7 +34,7 @@
   <link rel="stylesheet" href="css/tailwind.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-white text-gray-800">
@@ -87,11 +87,11 @@
   <section class="hero-section" style="padding-top: clamp(6rem, 12vw, 9rem); padding-bottom: clamp(4rem, 8vw, 6rem);">
     <canvas id="hero-canvas" class="hero-canvas"></canvas>
     <div class="hero-container">
-      <p class="hero-eyebrow fade-in">Fee-Only Fiduciary</p>
-      <h1 class="hero-title fade-in">
+      <p class="hero-eyebrow slide-up">Fee-Only Fiduciary</p>
+      <h1 class="hero-title mask-reveal">
         A Fiduciary With an Engineering Mindset
       </h1>
-      <p class="hero-subtitle fade-in">
+      <p class="hero-subtitle slide-up">
         Combining quantitative rigor with personal advisory &mdash; so every recommendation is stress-tested, tax-optimized, and built around your life.
       </p>
     </div>
@@ -99,18 +99,14 @@
 
   <!-- ===== THE FOUNDER ===== -->
   <section class="section-padding bg-white">
-    <div class="content-container">
-      <div class="story-grid fade-in">
-        <div class="story-photo">
-          <div class="photo-placeholder">
-            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
-              <circle cx="12" cy="7" r="4"/>
-            </svg>
-            <span class="placeholder-text">Photo coming soon</span>
+    <div class="content-container slide-up">
+      <div class="story-grid stagger-group">
+        <div class="story-photo stagger-item">
+          <div class="photo-placeholder" style="background: linear-gradient(135deg, #141414, #0a0a0a); border: 1px solid var(--border);">
+            <span style="font-family: 'Playfair Display', serif; font-size: 5rem; color: var(--accent); opacity: 0.9;">MT</span>
           </div>
         </div>
-        <div class="story-content">
+        <div class="story-content stagger-item">
           <h2 class="section-label">The Founder</h2>
           <h3 class="story-headline">Markos Terzidis</h3>
           <p class="story-body">
@@ -130,11 +126,11 @@
   <!-- ===== OUR APPROACH ===== -->
   <section class="section-padding" style="background: var(--bg-off);">
     <div class="content-container">
-      <h2 class="section-label text-center fade-in">Our Approach</h2>
-      <h3 class="section-title text-center fade-in">Three pillars. No compromises.</h3>
-      <div class="philosophy-grid fade-in">
+      <h2 class="section-label text-center slide-up">Our Approach</h2>
+      <h3 class="section-title text-center mask-reveal">Three pillars. No compromises.</h3>
+      <div class="philosophy-grid stagger-group">
 
-        <div class="philosophy-card">
+        <div class="philosophy-card stagger-item">
           <div class="philosophy-number">01</div>
           <h4 class="philosophy-heading">Quantitative Rigor</h4>
           <p class="philosophy-body">
@@ -142,7 +138,7 @@
           </p>
         </div>
 
-        <div class="philosophy-card">
+        <div class="philosophy-card stagger-item">
           <div class="philosophy-number">02</div>
           <h4 class="philosophy-heading">Tax-First Thinking</h4>
           <p class="philosophy-body">
@@ -150,7 +146,7 @@
           </p>
         </div>
 
-        <div class="philosophy-card">
+        <div class="philosophy-card stagger-item">
           <div class="philosophy-number">03</div>
           <h4 class="philosophy-heading">Transparency &amp; Compliance</h4>
           <p class="philosophy-body">
@@ -165,11 +161,11 @@
   <!-- ===== WHO WE SERVE ===== -->
   <section class="section-padding bg-white">
     <div class="content-container">
-      <h2 class="section-label text-center fade-in">Who We Serve</h2>
-      <h3 class="section-title text-center fade-in">Built for complexity. Accessible to all.</h3>
-      <div class="services-grid fade-in">
+      <h2 class="section-label text-center slide-up">Who We Serve</h2>
+      <h3 class="section-title text-center mask-reveal">Built for complexity. Accessible to all.</h3>
+      <div class="services-grid stagger-group">
 
-        <div class="service-card">
+        <div class="service-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="18" cy="14" r="6"/>
@@ -183,7 +179,7 @@
           </p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="8" y="20" width="32" height="22" rx="2"/>
@@ -198,7 +194,7 @@
           </p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="24" cy="24" r="18"/>
@@ -212,7 +208,7 @@
           </p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card stagger-item">
           <div class="service-icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="24" cy="20" r="10"/>
@@ -233,14 +229,14 @@
   <!-- ===== BOTTOM CTA ===== -->
   <section class="cta-break">
     <canvas id="cta-canvas" class="cta-break-canvas"></canvas>
-    <div class="content-container text-center">
-      <h2 class="cta-break-title fade-in">
+    <div class="content-container text-center stagger-group">
+      <h2 class="cta-break-title mask-reveal">
         Ready to work together?
       </h2>
-      <p class="cta-break-subtitle fade-in">
+      <p class="cta-break-subtitle slide-up stagger-item">
         A free 30-minute conversation. No sales pitch, no pressure — just a chance to talk about your situation and see if working together makes sense.
       </p>
-      <div class="fade-in">
+      <div class="slide-up stagger-item" style="transition-delay: 0.1s">
         <a href="contact.html#schedule" class="cta-break-button">
           Schedule a Call
           <svg class="cta-break-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
