@@ -1,0 +1,43 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "http://gordongreco.com/*"
+  to   = "https://gordongreco.com/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "http://www.gordongreco.com/*"
+  to   = "https://gordongreco.com/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "https://www.gordongreco.com/*"
+  to   = "https://gordongreco.com/:splat"
+  status = 301
+  force  = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options        = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+    Permissions-Policy     = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
