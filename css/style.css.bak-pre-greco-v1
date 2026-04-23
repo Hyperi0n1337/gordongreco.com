@@ -3,10 +3,6 @@
    Premium modern financial advisory
    ============================================ */
 
-/* Brand System v1 tokens (Claude Design). Imported additively; legacy vars
-   below continue to work until page-by-page swap lands in a follow-up commit. */
-@import "tokens.css";
-
 :root {
   --primary: #141414;
   --primary-soft: #1e1e1e;

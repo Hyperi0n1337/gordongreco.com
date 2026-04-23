@@ -1,14 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+// Gordon Greco LLC — site Tailwind config.
+// Consumes the brand-system preset (tailwind.preset.js) shipped by the design
+// system bundle. Keep tailwind.preset.js in lockstep with the Claude Design
+// source of truth; customize site-specific `content` paths and overrides here.
 module.exports = {
+  presets: [require('./tailwind.preset.js')],
   content: ['./**/*.html', './js/*.js'],
-  theme: {
-    extend: {
-      colors: {
-        navy: { DEFAULT: '#1a365d', dark: '#0f2440', light: '#2a4a7f' },
-        slate: '#2d3748',
-        green: { DEFAULT: '#276749', light: '#38a169' },
-      }
-    }
-  },
-  plugins: [],
-}
+};

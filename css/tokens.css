@@ -1,0 +1,80 @@
+/* =============================================================================
+   tokens.css — Gordon Greco LLC · Brand Design Tokens
+   =============================================================================
+   Canonical CSS custom properties for every web surface (client portal,
+   marketing site, internal dashboards). Keep in lockstep with pdf_theme.py
+   and chart_theme.py — if a value changes here, update those too.
+   ========================================================================== */
+
+:root {
+  /* ── Brand ─────────────────────────────────────────────────────────────── */
+  --gg-navy:         #1a365d;
+  --gg-navy-800:     #0f2440;
+  --gg-navy-600:     #2a4a7f;
+  --gg-navy-300:     #8196b5;
+  --gg-navy-50:      #eaeef5;
+
+  --gg-gold:         #b08a54;
+  --gg-gold-400:     #cbab7b;
+  --gg-gold-100:     #ecdfc7;
+
+  /* ── Neutrals ──────────────────────────────────────────────────────────── */
+  --gg-ink:          #14171c;
+  --gg-ink-2:        #33373e;
+  --gg-muted:        #5e6067;
+  --gg-light:        #8a8c92;
+
+  --gg-rule:         #e4e0d6;
+  --gg-rule-soft:    #eeeae0;
+  --gg-paper:        #fbf8f0;
+  --gg-cream:        #f3ede0;
+  --gg-white:        #ffffff;
+
+  /* ── Semantic ──────────────────────────────────────────────────────────── */
+  --gg-pos:          #276749;
+  --gg-neg:          #9b2335;
+  --gg-warn:         #b7791f;
+
+  /* ── Typography ────────────────────────────────────────────────────────── */
+  --gg-font-serif:   "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  --gg-font-sans:    "Work Sans", "Helvetica Neue", Arial, sans-serif;
+  --gg-font-mono:    "JetBrains Mono", "SF Mono", Menlo, monospace;
+
+  --gg-fs-xs:   11px;
+  --gg-fs-sm:   13px;
+  --gg-fs-base: 15px;
+  --gg-fs-lg:   18px;
+  --gg-fs-xl:   22px;
+  --gg-fs-2xl:  28px;
+  --gg-fs-3xl:  36px;
+  --gg-fs-4xl:  48px;
+
+  --gg-lh-tight:  1.15;
+  --gg-lh-snug:   1.35;
+  --gg-lh-normal: 1.55;
+
+  /* ── Spacing (4px baseline) ────────────────────────────────────────────── */
+  --gg-space-1:  4px;
+  --gg-space-2:  8px;
+  --gg-space-3:  12px;
+  --gg-space-4:  16px;
+  --gg-space-5:  24px;
+  --gg-space-6:  32px;
+  --gg-space-7:  48px;
+  --gg-space-8:  64px;
+
+  /* ── Rules & radii ─────────────────────────────────────────────────────── */
+  --gg-rule-w:        1px;
+  --gg-rule-w-bold:   1.5px;
+  --gg-radius-sm:     2px;
+  --gg-radius:        4px;
+  --gg-radius-lg:     8px;
+
+  /* ── Elevation ─────────────────────────────────────────────────────────── */
+  --gg-shadow-1: 0 1px 2px rgba(20, 23, 28, 0.04),
+                 0 1px 1px rgba(20, 23, 28, 0.03);
+  --gg-shadow-2: 0 4px 12px rgba(20, 23, 28, 0.06),
+                 0 2px 4px rgba(20, 23, 28, 0.04);
+  --gg-shadow-3: 0 12px 32px rgba(20, 23, 28, 0.10),
+                 0 4px 8px rgba(20, 23, 28, 0.05);
+}
