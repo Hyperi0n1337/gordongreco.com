@@ -18,7 +18,7 @@
     var numParticles = opts.numParticles || 60;
     var maxDistance = opts.maxDistance || 150;
     var mouseDistance = opts.mouseDistance || 200;
-    var color = opts.color || '212, 175, 55'; // Gold rgb
+    var color = opts.color || '200, 169, 126'; // Gold rgb
     
     function resize() {
       dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -140,7 +140,7 @@
     numParticles: window.innerWidth > 768 ? 80 : 40,
     maxDistance: 130,
     mouseDistance: 220,
-    color: '212, 175, 55'
+    color: '200, 169, 126'
   });
 
   // Init CTA Sections
@@ -149,7 +149,7 @@
       numParticles: window.innerWidth > 768 ? 40 : 20,
       maxDistance: 100,
       mouseDistance: 150,
-      color: '212, 175, 55'
+      color: '200, 169, 126'
     });
   });
 
@@ -158,7 +158,7 @@
   style.textContent = [
     'body { background-color: #faf9f7; }',
     'section.bg-white, section.bg-gray-50 {',
-    '  background-image: radial-gradient(circle, rgba(212,175,55,0.1) 1px, transparent 1px);',
+    '  background-image: radial-gradient(circle, rgba(200,169,126,0.1) 1px, transparent 1px);',
     '  background-size: 32px 32px;',
     '}'
   ].join('\n');

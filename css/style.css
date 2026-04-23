@@ -7,9 +7,9 @@
   --primary: #141414;
   --primary-soft: #1e1e1e;
   --primary-light: #2a2a2a;
-  --accent: #d4af37;
-  --accent-light: #e6c875;
-  --accent-muted: rgba(212, 175, 55, 0.15);
+  --accent: #c8a97e;
+  --accent-light: #dfc5a4;
+  --accent-muted: rgba(200, 169, 126, 0.15);
   --green: #4a9e6f;
   --green-light: #5cb87d;
   --text: #1a1a1a;
@@ -175,7 +175,7 @@ nav.nav-compressed .h-18 {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, var(--accent) 0%, #d4b88a 50%, var(--accent-light) 100%);
+  background: linear-gradient(135deg, var(--accent) 0%, #d3b791 50%, var(--accent-light) 100%);
   background-size: 200% 200%;
   animation: shimmer 4s ease infinite;
   color: var(--primary);
@@ -670,7 +670,7 @@ nav.nav-compressed .h-18 {
 }
 
 .ibkr-bg-wave-3 {
-  background: linear-gradient(45deg, #d4b88a, var(--accent));
+  background: linear-gradient(45deg, #d3b791, var(--accent));
   animation: ibkrWave 30s linear infinite;
   animation-delay: -5s;
   opacity: 0.025;
@@ -1399,7 +1399,7 @@ textarea.form-input {
 
 .service-card:hover, .philosophy-card:hover, .service-detail-card:hover, .pricing-card:hover {
   border-color: var(--accent);
-  box-shadow: 0 12px 40px rgba(212, 175, 55, 0.12), 0 0 0 1px var(--accent) inset;
+  box-shadow: 0 12px 40px rgba(200, 169, 126, 0.12), 0 0 0 1px var(--accent) inset;
   transform: translateY(-5px);
 }
 
