@@ -19,7 +19,7 @@
   --accent-light:  var(--gg-gold-400);      /* was #dfc5a4 */
   --accent-muted:  rgba(176, 138, 84, 0.15); /* gold @ 15% alpha */
   --green:         var(--gg-pos);           /* was #4a9e6f — positive semantic */
-  --green-light:   #38a169;                  /* was #5cb87d */
+  --green-light:   var(--gg-pos);
   --text:          var(--gg-ink);           /* was #1a1a1a */
   --text-muted:    var(--gg-muted);         /* was #555555 */
   --text-light:    var(--gg-light);         /* was #888888 */
@@ -193,7 +193,7 @@ nav.nav-compressed .h-18 {
   font-size: 1.05rem;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   text-decoration: none;
-  box-shadow: 0 0 20px rgba(200, 169, 126, 0.15), 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(var(--gg-gold-rgb), 0.15), 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .cta-break-button {
@@ -216,7 +216,7 @@ nav.nav-compressed .h-18 {
 .hero-cta:hover,
 .cta-break-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 40px rgba(200, 169, 126, 0.3), 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 40px rgba(var(--gg-gold-rgb), 0.3), 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .hero-cta:hover .hero-cta-arrow,
@@ -466,7 +466,7 @@ nav.nav-compressed .h-18 {
 
 .service-card:hover {
   border-color: var(--accent);
-  box-shadow: 0 8px 32px rgba(200, 169, 126, 0.1);
+  box-shadow: 0 8px 32px rgba(var(--gg-gold-rgb), 0.1);
   transform: translateY(-4px);
 }
 
@@ -695,7 +695,7 @@ nav.nav-compressed .h-18 {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, var(--gg-pos), #1a5c2e);
+  background: var(--gg-pos);
   color: white;
   font-size: 0.7rem;
   font-weight: 700;
@@ -1407,7 +1407,7 @@ textarea.form-input {
 
 .service-card:hover, .philosophy-card:hover, .service-detail-card:hover, .pricing-card:hover {
   border-color: var(--accent);
-  box-shadow: 0 12px 40px rgba(200, 169, 126, 0.12), 0 0 0 1px var(--accent) inset;
+  box-shadow: 0 12px 40px rgba(var(--gg-gold-rgb), 0.12), 0 0 0 1px var(--accent) inset;
   transform: translateY(-5px);
 }
 

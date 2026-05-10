@@ -3,7 +3,7 @@ that doesn't already have them. Idempotent.
 """
 from pathlib import Path
 
-SITE = Path(r"C:\github\gordongreco.com")
+SITE = Path(__file__).resolve().parents[1]
 
 ROOT_BLOCK_FROM = (
     '        <p class="text-xs text-gray-600">\n'

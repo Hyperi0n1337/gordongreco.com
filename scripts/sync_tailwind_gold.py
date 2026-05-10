@@ -1,7 +1,8 @@
 """Patch the precompiled tailwind.min.css to use the PDF-aligned gold gradient stops."""
 from pathlib import Path
 
-p = Path(r"C:\github\gordongreco.com\css\tailwind.min.css")
+ROOT = Path(__file__).resolve().parents[1]
+p = ROOT / "css" / "tailwind.min.css"
 src = p.read_text(encoding="utf-8")
 orig = src
 

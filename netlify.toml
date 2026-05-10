@@ -1,4 +1,6 @@
 [build]
+  base    = "mas/web"
+  command = "bash build.sh"
   publish = "."
 
 [[redirects]]

@@ -8,6 +8,20 @@
 
   var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  function cssVar(name, fallback) {
+    var value = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    return value || fallback;
+  }
+
+  function hexToRgbTuple(hex) {
+    var raw = hex.replace('#', '');
+    return [
+      parseInt(raw.slice(0, 2), 16),
+      parseInt(raw.slice(2, 4), 16),
+      parseInt(raw.slice(4, 6), 16)
+    ].join(', ');
+  }
+
   function initNetworkCanvas(canvas, opts) {
     if (!canvas) return;
     var ctx = canvas.getContext('2d');
@@ -18,7 +32,8 @@
     var numParticles = opts.numParticles || 60;
     var maxDistance = opts.maxDistance || 150;
     var mouseDistance = opts.mouseDistance || 200;
-    var color = opts.color || '200, 169, 126'; // Gold rgb
+    var color = opts.color || hexToRgbTuple(cssVar('--gg-gold', '#b08a54'));
+    var background = opts.background || cssVar('--gg-navy-800', '#0f2440');
     
     function resize() {
       dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -45,7 +60,7 @@
     
     function draw() {
       ctx.clearRect(0, 0, width, height);
-      ctx.fillStyle = '#0e0e0e';
+      ctx.fillStyle = background;
       ctx.fillRect(0, 0, width, height);
       
       // Draw grid lines
@@ -140,7 +155,7 @@
     numParticles: window.innerWidth > 768 ? 80 : 40,
     maxDistance: 130,
     mouseDistance: 220,
-    color: '200, 169, 126'
+    color: hexToRgbTuple(cssVar('--gg-gold', '#b08a54'))
   });
 
   // Init CTA Sections
@@ -149,16 +164,16 @@
       numParticles: window.innerWidth > 768 ? 40 : 20,
       maxDistance: 100,
       mouseDistance: 150,
-      color: '200, 169, 126'
+      color: hexToRgbTuple(cssVar('--gg-gold', '#b08a54'))
     });
   });
 
   // Body background styles
   var style = document.createElement('style');
   style.textContent = [
-    'body { background-color: #faf9f7; }',
+    'body { background-color: var(--gg-paper); }',
     'section.bg-white, section.bg-gray-50 {',
-    '  background-image: radial-gradient(circle, rgba(200,169,126,0.1) 1px, transparent 1px);',
+    '  background-image: radial-gradient(circle, rgba(var(--gg-gold-rgb),0.1) 1px, transparent 1px);',
     '  background-size: 32px 32px;',
     '}'
   ].join('\n');
