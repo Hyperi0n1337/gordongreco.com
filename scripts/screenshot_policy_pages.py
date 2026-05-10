@@ -12,6 +12,11 @@ PAGES = {
     "index": "index.html",
     "about": "about.html",
     "services": "services.html",
+    "services-business": "services/business.html",
+    "services-estate": "services/estate.html",
+    "services-investment": "services/investment.html",
+    "services-retirement": "services/retirement.html",
+    "services-tax": "services/tax.html",
     "contact": "contact.html",
     "privacy": "privacy.html",
     "terms": "terms.html",
@@ -39,8 +44,8 @@ with sync_playwright() as p:
                 errors.append(f"{viewport_name}/{name}: HTTP {response.status if response else 'no response'}")
 
             h1 = page.locator("h1").first.inner_text(timeout=5000)
-            has_priv = page.locator("footer a[href='privacy.html']").count() > 0
-            has_terms = page.locator("footer a[href='terms.html']").count() > 0
+            has_priv = page.locator("footer a[href$='privacy.html']").count() > 0
+            has_terms = page.locator("footer a[href$='terms.html']").count() > 0
             broken_images = page.locator("img").evaluate_all(
                 "(imgs) => imgs.filter((img) => !img.complete || img.naturalWidth === 0).map((img) => img.getAttribute('src'))"
             )
