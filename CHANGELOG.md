@@ -2,6 +2,8 @@
 
 ## 2026-05-10
 
+- Removed the stale `gordongreco.com` GitHub Pages CNAME so the public
+  `github.io/gordongreco.com` preview URL can resolve while DNS is unset.
 - Aligned the static website runtime CSS/JS with advisory brand tokens: Tailwind
   legacy aliases now read from the generated preset, `style.css` uses generated
   RGB token variables for gold effects, and the hero canvas reads token values
