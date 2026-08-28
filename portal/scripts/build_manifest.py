@@ -12,7 +12,7 @@ for path in sorted(ROOT.rglob("*")):
     if not path.is_file() or path.is_symlink():
         continue
     rel = path.relative_to(ROOT).as_posix()
-    if rel in EXCLUDED or rel.startswith(".git/") or "/__pycache__/" in f"/{rel}/" or rel.startswith("verification/logs/"):
+    if rel in EXCLUDED or rel.startswith((".git/", ".wrangler/")) or "/__pycache__/" in f"/{rel}/" or rel.startswith("verification/logs/"):
         continue
     body = path.read_bytes()
     entries.append({"path": rel, "bytes": len(body), "sha256": hashlib.sha256(body).hexdigest()})

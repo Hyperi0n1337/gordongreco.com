@@ -14,11 +14,6 @@
       "sha256": "db04a8da502db988a1874dcfa94eb70921198e6ec05ed09ae0699e5325952279"
     },
     {
-      "bytes": 115,
-      "path": ".wrangler/cache/wrangler-account.json",
-      "sha256": "dc0f5a9665b003d5f914fb7ef14cd6d2e5d1127a0f60f2ff637977c8abe62a3d"
-    },
-    {
       "bytes": 761,
       "path": "CHANGELOG.md",
       "sha256": "be00b20a976ffbdf86893a524790533b52f73be1961b89a4224023b8fcae2201"
@@ -544,9 +539,9 @@
       "sha256": "10958bde12718397f7a361fbc3ad95da8e3504f6f52ea7e79cbe95362234c910"
     },
     {
-      "bytes": 1547,
+      "bytes": 1563,
       "path": "scripts/build_manifest.py",
-      "sha256": "a5b10127cb519ae3d4a16be8a9125bfd3fb7962b75091db2bd5027eafe2d1e04"
+      "sha256": "3e6fa70efbd9a95f8e0569f81f50dbcc0f84dab8d9186c47939076759f2f2f3e"
     },
     {
       "bytes": 1705,
@@ -627,7 +622,7 @@
   ],
   "prompt_id": "MAS-RP-402",
   "schema_version": "mas.implementation_manifest.v1",
-  "source_bytes": 489408,
-  "source_file_count": 123,
+  "source_bytes": 489309,
+  "source_file_count": 122,
   "verification_command": "python scripts/verify.py --no-write"
 }
