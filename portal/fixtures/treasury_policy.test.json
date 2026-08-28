@@ -1,0 +1,12 @@
+{
+  "cash_operation_limit_minor": 1000000,
+  "currency": "USD",
+  "data_class": "fictional_test_only",
+  "execution": "none",
+  "minimum_operating_reserve_minor": 2500000,
+  "permitted_operation_types": [
+    "operating_reserve_adjustment",
+    "planned_tax_payment_reserve"
+  ],
+  "schema_version": "gg.portal.treasury_policy.v1"
+}

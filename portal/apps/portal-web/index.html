@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <title>Client Portal | Gordon Greco</title>
+  <link rel="stylesheet" href="/portal/styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="/" aria-label="Gordon Greco public website">
+      <span class="brand-mark">GG</span>
+      <span><strong>Gordon Greco</strong><small>Secure client portal</small></span>
+    </a>
+    <button id="logout" class="text-button hidden" type="button">Sign out</button>
+  </header>
+
+  <main id="app" class="shell" aria-live="polite">
+    <section id="login-view" class="auth-card">
+      <p class="eyebrow">Invitation-only access</p>
+      <h1>Open your secure portal</h1>
+      <p class="lede">Enter the invited email address. We will send a one-time link when the address is eligible.</p>
+      <form id="magic-form" class="stack">
+        <label>Email address<input id="email" name="email" type="email" autocomplete="email" required maxlength="254"></label>
+        <button class="primary" type="submit">Send secure link</button>
+      </form>
+      <div id="magic-status" class="notice hidden" tabindex="-1"></div>
+      <p class="privacy-note">For your security, this page does not reveal whether an address is registered.</p>
+    </section>
+
+    <section id="totp-view" class="auth-card hidden">
+      <p class="eyebrow">Security check</p>
+      <h1>Enter your authenticator code</h1>
+      <form id="totp-form" class="stack">
+        <label>6-digit code<input id="totp-code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required></label>
+        <button class="primary" type="submit">Verify</button>
+      </form>
+      <details>
+        <summary>Use a recovery code</summary>
+        <form id="recovery-form" class="stack compact">
+          <label>Recovery code<input id="recovery-code" autocomplete="off" maxlength="64" required></label>
+          <button type="submit">Use recovery code</button>
+        </form>
+      </details>
+    </section>
+
+    <section id="enroll-view" class="auth-card hidden">
+      <p class="eyebrow">Required security setup</p>
+      <h1>Add an authenticator</h1>
+      <p>Save the secret in your authenticator app, then enter the current code. Recovery codes are shown once.</p>
+      <div class="secret-box"><code id="totp-secret"></code></div>
+      <form id="enroll-form" class="stack">
+        <label>6-digit code<input id="enroll-code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required></label>
+        <button class="primary" type="submit">Confirm authenticator</button>
+      </form>
+    </section>
+
+    <section id="recovery-codes-view" class="auth-card hidden">
+      <p class="eyebrow">Save once</p>
+      <h1>Recovery codes</h1>
+      <p>Store these offline. Each code works once and cannot be shown again.</p>
+      <pre id="recovery-codes" class="recovery-codes"></pre>
+      <button id="codes-saved" class="primary" type="button">I saved these codes</button>
+    </section>
+
+    <section id="portal-view" class="hidden">
+      <div class="page-heading">
+        <div><p class="eyebrow">Document center</p><h1 id="welcome">Your checklist</h1></div>
+        <div class="security-chip" title="Sensitive actions require a recent authenticator code">Protected session</div>
+      </div>
+      <div class="summary-grid" id="summary-grid"></div>
+      <section class="panel">
+        <div class="panel-heading"><div><h2>Requested documents</h2><p>Upload only the item named on each request.</p></div><button id="refresh" type="button">Refresh</button></div>
+        <div id="request-list" class="request-list"></div>
+      </section>
+      <section class="panel support-panel">
+        <div><h2>Need help with an upload?</h2><p>Send one concise portal support request to your advisory team.</p></div>
+        <button id="support-open" type="button">Request upload help</button>
+      </section>
+    </section>
+  </main>
+
+  <dialog id="support-dialog">
+    <form id="support-form" method="dialog" class="stack">
+      <div><p class="eyebrow">Portal support</p><h2>Describe the upload issue</h2></div>
+      <label>Message<textarea id="support-message" maxlength="500" rows="5" required></textarea></label>
+      <div class="dialog-actions"><button value="cancel" type="button" id="support-cancel">Cancel</button><button class="primary" type="submit">Send request</button></div>
+    </form>
+  </dialog>
+
+  <template id="request-template">
+    <article class="request-card">
+      <div class="request-copy"><div class="request-topline"><span class="state-pill"></span><span class="due"></span></div><h3></h3><p class="description"></p><p class="file-meta"></p></div>
+      <div class="upload-zone" tabindex="0" role="button"><strong>Drop a file here</strong><span>or choose PDF, JPG, PNG, TXT, or CSV · 25 MB maximum</span><input type="file" accept=".pdf,.jpg,.jpeg,.png,.txt,.csv" hidden></div>
+      <div class="progress-wrap hidden"><progress max="100" value="0"></progress><span class="progress-label">Preparing upload…</span></div>
+      <div class="request-actions"></div>
+    </article>
+  </template>
+
+  <script type="module" src="/portal/client.js"></script>
+</body>
+</html>

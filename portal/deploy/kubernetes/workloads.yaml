@@ -1,0 +1,95 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portal-api
+  namespace: gg-portal
+spec:
+  replicas: 2
+  selector: {matchLabels: {app: portal-api}}
+  template:
+    metadata:
+      labels: {app: portal-api}
+    spec:
+      serviceAccountName: portal-api
+      automountServiceAccountToken: true
+      securityContext:
+        runAsNonRoot: true
+        seccompProfile: {type: RuntimeDefault}
+      containers:
+        - name: api
+          image: registry.gordongreco.test/portal-api@sha256:REPLACE_WITH_RELEASE_DIGEST
+          ports: [{name: http, containerPort: 8080}]
+          envFrom:
+            - configMapRef: {name: portal-config}
+          env:
+            - name: DATABASE_URL
+              valueFrom: {secretKeyRef: {name: portal-secrets, key: DATABASE_URL}}
+            - name: SESSION_HMAC_KEY
+              valueFrom: {secretKeyRef: {name: portal-secrets, key: SESSION_HMAC_KEY}}
+            - name: INVITATION_HMAC_KEY
+              valueFrom: {secretKeyRef: {name: portal-secrets, key: INVITATION_HMAC_KEY}}
+            - name: CAPABILITY_HMAC_KEY
+              valueFrom: {secretKeyRef: {name: portal-secrets, key: CAPABILITY_HMAC_KEY}}
+            - name: KMS_KEY_ID
+              valueFrom: {secretKeyRef: {name: portal-secrets, key: KMS_KEY_ID}}
+          readinessProbe: {httpGet: {path: /health/ready, port: http}, initialDelaySeconds: 5, periodSeconds: 10}
+          livenessProbe: {httpGet: {path: /health/live, port: http}, initialDelaySeconds: 10, periodSeconds: 20}
+          resources:
+            requests: {cpu: 100m, memory: 128Mi}
+            limits: {cpu: "1", memory: 512Mi}
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: {drop: [ALL]}
+          volumeMounts: [{name: tmp, mountPath: /tmp}]
+      volumes: [{name: tmp, emptyDir: {sizeLimit: 32Mi}}]
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portal-worker
+  namespace: gg-portal
+spec:
+  replicas: 2
+  selector: {matchLabels: {app: portal-worker}}
+  template:
+    metadata:
+      labels: {app: portal-worker}
+    spec:
+      serviceAccountName: portal-worker
+      automountServiceAccountToken: true
+      securityContext:
+        runAsNonRoot: true
+        seccompProfile: {type: RuntimeDefault}
+      containers:
+        - name: worker
+          image: registry.gordongreco.test/portal-worker@sha256:REPLACE_WITH_RELEASE_DIGEST
+          envFrom:
+            - configMapRef: {name: portal-config}
+          env:
+            - name: DATABASE_URL
+              valueFrom: {secretKeyRef: {name: portal-secrets, key: WORKER_DATABASE_URL}}
+            - name: KMS_KEY_ID
+              valueFrom: {secretKeyRef: {name: portal-secrets, key: KMS_KEY_ID}}
+          resources:
+            requests: {cpu: 200m, memory: 256Mi}
+            limits: {cpu: "2", memory: 1Gi}
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: {drop: [ALL]}
+          volumeMounts:
+            - {name: tmp, mountPath: /tmp}
+            - {name: intake, mountPath: /var/lib/mas-intake/outbound}
+      volumes:
+        - {name: tmp, emptyDir: {sizeLimit: 64Mi}}
+        - {name: intake, emptyDir: {sizeLimit: 1Gi}}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: portal-api
+  namespace: gg-portal
+spec:
+  selector: {app: portal-api}
+  ports: [{name: http, port: 8080, targetPort: http}]

@@ -1,0 +1,16 @@
+{
+  "Rules": [
+    {
+      "ID": "abort-incomplete-multipart",
+      "Status": "Enabled",
+      "Filter": {"Prefix": "quarantine/"},
+      "AbortIncompleteMultipartUpload": {"DaysAfterInitiation": 1}
+    },
+    {
+      "ID": "expire-unclaimed-quarantine",
+      "Status": "Enabled",
+      "Filter": {"Prefix": "quarantine/"},
+      "Expiration": {"Days": 7}
+    }
+  ]
+}

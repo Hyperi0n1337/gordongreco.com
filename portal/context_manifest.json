@@ -1,0 +1,420 @@
+{
+  "excluded_from_delivery": [
+    "source archive bytes",
+    "credentials",
+    "authenticators",
+    "real client documents",
+    "SSNs",
+    "tax returns",
+    "browser profiles"
+  ],
+  "implementation_decisions": [
+    "Public client.html remains an orientation/noindex shell.",
+    "The prior Streamlit portal context was treated as non-production reference and was not copied.",
+    "Existing onboarding/conversion owners remain separate; this portal emits outbound-only MAS intake envelopes."
+  ],
+  "member_count": 50,
+  "members": [
+    {
+      "bytes": 7474,
+      "first_nonempty_line": "\"\"\"",
+      "kind": "text",
+      "line_count": 227,
+      "path": "mas/advisory/client/portal.py",
+      "sha256": "a03b292583d67b6ecfadea1c497a0070d639f22fe6ef16644f0f8711ec86c231"
+    },
+    {
+      "bytes": 24029,
+      "first_nonempty_line": "\"\"\"Deterministic client-conversion packets for Gordon Greco onboarding.",
+      "kind": "text",
+      "line_count": 550,
+      "path": "mas/advisory/onboarding/conversion.py",
+      "sha256": "493a90037ced05558e9c148313308eab77da0bfeb3987378eacbaacfc5f7f514"
+    },
+    {
+      "bytes": 32866,
+      "first_nonempty_line": "\"\"\"Build branded, sendable IBKR onboarding guides for Gordon Greco clients.\"\"\"",
+      "kind": "text",
+      "line_count": 583,
+      "path": "mas/scripts/ops/build_ibkr_client_onboarding_guides.py",
+      "sha256": "5ef828e9b3382d3c030adfd6120e0b6f18f793f8044195a3107ef8d503677417"
+    },
+    {
+      "bytes": 4980,
+      "first_nonempty_line": "from __future__ import annotations",
+      "kind": "text",
+      "line_count": 128,
+      "path": "mas/tests/test_advisory_client_conversion.py",
+      "sha256": "597232d7d92024665cc7e6f32053b2b7f3b4e8c8bdc368d69b2df59e066d7846"
+    },
+    {
+      "bytes": 2326,
+      "first_nonempty_line": "from pathlib import Path",
+      "kind": "text",
+      "line_count": 64,
+      "path": "mas/tests/test_ibkr_client_onboarding_guides.py",
+      "sha256": "09b363e1c24f95a5bea47dbd8490cd0c0cc39704e70a83bc2ea2f4880925fedd"
+    },
+    {
+      "bytes": 47,
+      "first_nonempty_line": "tailwindcss-windows-x64.exe",
+      "kind": "text",
+      "line_count": 3,
+      "path": "mas/web/.gitignore",
+      "sha256": "25a23e81f16489eb0f30a47624b7a0a01291bc5145c65ebc9577e9a351dba6db"
+    },
+    {
+      "bytes": 0,
+      "first_nonempty_line": "",
+      "kind": "text",
+      "line_count": 0,
+      "path": "mas/web/.nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 14347,
+      "first_nonempty_line": "# Gordon Greco LLC \u2014 Final Polish Agent Prompt",
+      "kind": "text",
+      "line_count": 266,
+      "path": "mas/web/AGENT_POLISH_PROMPT.md",
+      "sha256": "cdcec5ec37ddb2976dd244ab38817c7a087322cce92383051cd1d428b9b157b1"
+    },
+    {
+      "bytes": 2636,
+      "first_nonempty_line": "# mas.web Changelog",
+      "kind": "text",
+      "line_count": 47,
+      "path": "mas/web/CHANGELOG.md",
+      "sha256": "8714872bec8140e9907ed0de430eaaa689ec1d6f213d0cb22bab0db290aad705"
+    },
+    {
+      "bytes": 1351,
+      "first_nonempty_line": "# Gordon Greco Client Portal Boundary",
+      "kind": "text",
+      "line_count": 27,
+      "path": "mas/web/CLIENT_PORTAL_BOUNDARY.md",
+      "sha256": "2a415a32d1d84ae9107720c6e5a174f7111c5e6036490c7748e317af5315526f"
+    },
+    {
+      "bytes": 2180,
+      "first_nonempty_line": "# Netlify Switchover \u2014 gordongreco.com",
+      "kind": "text",
+      "line_count": 75,
+      "path": "mas/web/NETLIFY_SWITCHOVER.md",
+      "sha256": "535a3ad22e8aad96d340755cedb63c51742d8d0cc1bac94b5bd93b3916ac1478"
+    },
+    {
+      "bytes": 16360,
+      "first_nonempty_line": "<!DOCTYPE html>",
+      "kind": "text",
+      "line_count": 306,
+      "path": "mas/web/about.html",
+      "sha256": "058df1d921d9a38abe5b3d6c7c84b3cd3614e36da0be4348536ce5c3d9cbd3fb"
+    },
+    {
+      "bytes": 41452,
+      "kind": "binary",
+      "path": "mas/web/assets/apple-touch-icon.png",
+      "sha256": "b66bc403fae565c7506d0792caf48e0a454aa28e9ae238d4f94bb94f2ff7a961"
+    },
+    {
+      "bytes": 2095,
+      "kind": "binary",
+      "path": "mas/web/assets/favicon.ico",
+      "sha256": "4b7c141524a9629a834f8fdc205d3ec314ec0d496f62752f4c7c492d068e39f0"
+    },
+    {
+      "bytes": 5148,
+      "kind": "binary",
+      "path": "mas/web/assets/ibkr-logo-white.png",
+      "sha256": "19e8e92a063a4f76292cdf355d102f3b22c4b62f1239accf8ace32e8e6bda700"
+    },
+    {
+      "bytes": 5639,
+      "kind": "binary",
+      "path": "mas/web/assets/ibkr-logo.png",
+      "sha256": "40539cb20abefb4f23b458bbf7fbb9ceab27b815797c360f9781effd7783aa26"
+    },
+    {
+      "bytes": 386326,
+      "kind": "binary",
+      "path": "mas/web/assets/logo.png",
+      "sha256": "d9973e7fd9f80bd9172e459c7df85936406d233eea5e36685805f19a340f02f8"
+    },
+    {
+      "bytes": 111175,
+      "kind": "binary",
+      "path": "mas/web/assets/og-image.png",
+      "sha256": "7355095afe4953e8934796f93dffc30454e6ee052f237942510c41dcb59cfb0a"
+    },
+    {
+      "bytes": 1243,
+      "first_nonempty_line": "#!/bin/bash",
+      "kind": "text",
+      "line_count": 35,
+      "path": "mas/web/build.sh",
+      "sha256": "56d01f83e5c19b794f49c60d28e472e14c83cf76432cb482483770b98af62e3e"
+    },
+    {
+      "bytes": 9701,
+      "first_nonempty_line": "<!DOCTYPE html>",
+      "kind": "text",
+      "line_count": 156,
+      "path": "mas/web/client.html",
+      "sha256": "217e4849c684940e90380958a170491a2c2018def5a3a668bfc1381b50e4aec4"
+    },
+    {
+      "bytes": 14387,
+      "first_nonempty_line": "<!DOCTYPE html>",
+      "kind": "text",
+      "line_count": 257,
+      "path": "mas/web/contact.html",
+      "sha256": "628c03676c4fe7e1306edc42a84de9dedcf3752e4064bf20be2d7ad241092ccd"
+    },
+    {
+      "bytes": 59,
+      "first_nonempty_line": "@tailwind base;",
+      "kind": "text",
+      "line_count": 3,
+      "path": "mas/web/css/input.css",
+      "sha256": "cc1a7ad0d019ddb1d32d0ecb588ba0ac26ce41d8625dd6c366348b25f83a28ec"
+    },
+    {
+      "bytes": 35921,
+      "first_nonempty_line": "/* ============================================",
+      "kind": "text",
+      "line_count": 1806,
+      "path": "mas/web/css/style.css",
+      "sha256": "eb144c3d732db315cc093df8318c80670e670ddaa4ecd77a1fc0d49b142841a6"
+    },
+    {
+      "bytes": 9587,
+      "first_nonempty_line": "*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-",
+      "kind": "text",
+      "line_count": 1,
+      "path": "mas/web/css/tailwind.min.css",
+      "sha256": "f99e45d12395f06c68c08d3ebaf2ee58e5f181a3485b9abf83ce976c0850363d"
+    },
+    {
+      "bytes": 3411,
+      "first_nonempty_line": "/* ============================================================================",
+      "kind": "text",
+      "line_count": 71,
+      "path": "mas/web/css/tokens.css",
+      "sha256": "c2a9ad2b7dd6023befad3e75284a6c06fe495e5a784237b574cb54a12b5f8e9c"
+    },
+    {
+      "bytes": 1766,
+      "first_nonempty_line": "#!/bin/bash",
+      "kind": "text",
+      "line_count": 55,
+      "path": "mas/web/deploy.sh",
+      "sha256": "6bda91cb08813ce7f19c2f54377b5276a42c2599455ea996e08a85c90a912411"
+    },
+    {
+      "bytes": 23601,
+      "first_nonempty_line": "<!DOCTYPE html>",
+      "kind": "text",
+      "line_count": 415,
+      "path": "mas/web/index.html",
+      "sha256": "e7fdd4c74011735fc7c444b469287d81920f5ec7b14a386148a584dbf4119465"
+    },
+    {
+      "bytes": 66,
+      "first_nonempty_line": "/* Calculator removed \u2014 replaced by broader service offering */",
+      "kind": "text",
+      "line_count": 1,
+      "path": "mas/web/js/calculator.js",
+      "sha256": "81e2680ca700d08e63f0055684f8963367e9ef0b911aacd8cb906406a9dcefb1"
+    },
+    {
+      "bytes": 5858,
+      "first_nonempty_line": "/**",
+      "kind": "text",
+      "line_count": 181,
+      "path": "mas/web/js/hero-bg.js",
+      "sha256": "754ef82879e5e3758ea19d5065246a4da2d868e11d4e1e8784dc8475e70e6f74"
+    },
+    {
+      "bytes": 7179,
+      "first_nonempty_line": "// Reveal animations are progressive enhancement; CSS leaves text visible if JS fails.",
+      "kind": "text",
+      "line_count": 217,
+      "path": "mas/web/js/nav.js",
+      "sha256": "dd7f0165f168ac9012379984e91d679133f83a711bd841feae8af93ab441d8c4"
+    },
+    {
+      "bytes": 6714,
+      "first_nonempty_line": "# Gordon Greco LLC \u2014 Complete Reference",
+      "kind": "text",
+      "line_count": 138,
+      "path": "mas/web/llms-full.txt",
+      "sha256": "d8364ebae88eafb35f53401b816d213df9f4dc8b1dbba56bf2e75a882d40b3f4"
+    },
+    {
+      "bytes": 2165,
+      "first_nonempty_line": "# Gordon Greco LLC",
+      "kind": "text",
+      "line_count": 27,
+      "path": "mas/web/llms.txt",
+      "sha256": "5bf1007de07db359252f7407adbac968d1be13d86b528dae6b21a8420bec60d6"
+    },
+    {
+      "bytes": 1039,
+      "first_nonempty_line": "[build]",
+      "kind": "text",
+      "line_count": 45,
+      "path": "mas/web/netlify.toml",
+      "sha256": "a9ff71d9c5b67486b91c6a8df0823a0f62368b71bb387a4f07806cbee0a017e2"
+    },
+    {
+      "bytes": 14713,
+      "first_nonempty_line": "<!DOCTYPE html>",
+      "kind": "text",
+      "line_count": 273,
+      "path": "mas/web/privacy.html",
+      "sha256": "ab92f8a3f67929000c1a4a0a50395e13304cc979cdfa33a0c04b2ca62e3738eb"
+    },
+    {
+      "bytes": 531,
+      "first_nonempty_line": "# Gordon Greco LLC \u2014 gordongreco.com",
+      "kind": "text",
+      "line_count": 36,
+      "path": "mas/web/robots.txt",
+      "sha256": "4fe7114d742c088b17d4971d8c1b473993eeb0fd21185004ec0260e95dbd2f05"
+    },
+    {
+      "bytes": 1731,
+      "first_nonempty_line": "\"\"\"One-off: Add canonical link tags to all HTML pages that are missing them.\"\"\"",
+      "kind": "text",
+      "line_count": 43,
+      "path": "mas/web/scripts/add_canonicals.py",
+      "sha256": "976eb320a284ad196a6db42bd5347e7c1c762def8ef2a72749275da87f987457"
+    },
+    {
+      "bytes": 2109,
+      "first_nonempty_line": "\"\"\"Add Privacy/Terms links in the footer-disclosure block of every HTML page",
+      "kind": "text",
+      "line_count": 55,
+      "path": "mas/web/scripts/add_legal_footer_links.py",
+      "sha256": "05eacefb54bf7bbc9e58cbe76404cf36c9e55defa7732ad3e3b7898b6df5c8d0"
+    },
+    {
+      "bytes": 723,
+      "first_nonempty_line": "\"\"\"One-off: Replace GitHub Pages temp domain with production domain across all HTML + sitemap.\"\"\"",
+      "kind": "text",
+      "line_count": 21,
+      "path": "mas/web/scripts/fix_domain.py",
+      "sha256": "99142ffd2c977c837089716c017e8114fe8e7dc16b6ea93224bb3f02cf35d609"
+    },
+    {
+      "bytes": 6145,
+      "first_nonempty_line": "\"\"\"Headless render-check of Gordon Greco static site pages.\"\"\"",
+      "kind": "text",
+      "line_count": 139,
+      "path": "mas/web/scripts/screenshot_policy_pages.py",
+      "sha256": "f0885a2113decefaa72eb686b16a9d060fff9df5b89b8bce074312cfa739023a"
+    },
+    {
+      "bytes": 792,
+      "first_nonempty_line": "\"\"\"Patch the precompiled tailwind.min.css to use the PDF-aligned gold gradient stops.\"\"\"",
+      "kind": "text",
+      "line_count": 24,
+      "path": "mas/web/scripts/sync_tailwind_gold.py",
+      "sha256": "f5f7e53354dc06d2df8cfca712a26d3e01f45bc96a08056afac9cb3f4edf362b"
+    },
+    {
+      "bytes": 16040,
+      "first_nonempty_line": "<!DOCTYPE html>",
+      "kind": "text",
+      "line_count": 304,
+      "path": "mas/web/services/business.html",
+      "sha256": "ac186b89fc3a8c00a38ef9a366d0347cc756472cca81585a8eae24ec5a0c6bfa"
+    },
+    {
+      "bytes": 15283,
+      "first_nonempty_line": "<!DOCTYPE html>",
+      "kind": "text",
+      "line_count": 283,
+      "path": "mas/web/services/estate.html",
+      "sha256": "804e64eabe7b696693b949e4ab2326f6540bb5edb0b36cf93d652ea63ae5a2b3"
+    },
+    {
+      "bytes": 15239,
+      "first_nonempty_line": "<!DOCTYPE html>",
+      "kind": "text",
+      "line_count": 282,
+      "path": "mas/web/services/investment.html",
+      "sha256": "d2766cb5a093c0521e7df39cb2d2011d9b872cacaf94a8d2024f25f1366bbcbd"
+    },
+    {
+      "bytes": 16338,
+      "first_nonempty_line": "<!DOCTYPE html>",
+      "kind": "text",
+      "line_count": 301,
+      "path": "mas/web/services/retirement.html",
+      "sha256": "df05fd13c11238d10699d8fcca9ee9dad04502789e1fa18aa50256a953593b47"
+    },
+    {
+      "bytes": 14970,
+      "first_nonempty_line": "<!DOCTYPE html>",
+      "kind": "text",
+      "line_count": 282,
+      "path": "mas/web/services/tax.html",
+      "sha256": "633c15f36cfa447d7f67050fa1baf798842ae96f4c7b46cb2409f35a3e7c49ab"
+    },
+    {
+      "bytes": 18044,
+      "first_nonempty_line": "<!DOCTYPE html>",
+      "kind": "text",
+      "line_count": 366,
+      "path": "mas/web/services.html",
+      "sha256": "31964b35a6c61568b38070c4fdc044c8924abb3471e4f5750c6527b64fa4d6f0"
+    },
+    {
+      "bytes": 1665,
+      "first_nonempty_line": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+      "kind": "text",
+      "line_count": 57,
+      "path": "mas/web/sitemap.xml",
+      "sha256": "59b5a06e8f5b4820ea979b65895d0a95b6dba760cdc680b5f27e254fe112d9f9"
+    },
+    {
+      "bytes": 1032,
+      "first_nonempty_line": "/** @type {import('tailwindcss').Config} */",
+      "kind": "text",
+      "line_count": 26,
+      "path": "mas/web/tailwind.config.js",
+      "sha256": "4de38ada8c749d84e31d1a2f90897639317d52278c8fb6e451abaf4860bc794e"
+    },
+    {
+      "bytes": 2028,
+      "first_nonempty_line": "/** @type {import('tailwindcss').Config} */",
+      "kind": "text",
+      "line_count": 61,
+      "path": "mas/web/tailwind.preset.js",
+      "sha256": "08f0700bf66d747154e3c5a6cf3f4ae05756e8bafc2b748f0163230e59957ac1"
+    },
+    {
+      "bytes": 14352,
+      "first_nonempty_line": "<!DOCTYPE html>",
+      "kind": "text",
+      "line_count": 266,
+      "path": "mas/web/terms.html",
+      "sha256": "03c336c1e0fdd39ebb889bb9f166f63f9187ec7b6cd950dd7aac09c877551f14"
+    }
+  ],
+  "prompt_id": "MAS-RP-402",
+  "public_site_copy_verification": {
+    "destination": "apps/public-site/",
+    "mismatches": [],
+    "note": "Source web members copied byte-for-byte; generated caches are forbidden.",
+    "source_prefix": "mas/web/",
+    "status": "PASS"
+  },
+  "read_status": "complete",
+  "schema_version": "mas.context_read_proof.v1",
+  "source_archive_bytes": 666911,
+  "source_archive_sha256": "06bebd6f96afe3b97639c6406f7beef8c1d96ed24e3ef248e6f2f0aecaa3c356",
+  "zip_integrity": "PASS"
+}

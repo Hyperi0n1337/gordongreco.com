@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: portal-config
+  namespace: gg-portal
+data:
+  PORTAL_ENV: production
+  PORTAL_BASE_URL: https://portal.gordongreco.test
+  ALLOWED_ORIGINS: https://portal.gordongreco.test
+  AWS_REGION: us-east-1
+  QUARANTINE_BUCKET: gg-portal-quarantine
+  CLEAN_BUCKET: gg-portal-clean
+  MAX_DOCUMENT_BYTES: "26214400"
+  VAULT_MODE: kms
+  MAS_INTAKE_DIR: /var/lib/mas-intake/outbound
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: portal-secrets-example-do-not-apply
+  namespace: gg-portal
+  annotations:
+    portal.gordongreco.test/example-only: "true"
+type: Opaque
+stringData:
+  DATABASE_URL: postgresql://portal_api:replace@postgres.example.test:5432/portal?sslmode=verify-full
+  WORKER_DATABASE_URL: postgresql://portal_worker:replace@postgres.example.test:5432/portal?sslmode=verify-full
+  SESSION_HMAC_KEY: replace-with-secret-manager-reference
+  INVITATION_HMAC_KEY: replace-with-secret-manager-reference
+  CAPABILITY_HMAC_KEY: replace-with-secret-manager-reference
+  KMS_KEY_ID: alias/gordon-greco-portal

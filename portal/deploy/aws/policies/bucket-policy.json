@@ -1,0 +1,42 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyInsecureTransport",
+      "Effect": "Deny",
+      "Principal": "*",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::gg-portal-quarantine",
+        "arn:aws:s3:::gg-portal-quarantine/*",
+        "arn:aws:s3:::gg-portal-clean",
+        "arn:aws:s3:::gg-portal-clean/*"
+      ],
+      "Condition": {"Bool": {"aws:SecureTransport": "false"}}
+    },
+    {
+      "Sid": "DenyUnencryptedWrites",
+      "Effect": "Deny",
+      "Principal": "*",
+      "Action": "s3:PutObject",
+      "Resource": [
+        "arn:aws:s3:::gg-portal-quarantine/*",
+        "arn:aws:s3:::gg-portal-clean/*"
+      ],
+      "Condition": {"StringNotEquals": {"s3:x-amz-server-side-encryption": "aws:kms"}}
+    },
+    {
+      "Sid": "DenyPublicAcl",
+      "Effect": "Deny",
+      "Principal": "*",
+      "Action": ["s3:PutObjectAcl", "s3:PutBucketAcl"],
+      "Resource": [
+        "arn:aws:s3:::gg-portal-quarantine",
+        "arn:aws:s3:::gg-portal-quarantine/*",
+        "arn:aws:s3:::gg-portal-clean",
+        "arn:aws:s3:::gg-portal-clean/*"
+      ],
+      "Condition": {"StringNotEqualsIfExists": {"s3:x-amz-acl": "private"}}
+    }
+  ]
+}

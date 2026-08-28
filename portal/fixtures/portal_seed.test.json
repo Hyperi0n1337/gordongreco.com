@@ -1,0 +1,48 @@
+{
+  "data_class": "fictional_test_only",
+  "entities": [
+    {
+      "household_id": "household-alpha.test",
+      "id": "entity-shared.test",
+      "name": "Alpha Example LLC"
+    },
+    {
+      "household_id": "household-beta.test",
+      "id": "entity-shared.test",
+      "name": "Beta Example Trust"
+    }
+  ],
+  "households": [
+    {
+      "id": "household-alpha.test",
+      "name": "Alpha Example Household"
+    },
+    {
+      "id": "household-beta.test",
+      "name": "Beta Example Household"
+    }
+  ],
+  "schema_version": "gg.portal.fixtures.v1",
+  "users": [
+    {
+      "email": "advisor.alpha@example.test",
+      "id": "advisor-alpha.test",
+      "role": "advisor"
+    },
+    {
+      "email": "client.alpha@example.test",
+      "id": "client-alpha.test",
+      "role": "client"
+    },
+    {
+      "email": "advisor.beta@example.test",
+      "id": "advisor-beta.test",
+      "role": "advisor"
+    },
+    {
+      "email": "client.beta@example.test",
+      "id": "client-beta.test",
+      "role": "client"
+    }
+  ]
+}

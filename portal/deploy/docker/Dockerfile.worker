@@ -1,0 +1,16 @@
+# Production builds MUST pass a digest-pinned reference, for example:
+# --build-arg PYTHON_BASE_IMAGE=python:3.13.5-slim@sha256:<verified-digest>
+ARG PYTHON_BASE_IMAGE=python:3.13.5-slim
+FROM ${PYTHON_BASE_IMAGE}
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PYTHONPATH=/app/packages:/app/apps/worker
+RUN apt-get update && apt-get install -y --no-install-recommends file libmagic1 clamav-daemon qpdf ca-certificates \
+  && rm -rf /var/lib/apt/lists/* \
+  && groupadd --system portal && useradd --system --gid portal --home /nonexistent portal
+WORKDIR /app
+COPY requirements.lock pyproject.toml ./
+RUN python -m pip install --no-cache-dir --requirement requirements.lock
+COPY packages ./packages
+COPY apps/worker ./apps/worker
+RUN mkdir -p /var/lib/mas-intake/outbound && chown -R portal:portal /var/lib/mas-intake
+USER portal
+CMD ["python","-m","portal_worker.main"]

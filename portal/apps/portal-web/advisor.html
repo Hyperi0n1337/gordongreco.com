@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <title>Advisor Portal | Gordon Greco</title>
+  <link rel="stylesheet" href="/portal/styles.css">
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="/"><span class="brand-mark">GG</span><span><strong>Gordon Greco</strong><small>Advisor portal</small></span></a><button id="logout" class="text-button">Sign out</button></header>
+  <main class="shell wide">
+    <div class="page-heading"><div><p class="eyebrow">Advisor operations</p><h1>Secure portal control surface</h1></div><button id="step-up" class="primary">Security check</button></div>
+    <nav class="tabs" aria-label="Advisor sections"><button data-tab="documents" class="active">Documents</button><button data-tab="access">Access</button><button data-tab="treasury">Treasury</button></nav>
+
+    <section id="documents" class="tab-panel">
+      <div class="two-column">
+        <form id="request-form" class="panel stack"><div><p class="eyebrow">Checklist</p><h2>Request a document</h2></div><label>Household ID<input name="household_id" required></label><label>Entity ID (optional)<input name="entity_id"></label><label>Title<input name="title" maxlength="160" required></label><label>Description<textarea name="description" maxlength="2000"></textarea></label><label>Due date<input name="due_at" type="datetime-local"></label><button class="primary">Create request</button></form>
+        <section class="panel"><div class="panel-heading"><div><p class="eyebrow">Review queue</p><h2>Documents</h2></div><button id="documents-refresh">Refresh</button></div><div id="advisor-documents" class="request-list"></div></section>
+      </div>
+    </section>
+
+    <section id="access" class="tab-panel hidden">
+      <div class="two-column">
+        <form id="invite-form" class="panel stack"><div><p class="eyebrow">Invitation-only</p><h2>Invite a portal user</h2></div><label>Email<input name="email" type="email" required></label><label>Display name<input name="display_name" required maxlength="120"></label><label>Household ID<input name="household_id" required></label><label>Role<select name="role"><option value="client">Client</option><option value="operations">Operations</option><option value="advisor">Advisor</option></select></label><label>Entity IDs, comma-separated<input name="entity_ids"></label><button class="primary">Create invitation</button></form>
+        <form id="revoke-form" class="panel stack"><div><p class="eyebrow">Immediate cutoff</p><h2>Revoke access</h2></div><label>User ID<input name="user_id" required></label><label>Household ID<input name="household_id" required></label><label>Reason<textarea name="reason" required maxlength="240"></textarea></label><button class="danger">Revoke sessions and access</button></form>
+      </div>
+    </section>
+
+    <section id="treasury" class="tab-panel hidden">
+      <div class="warning-banner"><strong>Non-executing workflow.</strong> Approvals create outbound MAS intake, Telegram outbox, and recalculation records only. No trade or money movement is possible here.</div>
+      <div class="two-column">
+        <form id="policy-form" class="panel stack"><div><p class="eyebrow">Future-effective version</p><h2>Propose policy amendment</h2></div><label>Household ID<input name="household_id" required></label><label>Base version ID (blank for initial)<input name="base_version_id"></label><label>Effective at<input name="effective_at" type="datetime-local" required></label><label>Currency<input name="currency" value="USD" maxlength="3" required></label><label>Operating reserve, minor units<input name="reserve" type="number" min="0" required></label><label>Operation limit, minor units<input name="limit" type="number" min="1" required></label><label>Signer user IDs, comma-separated<input name="signers" required></label><label>Approval threshold<input name="threshold" type="number" min="1" max="20" value="2" required></label><button class="primary">Propose version</button></form>
+        <form id="cash-form" class="panel stack"><div><p class="eyebrow">Cash operation</p><h2>Request approval</h2></div><label>Household ID<input name="household_id" required></label><label>Entity ID (optional)<input name="entity_id"></label><label>Policy version ID<input name="policy_version_id" required></label><label>Type<select name="operation_type"><option>operating_reserve_adjustment</option><option>planned_tax_payment_reserve</option><option>same_entity_liquidity_allocation</option><option>external_cash_need_notice</option></select></label><label>Amount, minor units<input name="amount_minor" type="number" min="1" required></label><label>Currency<input name="currency" value="USD" maxlength="3" required></label><label>Effective at<input name="requested_effective_at" type="datetime-local" required></label><label>Rationale<textarea name="rationale" maxlength="2000" required></textarea></label><label>Conflict key<input name="conflict_key" required maxlength="160"></label><button class="primary">Request approvals</button></form>
+      </div>
+      <section class="panel"><div class="panel-heading"><h2>Policy and cash-operation state</h2><button id="treasury-refresh">Refresh</button></div><div id="treasury-state" class="request-list"></div></section>
+    </section>
+    <div id="toast" class="toast hidden" role="status"></div>
+  </main>
+  <script type="module" src="/portal/advisor.js"></script>
+</body>
+</html>

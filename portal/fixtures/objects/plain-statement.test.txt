@@ -1,0 +1,1 @@
+Fictional statement fixture. Account: TEST-ONLY. Balance: 12345.67 USD.

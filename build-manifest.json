@@ -1,0 +1,147 @@
+{
+  "payload_file_count": 28,
+  "payload_bytes": 698447,
+  "manifest_excluded_from_counts": true,
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "about.html",
+      "bytes": 8457,
+      "sha256": "3a7149cc8b63362d7d8d150f59deb70d9366a38868bbb62c8f27806311cc6c0e"
+    },
+    {
+      "path": "assets/apple-touch-icon.png",
+      "bytes": 41452,
+      "sha256": "b66bc403fae565c7506d0792caf48e0a454aa28e9ae238d4f94bb94f2ff7a961"
+    },
+    {
+      "path": "assets/favicon.ico",
+      "bytes": 2095,
+      "sha256": "4b7c141524a9629a834f8fdc205d3ec314ec0d496f62752f4c7c492d068e39f0"
+    },
+    {
+      "path": "assets/ibkr-logo-white.png",
+      "bytes": 5148,
+      "sha256": "19e8e92a063a4f76292cdf355d102f3b22c4b62f1239accf8ace32e8e6bda700"
+    },
+    {
+      "path": "assets/ibkr-logo.png",
+      "bytes": 5639,
+      "sha256": "40539cb20abefb4f23b458bbf7fbb9ceab27b815797c360f9781effd7783aa26"
+    },
+    {
+      "path": "assets/logo-mark-2x.webp",
+      "bytes": 9466,
+      "sha256": "9298efe9c1436d00e7c5febcd58f301ad194bef65757bdb2672f177e2f281c9e"
+    },
+    {
+      "path": "assets/logo-mark.webp",
+      "bytes": 3524,
+      "sha256": "011c0ace750f3ab80aa642fd528f453fc274bc5923d36728fab60bd619f5c8a8"
+    },
+    {
+      "path": "assets/logo.png",
+      "bytes": 386326,
+      "sha256": "d9973e7fd9f80bd9172e459c7df85936406d233eea5e36685805f19a340f02f8"
+    },
+    {
+      "path": "assets/og-image.png",
+      "bytes": 111175,
+      "sha256": "7355095afe4953e8934796f93dffc30454e6ee052f237942510c41dcb59cfb0a"
+    },
+    {
+      "path": "client.html",
+      "bytes": 7139,
+      "sha256": "2a9145316d3b9348bc01031528a7fdf4c32016598b00d46704fd89dffb44eab5"
+    },
+    {
+      "path": "contact.html",
+      "bytes": 7872,
+      "sha256": "d851b4123c0052099f53fc60f9ec05cbb33daba2da884dac73fd92ca74fa9e66"
+    },
+    {
+      "path": "css/site.css",
+      "bytes": 20197,
+      "sha256": "d02e8d0d1ab6822dcf2b62376ff3a4773e768dfab76bec776ea054ec3f79fa3b"
+    },
+    {
+      "path": "index.html",
+      "bytes": 14569,
+      "sha256": "f529ab9e425ffa36b0ef9eaa3aeabbdabdca1d8690bbb958e0d6258b76ede719"
+    },
+    {
+      "path": "js/decision-view.js",
+      "bytes": 1174,
+      "sha256": "aeb502081371bb788878eab0299fec9b79ae1f4485a6a32e4e2d4405bcae3c13"
+    },
+    {
+      "path": "js/site.js",
+      "bytes": 1910,
+      "sha256": "f9cadbfda31d57b19f13de9161d72e420145bee35ebbd4bf7dafbb3fe38e473d"
+    },
+    {
+      "path": "llms-full.txt",
+      "bytes": 3486,
+      "sha256": "70d5f405a15142f6666ae0d6872e45fd4be7f39c7a17d6a262cd70b2d2e3b07a"
+    },
+    {
+      "path": "llms.txt",
+      "bytes": 1941,
+      "sha256": "9e3baa02d5f12fe9ba8541e4c65c95784775d7a14cdf268cba879945231a676b"
+    },
+    {
+      "path": "privacy.html",
+      "bytes": 6848,
+      "sha256": "57ff240a2ee0604d50612d1df8d5eb9c4dd913886a1326768805c50997f46060"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 362,
+      "sha256": "f9ea386eaf047033b45a2da0adfc60d9008b7d072ad071999a092d364f81d689"
+    },
+    {
+      "path": "services/business.html",
+      "bytes": 8030,
+      "sha256": "4c0a2a466d6d7c3946e872bd1e90b72f0bd1c5ceebfb7613b5922602d3149086"
+    },
+    {
+      "path": "services/estate.html",
+      "bytes": 8008,
+      "sha256": "c4300a049656083edbbb33f0abb1c04f0ea9c3229e82115bd87f6d829ddec889"
+    },
+    {
+      "path": "services/investment.html",
+      "bytes": 8052,
+      "sha256": "4701d320269db9b7c84a1c89d1b03c2cde72c0cd8dbe207c8aa01d23165a8836"
+    },
+    {
+      "path": "services/retirement.html",
+      "bytes": 7930,
+      "sha256": "7bda1369286536daee17f13712dd929dd6cceea833811822a4cd448308e4f6fd"
+    },
+    {
+      "path": "services/tax.html",
+      "bytes": 8001,
+      "sha256": "dbfdf7541ec4a3f982aa115d5c10c983ba1983f19aef2d1f049cfe0da6972c69"
+    },
+    {
+      "path": "services.html",
+      "bytes": 11137,
+      "sha256": "6a6782d3c710cf59faa2eb1bc8cc212373effa65a173aad18695628ec81c2354"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 1396,
+      "sha256": "6370f36d82a106b4b29007e5133d84ab8794c53e681b20cf5df03742007e2307"
+    },
+    {
+      "path": "terms.html",
+      "bytes": 7113,
+      "sha256": "8f9092c82e22112ff4850f5c3e774cd376d795f341416083cca4b5e4c5926e48"
+    }
+  ]
+}

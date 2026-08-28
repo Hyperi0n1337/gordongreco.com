@@ -1,0 +1,102 @@
+name: gg-secure-portal
+services:
+  postgres:
+    image: ${POSTGRES_IMAGE:?set a digest-pinned PostgreSQL image}
+    environment:
+      POSTGRES_DB: portal
+      POSTGRES_USER: portal_migrator
+      POSTGRES_PASSWORD: ${PORTAL_MIGRATOR_DB_PASSWORD:?required}
+      PORTAL_API_DB_PASSWORD: ${PORTAL_API_DB_PASSWORD:?required}
+      PORTAL_WORKER_DB_PASSWORD: ${PORTAL_WORKER_DB_PASSWORD:?required}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ../../migrations:/migrations:ro
+      - ./postgres-init.sh:/docker-entrypoint-initdb.d/10-portal.sh:ro
+    healthcheck:
+      test: ["CMD-SHELL","pg_isready -U portal_migrator -d portal"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    networks: [data]
+
+  minio:
+    image: ${MINIO_IMAGE:?set a digest-pinned MinIO image}
+    command: server /data --console-address :9001
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:?required}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?required}
+    volumes: ["minio-data:/data"]
+    networks: [data]
+
+  api:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile.api
+      args:
+        PYTHON_BASE_IMAGE: ${PYTHON_BASE_IMAGE:?set a digest-pinned Python image}
+    read_only: true
+    tmpfs: ["/tmp:size=32m,mode=1777"]
+    environment:
+      PORTAL_ENV: production
+      PORTAL_BASE_URL: ${PORTAL_BASE_URL:?required}
+      DATABASE_URL: postgresql://portal_api:${PORTAL_API_DB_PASSWORD}@postgres:5432/portal
+      SESSION_HMAC_KEY: ${SESSION_HMAC_KEY:?required}
+      INVITATION_HMAC_KEY: ${INVITATION_HMAC_KEY:?required}
+      CAPABILITY_HMAC_KEY: ${CAPABILITY_HMAC_KEY:?required}
+      VAULT_MODE: kms
+      KMS_KEY_ID: ${KMS_KEY_ID:?required}
+      AWS_REGION: ${AWS_REGION:-us-east-1}
+      S3_ENDPOINT_URL: ${S3_ENDPOINT_URL:-http://minio:9000}
+      QUARANTINE_BUCKET: gg-portal-quarantine
+      CLEAN_BUCKET: gg-portal-clean
+      ALLOWED_ORIGINS: ${PORTAL_BASE_URL:?required}
+    depends_on:
+      postgres: {condition: service_healthy}
+    networks: [edge, data]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+
+  worker:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile.worker
+      args:
+        PYTHON_BASE_IMAGE: ${PYTHON_BASE_IMAGE:?set a digest-pinned Python image}
+    read_only: true
+    tmpfs: ["/tmp:size=64m,mode=1777"]
+    environment:
+      DATABASE_URL: postgresql://portal_worker:${PORTAL_WORKER_DB_PASSWORD}@postgres:5432/portal
+      AWS_REGION: ${AWS_REGION:-us-east-1}
+      S3_ENDPOINT_URL: ${S3_ENDPOINT_URL:-http://minio:9000}
+      QUARANTINE_BUCKET: gg-portal-quarantine
+      CLEAN_BUCKET: gg-portal-clean
+      MAS_INTAKE_DIR: /var/lib/mas-intake/outbound
+    volumes: ["mas-intake:/var/lib/mas-intake/outbound"]
+    depends_on:
+      postgres: {condition: service_healthy}
+    networks: [data]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+
+  edge:
+    image: ${NGINX_IMAGE:?set a digest-pinned Nginx image}
+    read_only: true
+    tmpfs: ["/var/cache/nginx:size=16m","/var/run:size=2m"]
+    volumes:
+      - ../nginx/portal.conf:/etc/nginx/conf.d/default.conf:ro
+      - ../../apps/public-site:/srv/public:ro
+      - ../../apps/portal-web:/srv/portal:ro
+    ports: ["8080:8080"]
+    depends_on: [api]
+    networks: [edge]
+    cap_drop: [ALL]
+    cap_add: [NET_BIND_SERVICE]
+    security_opt: ["no-new-privileges:true"]
+
+networks:
+  edge: {internal: false}
+  data: {internal: true}
+volumes:
+  postgres-data:
+  minio-data:
+  mas-intake:

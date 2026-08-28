@@ -1,0 +1,583 @@
+{
+  "artifact_root": "portal",
+  "authority_boundary": "code_and_verification_only_no_deployment_credentials_real_client_data_account_creation_message_send_trade_or_money_movement",
+  "data_class": "private_design_context_no_client_documents",
+  "files": [
+    {
+      "bytes": 731,
+      "path": ".env.example",
+      "sha256": "cc259cd845505804a90a20846dc9d35b4c2a4ae02f035be09f37f087a20acfc2"
+    },
+    {
+      "bytes": 98,
+      "path": ".gitignore",
+      "sha256": "3898abe144bec152d94c3e4b3d22cb4092cbf60097932e0323aa3e153d74446b"
+    },
+    {
+      "bytes": 761,
+      "path": "CHANGELOG.md",
+      "sha256": "be00b20a976ffbdf86893a524790533b52f73be1961b89a4224023b8fcae2201"
+    },
+    {
+      "bytes": 297,
+      "path": "Makefile",
+      "sha256": "a319bc6df6c29d2f24d0fae8251b79b3fa747b62bda0241ba7156fb8100f2ca6"
+    },
+    {
+      "bytes": 3417,
+      "path": "README.md",
+      "sha256": "afa834f285997d461e2ebdf71925614c239891b0f836bd5d8c6856a0bde9c310"
+    },
+    {
+      "bytes": 2659,
+      "path": "VERIFY.md",
+      "sha256": "0c7f2da7a8b721ee50cf5178040897ed0a7a13576b0636adbc5ec3a2c8e60251"
+    },
+    {
+      "bytes": 3484,
+      "path": "acceptance_matrix.json",
+      "sha256": "7b94f1924d2a915e7b404afa21e550fbbc5af2005e864eff6f435424fe759eee"
+    },
+    {
+      "bytes": 2326,
+      "path": "acceptance_matrix.md",
+      "sha256": "93dcd4103b741c2e9e01655063ca7099af0ccabba6df29f4c28f9f62052bf882"
+    },
+    {
+      "bytes": 45,
+      "path": "apps/api/portal_api/__init__.py",
+      "sha256": "fff773b72110254462f9c60073b2a916380a63da5ae5e6ff8f0a72a87492f60d"
+    },
+    {
+      "bytes": 2374,
+      "path": "apps/api/portal_api/config.py",
+      "sha256": "50d755f9811124c9567b22fad0ad8bf260ec2e94c100108b6dac7d6fc94d106a"
+    },
+    {
+      "bytes": 2585,
+      "path": "apps/api/portal_api/http_security.py",
+      "sha256": "3ef0b8cc7c929e885c1acc54e4c588e218978779bba0d75a237190d2b2466574"
+    },
+    {
+      "bytes": 28033,
+      "path": "apps/api/portal_api/main.py",
+      "sha256": "d07ef13de7a838c9b7d1f142a34cd14bfc4f14eac3b724c857d3bf15bebbe261"
+    },
+    {
+      "bytes": 3713,
+      "path": "apps/api/portal_api/schemas.py",
+      "sha256": "af9cc4fa75f8b4987d4e644ebfd21fb408d305976db771bb18580cb5fe40c35b"
+    },
+    {
+      "bytes": 78,
+      "path": "apps/demo/__init__.py",
+      "sha256": "08b4483400f8b99384527fa30e44e94e537f47ed9ec6e10477b4c1ab1a8d51ed"
+    },
+    {
+      "bytes": 17064,
+      "path": "apps/demo/server.py",
+      "sha256": "eec7a1ee1ca2457fc444c1bb1c72b3690159355f615cb0021cbe639d9a6025d7"
+    },
+    {
+      "bytes": 572,
+      "path": "apps/portal-web/README.md",
+      "sha256": "b19dd9a7d347f3ddf9f2dff7f147a0c4a4cf768da3e5312ae1c3e73426150848"
+    },
+    {
+      "bytes": 5612,
+      "path": "apps/portal-web/advisor.html",
+      "sha256": "abc203843a689eb47b6c999e32671c44831c8758615044b9f2b1878605f0b52c"
+    },
+    {
+      "bytes": 8341,
+      "path": "apps/portal-web/advisor.js",
+      "sha256": "5f2b1d1c63f5a7505ed639ff0363cbc776cfaa928b8b35ca81cf85f851732058"
+    },
+    {
+      "bytes": 1497,
+      "path": "apps/portal-web/api.js",
+      "sha256": "40bc65a87f59a56bf1030fa2c54b45f1218f43b00f06d21692b612b4264f4a49"
+    },
+    {
+      "bytes": 11738,
+      "path": "apps/portal-web/client.js",
+      "sha256": "88b2bfe418762d701cd8118fa3e2577fe006080290b2fd3518958b068880f4ba"
+    },
+    {
+      "bytes": 5409,
+      "path": "apps/portal-web/index.html",
+      "sha256": "8cc0e7cf7b8cbc444127a183655eb5f458ee3205537d45d51307fc2d35e5a2b5"
+    },
+    {
+      "bytes": 86,
+      "path": "apps/portal-web/package.json",
+      "sha256": "e44be0d1f64dec964d265b9fc3a79bfb25571d402ae00eeb84fefd43da708eb7"
+    },
+    {
+      "bytes": 6759,
+      "path": "apps/portal-web/styles.css",
+      "sha256": "c91544c7591c9b01cb06348514b086f4b9dbb965bcf2c3dc025271dfa096fd5c"
+    },
+    {
+      "bytes": 87,
+      "path": "apps/worker/portal_worker/__init__.py",
+      "sha256": "eccb9624898a45c1dc0a2c80a1e1a77499023f167454e2fd9276526d19bd5344"
+    },
+    {
+      "bytes": 9322,
+      "path": "apps/worker/portal_worker/main.py",
+      "sha256": "fc8febc6247386125a7d79aa4221679ea834484e883ccc7ac01794542259abdd"
+    },
+    {
+      "bytes": 14527,
+      "path": "context_manifest.json",
+      "sha256": "7afe385cd61a03e815345c88512dc3b7ac6cbf999f7bcf784ea5d7cbd9e6fff4"
+    },
+    {
+      "bytes": 881,
+      "path": "deploy/aws/README.md",
+      "sha256": "d259b3f01da82ffe16c2b445e377c08fd6c9dd21dbc0550253841a50e54b405b"
+    },
+    {
+      "bytes": 666,
+      "path": "deploy/aws/policies/api-role-policy.json",
+      "sha256": "c6b3e1eb1c21ee8f09a245e658df35206f4029c41e43a551e8df0ff4405e5c92"
+    },
+    {
+      "bytes": 1198,
+      "path": "deploy/aws/policies/bucket-policy.json",
+      "sha256": "eaa8358764bad21b8f7bfc5706575ed4d869d049051fb3524ad514d10bfd1ad9"
+    },
+    {
+      "bytes": 370,
+      "path": "deploy/aws/policies/lifecycle.json",
+      "sha256": "0a6b30e855f0871fb5d464b7a52832cadbbf220a4828e1a8dc4c8c8b67f30dc3"
+    },
+    {
+      "bytes": 661,
+      "path": "deploy/aws/policies/worker-role-policy.json",
+      "sha256": "a375517f744c9ac1b54afad754d705631b6127d4e259d8f1eaafbec02eb5b76c"
+    },
+    {
+      "bytes": 1676,
+      "path": "deploy/aws/terraform/main.tf",
+      "sha256": "04db87f9c7a90b90637cc495efc00472f75653391847c3dafffce085e4808226"
+    },
+    {
+      "bytes": 148,
+      "path": "deploy/aws/terraform/outputs.tf",
+      "sha256": "b846fc25ce683c15e70da29ea4406e6b8c1f00dcc6976d19078593ebe9aaa6dd"
+    },
+    {
+      "bytes": 177,
+      "path": "deploy/aws/terraform/variables.tf",
+      "sha256": "c90215b38e7177754e8db0d63d8ac1915d76cbc958b197de10ffe76e8db65459"
+    },
+    {
+      "bytes": 130,
+      "path": "deploy/aws/terraform/versions.tf",
+      "sha256": "1d920f5e29291f2c75f1787c7bac409075888dd19470d7b090e9a5743bc59ff3"
+    },
+    {
+      "bytes": 771,
+      "path": "deploy/docker/.env.deploy.example",
+      "sha256": "7e2f8242b8cc58fc2bc136b7c2ce0f02924aed4be99e1b036e46199c088cea14"
+    },
+    {
+      "bytes": 751,
+      "path": "deploy/docker/Dockerfile.api",
+      "sha256": "ae4c137da735750c8286379769b59238a70f4d7630d6dc427f710a442a20a689"
+    },
+    {
+      "bytes": 870,
+      "path": "deploy/docker/Dockerfile.worker",
+      "sha256": "993810f15f3db214f5dfc63eca91754f1e6331cb88adb3061d866f6a9ccad824"
+    },
+    {
+      "bytes": 3486,
+      "path": "deploy/docker/compose.yaml",
+      "sha256": "e3e0d66f8e275c2f1c9c0785ba67aa5f8ce436e9b23f55e53e85ab39ab3f9f02"
+    },
+    {
+      "bytes": 970,
+      "path": "deploy/docker/postgres-init.sh",
+      "sha256": "8ea882547232dbfb83e007859dcece871939873e39e237074fbd1c3e109db505"
+    },
+    {
+      "bytes": 642,
+      "path": "deploy/kubernetes/README.md",
+      "sha256": "c229f79968f98070a39cecd5b65eef4468796dd629adc88e05666f9f815fb1c6"
+    },
+    {
+      "bytes": 1348,
+      "path": "deploy/kubernetes/access.yaml",
+      "sha256": "7d6db8c8b8afc99c6e3cc83b1d6caa4461abf734e305f5f1370d23dc0e71337c"
+    },
+    {
+      "bytes": 1047,
+      "path": "deploy/kubernetes/config.yaml",
+      "sha256": "d8c83d98784aa08300d2d3519d76e781127ba28ecb63feb696b0a48380c262bb"
+    },
+    {
+      "bytes": 794,
+      "path": "deploy/kubernetes/ingress.yaml",
+      "sha256": "48de7201c6d5c9be5a79bf1175efdb2c4a00a0b65639960686ccc2b1003f195b"
+    },
+    {
+      "bytes": 217,
+      "path": "deploy/kubernetes/namespace.yaml",
+      "sha256": "191ecd10a37fec170b03d8922184a0328590e74a10c5618853673c1c2df065b0"
+    },
+    {
+      "bytes": 3443,
+      "path": "deploy/kubernetes/workloads.yaml",
+      "sha256": "eae488ae0a45f0cb56328c34be1de7e2ba380625d2ec3c6bda74f155da4153b9"
+    },
+    {
+      "bytes": 1966,
+      "path": "deploy/nginx/portal.conf",
+      "sha256": "662b190fb991d5a75fefa017ad2ae2a53c6a36c96a51727f6341940496df22f1"
+    },
+    {
+      "bytes": 2364,
+      "path": "docs/API.md",
+      "sha256": "e447139e022752153bc0c86674c9a4a784f3bc18ab1acab018b922b99106a23c"
+    },
+    {
+      "bytes": 2869,
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "0d66212bbd50974a1170bb92259bad8cb9cbaa9dfdaea513977a71950ff16547"
+    },
+    {
+      "bytes": 2438,
+      "path": "docs/BACKUP_RECOVERY.md",
+      "sha256": "f6354a8a3f82861b818c62c7d5d781cac6009a270573a032fbe2e657ac9924dc"
+    },
+    {
+      "bytes": 2736,
+      "path": "docs/BOOKS_AND_RECORDS_DECISIONS.md",
+      "sha256": "b009355e3582883d19fc5529974aba0b61fe45c894675b744624c2d416792f65"
+    },
+    {
+      "bytes": 6115,
+      "path": "docs/CONTEXT_READ_PROOF.md",
+      "sha256": "31e27718ecefa96d98bba7b0a919da4420848ec275cc02757ecdb762e943af29"
+    },
+    {
+      "bytes": 2458,
+      "path": "docs/DEPLOYMENT.md",
+      "sha256": "5b8d9aeb57eb409fd32d6db2dce4d17cefa03a2fa8d28bc775617a8400803de9"
+    },
+    {
+      "bytes": 3365,
+      "path": "docs/INCIDENT_RESPONSE.md",
+      "sha256": "13552d75a89608a0bb65807abad41cf2b9b8323cf0437b784006cd32e1f4490b"
+    },
+    {
+      "bytes": 1799,
+      "path": "docs/OPERATIONS_RUNBOOK.md",
+      "sha256": "fb0c3d0cb34dc792f5de8816d52e0d29d3b2c8ea1e82f9015bee939217647427"
+    },
+    {
+      "bytes": 2755,
+      "path": "docs/SECURITY_CONTROLS.md",
+      "sha256": "5a596436638fdad009cf2173699a3fdf7f64a84fdf77f08e7fba2325a456d53d"
+    },
+    {
+      "bytes": 3872,
+      "path": "docs/THREAT_MODEL.md",
+      "sha256": "6bef408f6ca9c06815410eb0e3c70665b8f94ed22752706fc260c81c70c0342e"
+    },
+    {
+      "bytes": 1895,
+      "path": "docs/TREASURY_WORKFLOW.md",
+      "sha256": "60a225a4d503b857ff153f7cdb1f7069977ad9c1be350bf29affeb39b14247f8"
+    },
+    {
+      "bytes": 347,
+      "path": "fixtures/README.md",
+      "sha256": "2ce5f4ee00225b1acf4bc1a4e96433e8bfd6c36327103cd6a5b7529b5041549e"
+    },
+    {
+      "bytes": 512,
+      "path": "fixtures/document_requests.test.json",
+      "sha256": "431fe7b2e3913a017a7e93c689a9fd19111a9efa3dcdebfa2fd6463dd9cc9b89"
+    },
+    {
+      "bytes": 125,
+      "path": "fixtures/objects/clean-statement.test.pdf",
+      "sha256": "034360b8929e7273d543cf892ed752d6f6add7cf407ab271cbdd5a6d290fe5a0"
+    },
+    {
+      "bytes": 60,
+      "path": "fixtures/objects/plain-ledger.test.csv",
+      "sha256": "90a7828b40864b9dc3ce738d757521e887e70d4b8c17949ff29b798240c3a3a5"
+    },
+    {
+      "bytes": 72,
+      "path": "fixtures/objects/plain-statement.test.txt",
+      "sha256": "e52b5d167ec1747744cf4f4effe680ff43994e689b0771eae87c41405658c7c7"
+    },
+    {
+      "bytes": 1030,
+      "path": "fixtures/portal_seed.test.json",
+      "sha256": "89d7844255a012bca196cc925fac4a9691fc8fb3e4ebc34e468a076df690823d"
+    },
+    {
+      "bytes": 333,
+      "path": "fixtures/treasury_policy.test.json",
+      "sha256": "63815b7ebd9e1d75d9dd7260bcbe16016cc23dd09c4e579c0536bf03b04f7aa2"
+    },
+    {
+      "bytes": 3382,
+      "path": "migrations/0001_bootstrap.sql",
+      "sha256": "f3deeedde7d454649b960f2986a6152b5e16739a4ba22ba53d700ed117543c61"
+    },
+    {
+      "bytes": 8974,
+      "path": "migrations/0002_identity_auth.sql",
+      "sha256": "81f53ec84d5bd1c22b6cdf9e375fbb82176880123248ef8c9e442b5682bad4ca"
+    },
+    {
+      "bytes": 7122,
+      "path": "migrations/0003_documents_storage.sql",
+      "sha256": "b94be5f2fe61560c8a7266eb7b3f71d2d83fa298990e7f63ec66194453a9495d"
+    },
+    {
+      "bytes": 5163,
+      "path": "migrations/0004_treasury.sql",
+      "sha256": "b34fe15e4385f8fa288094f2ef2f4344b8e09922f8a64c5faf731e3e9082062c"
+    },
+    {
+      "bytes": 8885,
+      "path": "migrations/0005_restrictive_rls.sql",
+      "sha256": "744c33eff2ed5c5717041f7749c07457dc824172c52790c80b46ff77c78823c3"
+    },
+    {
+      "bytes": 17093,
+      "path": "migrations/0006_auth_rpcs.sql",
+      "sha256": "b45076ac68cdcdbe7429c49b717a9b6a20aaf9f618ea14c82fcd0a7cb6ecb313"
+    },
+    {
+      "bytes": 20415,
+      "path": "migrations/0007_document_rpcs.sql",
+      "sha256": "9c40182a5af8222a943c05e1617c2ddc03cfbd83a2c935c95502ef46055910ce"
+    },
+    {
+      "bytes": 16214,
+      "path": "migrations/0008_treasury_rpcs.sql",
+      "sha256": "10378302e038e06b38320f572a1a9640e43a2cbd28cf9915f51a608ed235d38b"
+    },
+    {
+      "bytes": 18488,
+      "path": "migrations/0009_worker_immutability.sql",
+      "sha256": "b383bff1a14da6f7934e329957373f7b09b43e5363a392fe326caf97c03b348f"
+    },
+    {
+      "bytes": 788,
+      "path": "migrations/README.md",
+      "sha256": "33003ad02cfa5e713e0e3174a54e0bd59d49ed0798864630d02c920ad8bab193"
+    },
+    {
+      "bytes": 78,
+      "path": "packages/portal_adapters/__init__.py",
+      "sha256": "5f67900ffe38efc3d88fea53646f8b6570f35c65b9aac83aac08cd5f798a10d9"
+    },
+    {
+      "bytes": 1213,
+      "path": "packages/portal_adapters/kms.py",
+      "sha256": "cf5f22e4688303babdbd3d26a74bf50cabefe4fbaa474d446e5217957973d8e3"
+    },
+    {
+      "bytes": 1125,
+      "path": "packages/portal_adapters/local_vault.py",
+      "sha256": "2e6775beac0abc7925ad6f355617acbaebc9d3b3f6ae0ae5df6291dd0c64da04"
+    },
+    {
+      "bytes": 3013,
+      "path": "packages/portal_adapters/postgres.py",
+      "sha256": "513f00fdf5d30fc2a33057ebcf1bf58586a126bd46d137a8715434886a1fbe0a"
+    },
+    {
+      "bytes": 5973,
+      "path": "packages/portal_adapters/s3.py",
+      "sha256": "075210a0651cbaf67bb37d95ebe6a544217d9390c5410537696c14eab7fcca6a"
+    },
+    {
+      "bytes": 4186,
+      "path": "packages/portal_adapters/scanners.py",
+      "sha256": "a163f8b826bc8717a09808c9f2754bb77b11cb35db653a9277549eb3d94a1845"
+    },
+    {
+      "bytes": 487,
+      "path": "packages/portal_core/__init__.py",
+      "sha256": "a10615970b6da3465109291c6b52750bb243d3ad2fcc03eb6f094b20952cf5fe"
+    },
+    {
+      "bytes": 16094,
+      "path": "packages/portal_core/auth.py",
+      "sha256": "18b447da53094d1c98195a896a0b2adf2a08e00a5beb9cdcfbfd5f232c4e9be6"
+    },
+    {
+      "bytes": 2900,
+      "path": "packages/portal_core/capabilities.py",
+      "sha256": "44e833468d122697bcbef06c299ac6b8b3a7ec900730a06298b14dda86153caf"
+    },
+    {
+      "bytes": 604,
+      "path": "packages/portal_core/clock.py",
+      "sha256": "2f49c2d6ded6bfbabb438e6b3ec745bc927633c3c6689e8c8b28923e10806990"
+    },
+    {
+      "bytes": 849,
+      "path": "packages/portal_core/errors.py",
+      "sha256": "8d53c54a2194d530f9d75bcab9aa5bc2617a4aa4c6a228eeb7447425542b9e30"
+    },
+    {
+      "bytes": 445,
+      "path": "packages/portal_core/ids.py",
+      "sha256": "e68a8506751083f79083776096b92b40c27147addd400b548a98d59d64879e74"
+    },
+    {
+      "bytes": 7551,
+      "path": "packages/portal_core/memory.py",
+      "sha256": "9e2589aed723761558ce06d8f3ce9e2d30e2a19264c0eab8e2aff8ba48634bbe"
+    },
+    {
+      "bytes": 6463,
+      "path": "packages/portal_core/models.py",
+      "sha256": "e97e8c61979553314821b85b7b409e1acf95bcb80a7914eab79957f2a89d0e88"
+    },
+    {
+      "bytes": 4844,
+      "path": "packages/portal_core/scanning.py",
+      "sha256": "2f2f21006401492975683cdda469d79057a345c52f08080bd03141c45b28bbc4"
+    },
+    {
+      "bytes": 2878,
+      "path": "packages/portal_core/scope.py",
+      "sha256": "6fb1d1118d108668e5ba9af2681a6cdacecbdf557e1a93a4293a2a7d86c4f837"
+    },
+    {
+      "bytes": 4362,
+      "path": "packages/portal_core/security.py",
+      "sha256": "dbe9a014bb6ad525d3abe30f37663600f581bfa47a5b461ec443652009d6ed2b"
+    },
+    {
+      "bytes": 22620,
+      "path": "packages/portal_core/treasury.py",
+      "sha256": "bd44ae8136b40e42f21893916007c201cd9167f5893f4eb761d3587aabffc32b"
+    },
+    {
+      "bytes": 24617,
+      "path": "packages/portal_core/uploads.py",
+      "sha256": "305a21c734016e5265b536dcffed6f9288a77c6ad7f7e294e75e2d495b97acd2"
+    },
+    {
+      "bytes": 946,
+      "path": "pyproject.toml",
+      "sha256": "7242c9c962bec7687000dc341ccac52a1d15985ff7a8b384d9fba08ffaf0868d"
+    },
+    {
+      "bytes": 225,
+      "path": "requirements.lock",
+      "sha256": "feee3ed9534818c82de0304a1db59b1f5298f47b75de0dfe2c66ed594f5fe6c0"
+    },
+    {
+      "bytes": 395,
+      "path": "scripts/apply_migrations.sh",
+      "sha256": "b8773ae596003d6ce92352bb4ea730c45ec40593ab031421cc8c7d99ebe469df"
+    },
+    {
+      "bytes": 558,
+      "path": "scripts/backup.sh",
+      "sha256": "10958bde12718397f7a361fbc3ad95da8e3504f6f52ea7e79cbe95362234c910"
+    },
+    {
+      "bytes": 1547,
+      "path": "scripts/build_manifest.py",
+      "sha256": "a5b10127cb519ae3d4a16be8a9125bfd3fb7962b75091db2bd5027eafe2d1e04"
+    },
+    {
+      "bytes": 1705,
+      "path": "scripts/check_migrations.py",
+      "sha256": "eaae00a57ec770878f9e875674eff7265e807881240d5f63a10b0259ac50e959"
+    },
+    {
+      "bytes": 589,
+      "path": "scripts/restore_drill.sh",
+      "sha256": "972d8cb18ab51b89d55d21336e81a07d5851661a77f4a9793f9317e0bd6e3b13"
+    },
+    {
+      "bytes": 4622,
+      "path": "scripts/verify.py",
+      "sha256": "b79fa6ec8b06a0c854fe836dc40a13c6a1ff9ade2de3142acae02a689a614f0a"
+    },
+    {
+      "bytes": 4521,
+      "path": "tests/conftest.py",
+      "sha256": "ddd5ca4dd80951383b2c2e35532cfd74a9dc3b7f9dba4c36668bb635e5b59bb3"
+    },
+    {
+      "bytes": 3976,
+      "path": "tests/test_auth.py",
+      "sha256": "9fdd13a7af3d89d567cca0943e73c226db29ca5236da122f806d74586241a1cf"
+    },
+    {
+      "bytes": 2546,
+      "path": "tests/test_capabilities.py",
+      "sha256": "6689b33e3496c4768bd013051f47e166e68cb41ca9191f4a338c8d451921ef17"
+    },
+    {
+      "bytes": 4717,
+      "path": "tests/test_demo_server.py",
+      "sha256": "16b3b6bca6ce0dd3e5ea57c643b84a35c5d41e692bc3f8c5b66be875595f4706"
+    },
+    {
+      "bytes": 2935,
+      "path": "tests/test_migrations_security.py",
+      "sha256": "4aff19551a9bea25e01c0a46e18bfe1f694a019b649eb440b60da5d1efaacec8"
+    },
+    {
+      "bytes": 1841,
+      "path": "tests/test_receipts.py",
+      "sha256": "f4aeb08690de155fe2d805148eb5c8071b402d2e61e4f2972cd16306b4325556"
+    },
+    {
+      "bytes": 2286,
+      "path": "tests/test_repository_security.py",
+      "sha256": "d95c1c08ee16901e3148778f8789d754e515ebcaffb605a738e2780a3c053b52"
+    },
+    {
+      "bytes": 2855,
+      "path": "tests/test_scanning.py",
+      "sha256": "d246d65c149e29f4c5abae0cea2f1e93ed90ea5930396724afafabebaddc0536"
+    },
+    {
+      "bytes": 1233,
+      "path": "tests/test_scope.py",
+      "sha256": "7a19579527776f795eb8b40b23c72ec0a6820160adbb84c391e167843d4ed704"
+    },
+    {
+      "bytes": 7757,
+      "path": "tests/test_treasury.py",
+      "sha256": "22d864c38ca54203287cb7190a90ec16cd4ee8c8512dd9a969b1c916cc5a7037"
+    },
+    {
+      "bytes": 7898,
+      "path": "tests/test_uploads.py",
+      "sha256": "32615d28509bdff18777e62d8464370f7bb42c31b16c5395e28c267f2e72c243"
+    }
+  ],
+  "identity_marker": "MAS-RP-402-SECURE-PORTAL-ACTUAL-ZIP",
+  "manifest_exclusions": [
+    "implementation_manifest.json (self)",
+    ".git/*",
+    "__pycache__/*"
+  ],
+  "prompt_id": "MAS-RP-402",
+  "schema_version": "mas.implementation_manifest.v1",
+  "source_bytes": 458950,
+  "source_file_count": 113,
+  "verification_command": "python scripts/verify.py --no-write"
+}

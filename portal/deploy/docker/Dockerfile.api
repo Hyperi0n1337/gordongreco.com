@@ -1,0 +1,14 @@
+# Production builds MUST pass a digest-pinned reference, for example:
+# --build-arg PYTHON_BASE_IMAGE=python:3.13.5-slim@sha256:<verified-digest>
+ARG PYTHON_BASE_IMAGE=python:3.13.5-slim
+FROM ${PYTHON_BASE_IMAGE}
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PYTHONPATH=/app/packages:/app/apps/api
+RUN groupadd --system portal && useradd --system --gid portal --home /nonexistent portal
+WORKDIR /app
+COPY requirements.lock pyproject.toml ./
+RUN python -m pip install --no-cache-dir --requirement requirements.lock
+COPY packages ./packages
+COPY apps/api ./apps/api
+USER portal
+EXPOSE 8080
+CMD ["python","-m","uvicorn","portal_api.main:create_app","--factory","--host","0.0.0.0","--port","8080","--proxy-headers","--forwarded-allow-ips","127.0.0.1"]

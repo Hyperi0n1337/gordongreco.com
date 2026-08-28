@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "QuarantineScanAndDelete",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:DeleteObject"],
+      "Resource": "arn:aws:s3:::gg-portal-quarantine/quarantine/*"
+    },
+    {
+      "Sid": "CleanWriteVerifyDelete",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:PutObject", "s3:DeleteObject"],
+      "Resource": "arn:aws:s3:::gg-portal-clean/clean/*"
+    },
+    {
+      "Sid": "ObjectEncryption",
+      "Effect": "Allow",
+      "Action": ["kms:Decrypt", "kms:Encrypt", "kms:GenerateDataKey"],
+      "Resource": "arn:aws:kms:us-east-1:111122223333:key/REPLACE"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "prompt_id": "MAS-RP-402",
+  "requirements": [
+    {
+      "evidence": "Archive build and external verification",
+      "id": "A01",
+      "requirement": "Actual exact-name ZIP with one top-level root",
+      "status": "PASS"
+    },
+    {
+      "evidence": "apps/public-site, apps/portal-web, nginx/ingress boundary, tests",
+      "id": "A02",
+      "requirement": "Public marketing site separate from private authenticated portal",
+      "status": "PASS"
+    },
+    {
+      "evidence": "auth core/API, migrations 0002/0006, test_auth.py",
+      "id": "A03",
+      "requirement": "Invitation-only passwordless access, TOTP, expiry, recovery, revocation",
+      "status": "PASS"
+    },
+    {
+      "evidence": "scope.py, Postgres transaction settings, RLS, IAM/bucket policies, tests",
+      "id": "A04",
+      "requirement": "Server-derived household/entity scope and restrictive database/storage authorization",
+      "status": "PASS"
+    },
+    {
+      "evidence": "portal-web/client.js, document RPCs, upload tests",
+      "id": "A05",
+      "requirement": "Client checklist, drag/drop/progress/resume, quarantine/review/missing states, one support action",
+      "status": "PASS"
+    },
+    {
+      "evidence": "advisor UI/API/RPCs, immutable receipts, upload tests",
+      "id": "A06",
+      "requirement": "Advisor invite/revoke/request/review/download/delete, receipt, outbound-only MAS intake",
+      "status": "PASS"
+    },
+    {
+      "evidence": "uploads core/API/S3 adapter/RPCs, capability/upload tests",
+      "id": "A07",
+      "requirement": "Generated keys, bounded capabilities, authoritative SHA-256/size, interrupted/duplicate handling",
+      "status": "PASS"
+    },
+    {
+      "evidence": "scanning.py/adapters/worker, scanning tests",
+      "id": "A08",
+      "requirement": "Fail-closed libmagic, executable/PDF, ClamAV, qpdf controls",
+      "status": "PASS"
+    },
+    {
+      "evidence": "treasury core/API/RPCs/UI, treasury tests",
+      "id": "A09",
+      "requirement": "Cash operation vs future-effective treasury policy amendment, signers/conflicts/idempotency/outboxes/recalc, no execution",
+      "status": "PASS"
+    },
+    {
+      "evidence": "migrations 0001-0009, deploy/, migration tests",
+      "id": "A10",
+      "requirement": "Ordered migrations, FORCE RLS, storage policies/RPCs, deploy templates",
+      "status": "PASS"
+    },
+    {
+      "evidence": "fixtures/, 41-test pytest suite",
+      "id": "A11",
+      "requirement": "Fictional .test fixtures and real authorization/upload/security tests",
+      "status": "PASS"
+    },
+    {
+      "evidence": "docs/",
+      "id": "A12",
+      "requirement": "Threat model, incident response, backup/recovery, books-and-records decisions",
+      "status": "PASS"
+    },
+    {
+      "evidence": "changes.patch, implementation_manifest.json",
+      "id": "A13",
+      "requirement": "Repository-relative changes.patch and implementation manifest",
+      "status": "PASS"
+    },
+    {
+      "evidence": "VERIFY.md, acceptance_matrix.*, verification/logs/",
+      "id": "A14",
+      "requirement": "VERIFY.md, acceptance matrix, exact command logs",
+      "status": "PASS"
+    },
+    {
+      "evidence": "source boundary, fixture checks, outbox-only worker, tests",
+      "id": "A15",
+      "requirement": "No deployment, credentials, real client data, messages, trades, or money movement",
+      "status": "PASS"
+    }
+  ],
+  "schema_version": "mas.acceptance_matrix.v1",
+  "status": "PASS"
+}

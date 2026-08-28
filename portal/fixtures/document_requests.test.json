@@ -1,0 +1,20 @@
+{
+  "data_class": "fictional_test_only",
+  "requests": [
+    {
+      "entity_id": "entity-shared.test",
+      "household_id": "household-alpha.test",
+      "id": "request-statement.test",
+      "status": "missing",
+      "title": "Example monthly statement"
+    },
+    {
+      "entity_id": null,
+      "household_id": "household-alpha.test",
+      "id": "request-tax-summary.test",
+      "status": "missing",
+      "title": "Example tax summary"
+    }
+  ],
+  "schema_version": "gg.portal.document_requests.v1"
+}

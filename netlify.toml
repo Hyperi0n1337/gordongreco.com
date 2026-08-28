@@ -1,45 +1,33 @@
 [build]
-  base    = "mas/web"
+  base = "."
   command = "bash build.sh"
-  publish = "."
-
-[[redirects]]
-  from = "http://gordongreco.com/*"
-  to   = "https://gordongreco.com/:splat"
-  status = 301
-  force  = true
-
-[[redirects]]
-  from = "http://www.gordongreco.com/*"
-  to   = "https://gordongreco.com/:splat"
-  status = 301
-  force  = true
-
-[[redirects]]
-  from = "https://www.gordongreco.com/*"
-  to   = "https://gordongreco.com/:splat"
-  status = 301
-  force  = true
+  publish = "dist"
 
 [[headers]]
-  for = "/*"
+  for = "/*.html"
   [headers.values]
-    X-Frame-Options        = "SAMEORIGIN"
+    Cache-Control = "public, max-age=0, must-revalidate"
     X-Content-Type-Options = "nosniff"
-    Referrer-Policy        = "strict-origin-when-cross-origin"
-    Permissions-Policy     = "camera=(), microphone=(), geolocation=()"
-
-[[headers]]
-  for = "/css/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/js/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=2592000"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=2592000"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=2592000"
+
+[[headers]]
+  for = "/client.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "private, max-age=0, must-revalidate"
