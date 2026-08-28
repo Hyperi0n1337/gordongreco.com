@@ -474,14 +474,14 @@
       "sha256": "305a21c734016e5265b536dcffed6f9288a77c6ad7f7e294e75e2d495b97acd2"
     },
     {
-      "bytes": 946,
+      "bytes": 963,
       "path": "pyproject.toml",
-      "sha256": "7242c9c962bec7687000dc341ccac52a1d15985ff7a8b384d9fba08ffaf0868d"
+      "sha256": "ac7ab52a8d2b81e4664fe6e40ceb8afc17683755625bea59ae6f892d7dbf2f7c"
     },
     {
-      "bytes": 225,
+      "bytes": 239,
       "path": "requirements.lock",
-      "sha256": "feee3ed9534818c82de0304a1db59b1f5298f47b75de0dfe2c66ed594f5fe6c0"
+      "sha256": "2f92a83a53323dd15117b20d1c46e651e5b2d154f8c89ef6c0c367c87c865351"
     },
     {
       "bytes": 395,
@@ -577,7 +577,7 @@
   ],
   "prompt_id": "MAS-RP-402",
   "schema_version": "mas.implementation_manifest.v1",
-  "source_bytes": 458950,
+  "source_bytes": 458981,
   "source_file_count": 113,
   "verification_command": "python scripts/verify.py --no-write"
 }
