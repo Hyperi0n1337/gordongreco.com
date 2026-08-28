@@ -14,6 +14,11 @@
       "sha256": "3898abe144bec152d94c3e4b3d22cb4092cbf60097932e0323aa3e153d74446b"
     },
     {
+      "bytes": 115,
+      "path": ".wrangler/cache/wrangler-account.json",
+      "sha256": "dc0f5a9665b003d5f914fb7ef14cd6d2e5d1127a0f60f2ff637977c8abe62a3d"
+    },
+    {
       "bytes": 761,
       "path": "CHANGELOG.md",
       "sha256": "be00b20a976ffbdf86893a524790533b52f73be1961b89a4224023b8fcae2201"
@@ -177,6 +182,46 @@
       "bytes": 130,
       "path": "deploy/aws/terraform/versions.tf",
       "sha256": "1d920f5e29291f2c75f1787c7bac409075888dd19470d7b090e9a5743bc59ff3"
+    },
+    {
+      "bytes": 1203,
+      "path": "deploy/cloudflare/README.md",
+      "sha256": "c9d5406a63c1cabdc295432348739e3da8862fb31ccdea7cf13452fb66cfd768"
+    },
+    {
+      "bytes": 2722,
+      "path": "deploy/cloudflare/public/portal/app.js",
+      "sha256": "d89605b301857749b139764a0db56df7a2cfaaadb29b818afb0cd74f22b74ade"
+    },
+    {
+      "bytes": 959,
+      "path": "deploy/cloudflare/public/portal/index.html",
+      "sha256": "71b5e552b182b81781c86e695fc94220ae8796129c9a4a2e254963409bcc95be"
+    },
+    {
+      "bytes": 1333,
+      "path": "deploy/cloudflare/public/portal/styles.css",
+      "sha256": "ace8fc92b7497e88241f3b52a05526a46e94b5c33a69e38f8e812ea76d486a94"
+    },
+    {
+      "bytes": 2954,
+      "path": "deploy/cloudflare/schema.sql",
+      "sha256": "5dc8c111de9b48cbc73da8b3f0e8b3bc3b8bdc8ba288b4e76a73c00783b2e369"
+    },
+    {
+      "bytes": 13615,
+      "path": "deploy/cloudflare/src/worker.mjs",
+      "sha256": "adf18b2e698de525434fbff26bb4add829132e86c4423e3b2b214599fb1b0c0d"
+    },
+    {
+      "bytes": 967,
+      "path": "deploy/cloudflare/tests/worker_contract.test.mjs",
+      "sha256": "00b3ace699d49008d533706137a9173c5975237486a4a1a25923fa6776b0fc9c"
+    },
+    {
+      "bytes": 662,
+      "path": "deploy/cloudflare/wrangler.jsonc",
+      "sha256": "6bb4209a2e2151ac57d375e1d75b6cee0f188d3cd50cfa8a228c17b88393eeac"
     },
     {
       "bytes": 771,
@@ -577,7 +622,7 @@
   ],
   "prompt_id": "MAS-RP-402",
   "schema_version": "mas.implementation_manifest.v1",
-  "source_bytes": 458981,
-  "source_file_count": 113,
+  "source_bytes": 483511,
+  "source_file_count": 122,
   "verification_command": "python scripts/verify.py --no-write"
 }
