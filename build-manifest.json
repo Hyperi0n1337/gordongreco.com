@@ -1,6 +1,6 @@
 {
   "payload_file_count": 28,
-  "payload_bytes": 698447,
+  "payload_bytes": 698596,
   "manifest_excluded_from_counts": true,
   "files": [
     {
@@ -55,8 +55,8 @@
     },
     {
       "path": "client.html",
-      "bytes": 7139,
-      "sha256": "2a9145316d3b9348bc01031528a7fdf4c32016598b00d46704fd89dffb44eab5"
+      "bytes": 7288,
+      "sha256": "398084c73c64c3cab4deae1bc78c21d97903ca721ab05613a3f899babb08ce3b"
     },
     {
       "path": "contact.html",

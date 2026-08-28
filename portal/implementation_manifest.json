@@ -9,9 +9,9 @@
       "sha256": "cc259cd845505804a90a20846dc9d35b4c2a4ae02f035be09f37f087a20acfc2"
     },
     {
-      "bytes": 98,
+      "bytes": 109,
       "path": ".gitignore",
-      "sha256": "3898abe144bec152d94c3e4b3d22cb4092cbf60097932e0323aa3e153d74446b"
+      "sha256": "db04a8da502db988a1874dcfa94eb70921198e6ec05ed09ae0699e5325952279"
     },
     {
       "bytes": 115,
@@ -212,6 +212,11 @@
       "bytes": 13615,
       "path": "deploy/cloudflare/src/worker.mjs",
       "sha256": "adf18b2e698de525434fbff26bb4add829132e86c4423e3b2b214599fb1b0c0d"
+    },
+    {
+      "bytes": 5886,
+      "path": "deploy/cloudflare/tests/live_smoke.py",
+      "sha256": "2d9254724c3e17a7b89ed5ad720d605f8839a294dd31d96c3be8cb24b5ab71fe"
     },
     {
       "bytes": 967,
@@ -622,7 +627,7 @@
   ],
   "prompt_id": "MAS-RP-402",
   "schema_version": "mas.implementation_manifest.v1",
-  "source_bytes": 483511,
-  "source_file_count": 122,
+  "source_bytes": 489408,
+  "source_file_count": 123,
   "verification_command": "python scripts/verify.py --no-write"
 }

@@ -74,7 +74,8 @@ def test_no_unverified_public_claims():
 
 def test_client_shell_has_no_auth_upload_or_client_state():
     page=ROOT/'client.html'; raw=page.read_text(encoding='utf-8').lower(); p=parse(page)
-    assert 'data-portal-state="not-enabled"' in raw
+    assert 'data-portal-state="live"' in raw
+    assert 'gordon-greco-client-portal.markterzidis.workers.dev/portal/' in raw
     assert 'noindex, nofollow' in raw
     assert '<form' not in raw
     for tag,field in p.inputs:
