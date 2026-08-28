@@ -184,9 +184,9 @@
       "sha256": "c9d5406a63c1cabdc295432348739e3da8862fb31ccdea7cf13452fb66cfd768"
     },
     {
-      "bytes": 2722,
+      "bytes": 2812,
       "path": "deploy/cloudflare/public/portal/app.js",
-      "sha256": "d89605b301857749b139764a0db56df7a2cfaaadb29b818afb0cd74f22b74ade"
+      "sha256": "7d5c6928599358a9d75a8f01891d87899f849f4b25cb052f4c19cc1a65b2633f"
     },
     {
       "bytes": 959,
@@ -214,9 +214,9 @@
       "sha256": "2d9254724c3e17a7b89ed5ad720d605f8839a294dd31d96c3be8cb24b5ab71fe"
     },
     {
-      "bytes": 967,
+      "bytes": 1346,
       "path": "deploy/cloudflare/tests/worker_contract.test.mjs",
-      "sha256": "00b3ace699d49008d533706137a9173c5975237486a4a1a25923fa6776b0fc9c"
+      "sha256": "75b8e3c3e2be30d9f307ed5f88fe0bfe065ce9b65099221d65d6a9f057ddf832"
     },
     {
       "bytes": 662,
@@ -622,7 +622,7 @@
   ],
   "prompt_id": "MAS-RP-402",
   "schema_version": "mas.implementation_manifest.v1",
-  "source_bytes": 489309,
+  "source_bytes": 489778,
   "source_file_count": 122,
   "verification_command": "python scripts/verify.py --no-write"
 }
